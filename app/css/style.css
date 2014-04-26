@@ -6,6 +6,10 @@
   width: 200px;
   word-wrap: break-word; }
 
+#github-webview .comment-description {
+  margin: 0 .5em;
+  overflow: hidden; }
+
 #github-iframe {
   width: 100%;
   min-height: 100%;
@@ -157,15 +161,17 @@ a {
 .event-username {
   color: #999; }
 
-.event-desc {
+.event-description {
   font-size: 80%;
-  margin: 0.4em 0; }
+  margin: 0.4em 0;
+  overflow: hidden;
+  max-height: 150px; }
 
 .event-item-selected {
   background: #eee; }
 
 .email-item-unread {
-  border-left: 6px solid #1b98f8; }
+  order-left: 6px solid #1b98f8; }
 
 /* Email Content Styles */
 .event-content-header, .email-content-body, .email-content-footer {
@@ -173,7 +179,10 @@ a {
 
 .event-content-header {
   border-bottom: 1px solid #ddd;
-  height: 50px; }
+  max-height: 50px;
+  height: 50px;
+  font-size: 1.3em;
+  overflow: hidden; }
 
 .email-content-title {
   margin: 0.5em 0 0; }

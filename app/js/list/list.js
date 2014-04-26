@@ -5,9 +5,10 @@
 "use strict";
 var Vue = require('vue');
 var github = require("../github/github");
-var userData = require("../config/userData").getUserData();
+var user = require("../config/userData");
 var builder = require("parse-github-event");
 module.exports = function () {
+    console.log("load");
     var commentHeader = new Vue({
         el: '#comment-preview-header',
         data: {
@@ -53,6 +54,7 @@ module.exports = function () {
                 }
             },
             loadHTMLView: function (item) {
+                document.documentElement.scrollTop = 0;
                 this.selectedItem = item.$data || item;// raw data
                 // update header
                 commentHeader.avatar_url = item.avatar_url;
@@ -74,10 +76,9 @@ module.exports = function () {
     window.Mousetrap.bind('k', function () {
         view.selectPrevItem();
     });
-    var user = github.getUser(userData.name);
-    user.getReceivedEvents().then(function (events) {
+    var githubUser = github.getUser(user.getUserData().name);
+    githubUser.getReceivedEvents().then(function (events) {
         var list = events.map(function (event) {
-            console.log(event.payload.comment);
             var parsedEvent = builder.parse(event);
             return {
                 "user_name": event.actor.login,
