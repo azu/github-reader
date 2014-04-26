@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Github Reader</title>
+    <link rel="stylesheet" href="../bower_components/pure/pure-min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="layout" class="content pure-g">
+    <div id="nav" class="pure-u-1-24">
+        <a href="#" class="nav-menu-button">Menu</a>
+
+        <div class="nav-inner">
+            <button class="primary-button pure-button">Compose</button>
+
+            <div class="pure-menu pure-menu-open">
+                <ul>
+                    <li><a href="#">Inbox <span class="email-count">(2)</span></a></li>
+                    <li><a href="#"><span class="email-label-personal"></span>Personal</a></li>
+                    <li><a href="#"><span class="email-label-work"></span>Work</a></li>
+                    <li><a href="#"><span class="email-label-travel"></span>Travel</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="content-list" class="pure-u-1-4">
+        <div class="event-item pure-g" v-repeat="items"
+             v-on='click: loadHTMLView(this)'
+             v-class="
+             event-item-selected: this === selectedItem
+             ">
+            <div class="pure-u">
+                <div class="event-header">
+                    <img src="{{avatar_url}}" class="avatar-img"/>
+                    <h5 class="event-username">{{user_name}}</h5>
+                    <h4 class="event-subject">{{title}}</h4>
+                </div>
+                <p class="event-desc">
+                    {{body}}
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="github-webview" class="pure-u-1">
+        <div id="comment-preview-header" class="event-content-header pure-g">
+            <img src="{{avatar_url}}" class="avatar-img"/>
+
+            <p class="event-desc">
+                {{body}}
+            </p>
+        </div>
+        <iframe id="github-iframe" nwfaketop></iframe>
+    </div>
+</div>
+<script src="node-webkit/workaround.js"></script>
+<script src="node-webkit/winstate.js"></script>
+<script src="../bower_components/mousetrap/mousetrap.min.js"></script>
+<script>
+    require("./js/index")();
+</script>
+</body>
+</html>

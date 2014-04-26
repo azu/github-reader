@@ -1,0 +1,2214 @@
+[
+    {
+        "id": "2070416128",
+        "type": "PullRequestEvent",
+        "actor": {
+            "id": 1062518,
+            "login": "pivotal-brian-croom",
+            "gravatar_id": "92d36bd6d9b53539fcec282452872710",
+            "url": "https://api.github.com/users/pivotal-brian-croom",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1062518?"
+        },
+        "repo": {
+            "id": 708684,
+            "name": "pivotal/cedar",
+            "url": "https://api.github.com/repos/pivotal/cedar"
+        },
+        "payload": {
+            "action": "opened",
+            "number": 231,
+            "pull_request": {
+                "url": "https://api.github.com/repos/pivotal/cedar/pulls/231",
+                "id": 15102666,
+                "html_url": "https://github.com/pivotal/cedar/pull/231",
+                "diff_url": "https://github.com/pivotal/cedar/pull/231.diff",
+                "patch_url": "https://github.com/pivotal/cedar/pull/231.patch",
+                "issue_url": "https://api.github.com/repos/pivotal/cedar/issues/231",
+                "number": 231,
+                "state": "open",
+                "title": "Refactor test boot methods",
+                "user": {
+                    "login": "pivotal-brian-croom",
+                    "id": 1062518,
+                    "avatar_url": "https://avatars.githubusercontent.com/u/1062518?",
+                    "gravatar_id": "92d36bd6d9b53539fcec282452872710",
+                    "url": "https://api.github.com/users/pivotal-brian-croom",
+                    "html_url": "https://github.com/pivotal-brian-croom",
+                    "followers_url": "https://api.github.com/users/pivotal-brian-croom/followers",
+                    "following_url": "https://api.github.com/users/pivotal-brian-croom/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/pivotal-brian-croom/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/pivotal-brian-croom/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/pivotal-brian-croom/subscriptions",
+                    "organizations_url": "https://api.github.com/users/pivotal-brian-croom/orgs",
+                    "repos_url": "https://api.github.com/users/pivotal-brian-croom/repos",
+                    "events_url": "https://api.github.com/users/pivotal-brian-croom/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/pivotal-brian-croom/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "body": "- Common code consolidated into CDROTestRunner and CDROTestIPhoneRunner\r\n- CDROTestIPhoneRunner subclasses CDROTestRunner\r\n[#67878220]\r\n\r\nThoughts?\r\n@idoru, @jeffh",
+                "created_at": "2014-04-24T05:01:39Z",
+                "updated_at": "2014-04-24T05:01:39Z",
+                "closed_at": null,
+                "merged_at": null,
+                "merge_commit_sha": null,
+                "assignee": null,
+                "milestone": null,
+                "commits_url": "https://api.github.com/repos/pivotal/cedar/pulls/231/commits",
+                "review_comments_url": "https://api.github.com/repos/pivotal/cedar/pulls/231/comments",
+                "review_comment_url": "https://api.github.com/repos/pivotal/cedar/pulls/comments/{number}",
+                "comments_url": "https://api.github.com/repos/pivotal/cedar/issues/231/comments",
+                "statuses_url": "https://api.github.com/repos/pivotal/cedar/statuses/196e2ba6c2f35302ff4a6534943bddc798d726ad",
+                "head": {
+                    "label": "pivotal-brian-croom:refactor-boot-methods",
+                    "ref": "refactor-boot-methods",
+                    "sha": "196e2ba6c2f35302ff4a6534943bddc798d726ad",
+                    "user": {
+                        "login": "pivotal-brian-croom",
+                        "id": 1062518,
+                        "avatar_url": "https://avatars.githubusercontent.com/u/1062518?",
+                        "gravatar_id": "92d36bd6d9b53539fcec282452872710",
+                        "url": "https://api.github.com/users/pivotal-brian-croom",
+                        "html_url": "https://github.com/pivotal-brian-croom",
+                        "followers_url": "https://api.github.com/users/pivotal-brian-croom/followers",
+                        "following_url": "https://api.github.com/users/pivotal-brian-croom/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/pivotal-brian-croom/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/pivotal-brian-croom/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/pivotal-brian-croom/subscriptions",
+                        "organizations_url": "https://api.github.com/users/pivotal-brian-croom/orgs",
+                        "repos_url": "https://api.github.com/users/pivotal-brian-croom/repos",
+                        "events_url": "https://api.github.com/users/pivotal-brian-croom/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/pivotal-brian-croom/received_events",
+                        "type": "User",
+                        "site_admin": false
+                    },
+                    "repo": {
+                        "id": 18118188,
+                        "name": "cedar",
+                        "full_name": "pivotal-brian-croom/cedar",
+                        "owner": {
+                            "login": "pivotal-brian-croom",
+                            "id": 1062518,
+                            "avatar_url": "https://avatars.githubusercontent.com/u/1062518?",
+                            "gravatar_id": "92d36bd6d9b53539fcec282452872710",
+                            "url": "https://api.github.com/users/pivotal-brian-croom",
+                            "html_url": "https://github.com/pivotal-brian-croom",
+                            "followers_url": "https://api.github.com/users/pivotal-brian-croom/followers",
+                            "following_url": "https://api.github.com/users/pivotal-brian-croom/following{/other_user}",
+                            "gists_url": "https://api.github.com/users/pivotal-brian-croom/gists{/gist_id}",
+                            "starred_url": "https://api.github.com/users/pivotal-brian-croom/starred{/owner}{/repo}",
+                            "subscriptions_url": "https://api.github.com/users/pivotal-brian-croom/subscriptions",
+                            "organizations_url": "https://api.github.com/users/pivotal-brian-croom/orgs",
+                            "repos_url": "https://api.github.com/users/pivotal-brian-croom/repos",
+                            "events_url": "https://api.github.com/users/pivotal-brian-croom/events{/privacy}",
+                            "received_events_url": "https://api.github.com/users/pivotal-brian-croom/received_events",
+                            "type": "User",
+                            "site_admin": false
+                        },
+                        "private": false,
+                        "html_url": "https://github.com/pivotal-brian-croom/cedar",
+                        "description": "BDD-style testing using Objective-C",
+                        "fork": true,
+                        "url": "https://api.github.com/repos/pivotal-brian-croom/cedar",
+                        "forks_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/forks",
+                        "keys_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/keys{/key_id}",
+                        "collaborators_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/collaborators{/collaborator}",
+                        "teams_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/teams",
+                        "hooks_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/hooks",
+                        "issue_events_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/issues/events{/number}",
+                        "events_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/events",
+                        "assignees_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/assignees{/user}",
+                        "branches_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/branches{/branch}",
+                        "tags_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/tags",
+                        "blobs_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/git/blobs{/sha}",
+                        "git_tags_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/git/tags{/sha}",
+                        "git_refs_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/git/refs{/sha}",
+                        "trees_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/git/trees{/sha}",
+                        "statuses_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/statuses/{sha}",
+                        "languages_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/languages",
+                        "stargazers_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/stargazers",
+                        "contributors_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/contributors",
+                        "subscribers_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/subscribers",
+                        "subscription_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/subscription",
+                        "commits_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/commits{/sha}",
+                        "git_commits_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/git/commits{/sha}",
+                        "comments_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/comments{/number}",
+                        "issue_comment_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/issues/comments/{number}",
+                        "contents_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/contents/{+path}",
+                        "compare_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/compare/{base}...{head}",
+                        "merges_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/merges",
+                        "archive_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/{archive_format}{/ref}",
+                        "downloads_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/downloads",
+                        "issues_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/issues{/number}",
+                        "pulls_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/pulls{/number}",
+                        "milestones_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/milestones{/number}",
+                        "notifications_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/notifications{?since,all,participating}",
+                        "labels_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/labels{/name}",
+                        "releases_url": "https://api.github.com/repos/pivotal-brian-croom/cedar/releases{/id}",
+                        "created_at": "2014-03-25T22:03:41Z",
+                        "updated_at": "2014-04-24T05:01:39Z",
+                        "pushed_at": "2014-04-24T04:58:41Z",
+                        "git_url": "git://github.com/pivotal-brian-croom/cedar.git",
+                        "ssh_url": "git@github.com:pivotal-brian-croom/cedar.git",
+                        "clone_url": "https://github.com/pivotal-brian-croom/cedar.git",
+                        "svn_url": "https://github.com/pivotal-brian-croom/cedar",
+                        "homepage": "http://groups.google.com/group/cedar-discuss",
+                        "size": 3067,
+                        "stargazers_count": 0,
+                        "watchers_count": 0,
+                        "language": "Objective-C",
+                        "has_issues": false,
+                        "has_downloads": true,
+                        "has_wiki": true,
+                        "forks_count": 0,
+                        "mirror_url": null,
+                        "open_issues_count": 0,
+                        "forks": 0,
+                        "open_issues": 0,
+                        "watchers": 0,
+                        "default_branch": "master"
+                    }
+                },
+                "base": {
+                    "label": "pivotal:master",
+                    "ref": "master",
+                    "sha": "12d925bb7c1d5f53d759ac6c612be12953b61593",
+                    "user": {
+                        "login": "pivotal",
+                        "id": 9148,
+                        "avatar_url": "https://avatars.githubusercontent.com/u/9148?",
+                        "gravatar_id": "9f7ca4684008e71a26ff490caa985d8b",
+                        "url": "https://api.github.com/users/pivotal",
+                        "html_url": "https://github.com/pivotal",
+                        "followers_url": "https://api.github.com/users/pivotal/followers",
+                        "following_url": "https://api.github.com/users/pivotal/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/pivotal/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/pivotal/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/pivotal/subscriptions",
+                        "organizations_url": "https://api.github.com/users/pivotal/orgs",
+                        "repos_url": "https://api.github.com/users/pivotal/repos",
+                        "events_url": "https://api.github.com/users/pivotal/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/pivotal/received_events",
+                        "type": "Organization",
+                        "site_admin": false
+                    },
+                    "repo": {
+                        "id": 708684,
+                        "name": "cedar",
+                        "full_name": "pivotal/cedar",
+                        "owner": {
+                            "login": "pivotal",
+                            "id": 9148,
+                            "avatar_url": "https://avatars.githubusercontent.com/u/9148?",
+                            "gravatar_id": "9f7ca4684008e71a26ff490caa985d8b",
+                            "url": "https://api.github.com/users/pivotal",
+                            "html_url": "https://github.com/pivotal",
+                            "followers_url": "https://api.github.com/users/pivotal/followers",
+                            "following_url": "https://api.github.com/users/pivotal/following{/other_user}",
+                            "gists_url": "https://api.github.com/users/pivotal/gists{/gist_id}",
+                            "starred_url": "https://api.github.com/users/pivotal/starred{/owner}{/repo}",
+                            "subscriptions_url": "https://api.github.com/users/pivotal/subscriptions",
+                            "organizations_url": "https://api.github.com/users/pivotal/orgs",
+                            "repos_url": "https://api.github.com/users/pivotal/repos",
+                            "events_url": "https://api.github.com/users/pivotal/events{/privacy}",
+                            "received_events_url": "https://api.github.com/users/pivotal/received_events",
+                            "type": "Organization",
+                            "site_admin": false
+                        },
+                        "private": false,
+                        "html_url": "https://github.com/pivotal/cedar",
+                        "description": "BDD-style testing using Objective-C",
+                        "fork": false,
+                        "url": "https://api.github.com/repos/pivotal/cedar",
+                        "forks_url": "https://api.github.com/repos/pivotal/cedar/forks",
+                        "keys_url": "https://api.github.com/repos/pivotal/cedar/keys{/key_id}",
+                        "collaborators_url": "https://api.github.com/repos/pivotal/cedar/collaborators{/collaborator}",
+                        "teams_url": "https://api.github.com/repos/pivotal/cedar/teams",
+                        "hooks_url": "https://api.github.com/repos/pivotal/cedar/hooks",
+                        "issue_events_url": "https://api.github.com/repos/pivotal/cedar/issues/events{/number}",
+                        "events_url": "https://api.github.com/repos/pivotal/cedar/events",
+                        "assignees_url": "https://api.github.com/repos/pivotal/cedar/assignees{/user}",
+                        "branches_url": "https://api.github.com/repos/pivotal/cedar/branches{/branch}",
+                        "tags_url": "https://api.github.com/repos/pivotal/cedar/tags",
+                        "blobs_url": "https://api.github.com/repos/pivotal/cedar/git/blobs{/sha}",
+                        "git_tags_url": "https://api.github.com/repos/pivotal/cedar/git/tags{/sha}",
+                        "git_refs_url": "https://api.github.com/repos/pivotal/cedar/git/refs{/sha}",
+                        "trees_url": "https://api.github.com/repos/pivotal/cedar/git/trees{/sha}",
+                        "statuses_url": "https://api.github.com/repos/pivotal/cedar/statuses/{sha}",
+                        "languages_url": "https://api.github.com/repos/pivotal/cedar/languages",
+                        "stargazers_url": "https://api.github.com/repos/pivotal/cedar/stargazers",
+                        "contributors_url": "https://api.github.com/repos/pivotal/cedar/contributors",
+                        "subscribers_url": "https://api.github.com/repos/pivotal/cedar/subscribers",
+                        "subscription_url": "https://api.github.com/repos/pivotal/cedar/subscription",
+                        "commits_url": "https://api.github.com/repos/pivotal/cedar/commits{/sha}",
+                        "git_commits_url": "https://api.github.com/repos/pivotal/cedar/git/commits{/sha}",
+                        "comments_url": "https://api.github.com/repos/pivotal/cedar/comments{/number}",
+                        "issue_comment_url": "https://api.github.com/repos/pivotal/cedar/issues/comments/{number}",
+                        "contents_url": "https://api.github.com/repos/pivotal/cedar/contents/{+path}",
+                        "compare_url": "https://api.github.com/repos/pivotal/cedar/compare/{base}...{head}",
+                        "merges_url": "https://api.github.com/repos/pivotal/cedar/merges",
+                        "archive_url": "https://api.github.com/repos/pivotal/cedar/{archive_format}{/ref}",
+                        "downloads_url": "https://api.github.com/repos/pivotal/cedar/downloads",
+                        "issues_url": "https://api.github.com/repos/pivotal/cedar/issues{/number}",
+                        "pulls_url": "https://api.github.com/repos/pivotal/cedar/pulls{/number}",
+                        "milestones_url": "https://api.github.com/repos/pivotal/cedar/milestones{/number}",
+                        "notifications_url": "https://api.github.com/repos/pivotal/cedar/notifications{?since,all,participating}",
+                        "labels_url": "https://api.github.com/repos/pivotal/cedar/labels{/name}",
+                        "releases_url": "https://api.github.com/repos/pivotal/cedar/releases{/id}",
+                        "created_at": "2010-06-08T01:34:14Z",
+                        "updated_at": "2014-04-23T03:57:29Z",
+                        "pushed_at": "2014-04-23T03:57:28Z",
+                        "git_url": "git://github.com/pivotal/cedar.git",
+                        "ssh_url": "git@github.com:pivotal/cedar.git",
+                        "clone_url": "https://github.com/pivotal/cedar.git",
+                        "svn_url": "https://github.com/pivotal/cedar",
+                        "homepage": "http://groups.google.com/group/cedar-discuss",
+                        "size": 6672,
+                        "stargazers_count": 769,
+                        "watchers_count": 769,
+                        "language": "Objective-C",
+                        "has_issues": true,
+                        "has_downloads": true,
+                        "has_wiki": true,
+                        "forks_count": 110,
+                        "mirror_url": null,
+                        "open_issues_count": 11,
+                        "forks": 110,
+                        "open_issues": 11,
+                        "watchers": 769,
+                        "default_branch": "master"
+                    }
+                },
+                "_links": {
+                    "self": {
+                        "href": "https://api.github.com/repos/pivotal/cedar/pulls/231"
+                    },
+                    "html": {
+                        "href": "https://github.com/pivotal/cedar/pull/231"
+                    },
+                    "issue": {
+                        "href": "https://api.github.com/repos/pivotal/cedar/issues/231"
+                    },
+                    "comments": {
+                        "href": "https://api.github.com/repos/pivotal/cedar/issues/231/comments"
+                    },
+                    "review_comments": {
+                        "href": "https://api.github.com/repos/pivotal/cedar/pulls/231/comments"
+                    },
+                    "review_comment": {
+                        "href": "https://api.github.com/repos/pivotal/cedar/pulls/comments/{number}"
+                    },
+                    "commits": {
+                        "href": "https://api.github.com/repos/pivotal/cedar/pulls/231/commits"
+                    },
+                    "statuses": {
+                        "href": "https://api.github.com/repos/pivotal/cedar/statuses/196e2ba6c2f35302ff4a6534943bddc798d726ad"
+                    }
+                },
+                "merged": false,
+                "mergeable": null,
+                "mergeable_state": "unknown",
+                "merged_by": null,
+                "comments": 0,
+                "review_comments": 0,
+                "commits": 1,
+                "additions": 143,
+                "deletions": 122,
+                "changed_files": 11
+            }
+        },
+        "public": true,
+        "created_at": "2014-04-24T05:01:39Z",
+        "org": {
+            "id": 9148,
+            "login": "pivotal",
+            "gravatar_id": "9f7ca4684008e71a26ff490caa985d8b",
+            "url": "https://api.github.com/orgs/pivotal",
+            "avatar_url": "https://avatars.githubusercontent.com/u/9148?"
+        }
+    },
+    {
+        "id": "2070414830",
+        "type": "CreateEvent",
+        "actor": {
+            "id": 12631,
+            "login": "substack",
+            "gravatar_id": "d4a2f12ceae3b7f211b661576d22bfb9",
+            "url": "https://api.github.com/users/substack",
+            "avatar_url": "https://avatars.githubusercontent.com/u/12631?"
+        },
+        "repo": {
+            "id": 19096306,
+            "name": "substack/scrux",
+            "url": "https://api.github.com/repos/substack/scrux"
+        },
+        "payload": {
+            "ref": null,
+            "ref_type": "repository",
+            "master_branch": "master",
+            "description": "screen reader terminal multiplexer",
+            "pusher_type": "user"
+        },
+        "public": true,
+        "created_at": "2014-04-24T04:59:35Z"
+    },
+    {
+        "id": "2070406273",
+        "type": "IssueCommentEvent",
+        "actor": {
+            "id": 1315816,
+            "login": "jamesmortensen",
+            "gravatar_id": "5b36a81be1209394d5b70daa1767e0d7",
+            "url": "https://api.github.com/users/jamesmortensen",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1315816?"
+        },
+        "repo": {
+            "id": 1451352,
+            "name": "visionmedia/mocha",
+            "url": "https://api.github.com/repos/visionmedia/mocha"
+        },
+        "payload": {
+            "action": "created",
+            "issue": {
+                "url": "https://api.github.com/repos/visionmedia/mocha/issues/960",
+                "labels_url": "https://api.github.com/repos/visionmedia/mocha/issues/960/labels{/name}",
+                "comments_url": "https://api.github.com/repos/visionmedia/mocha/issues/960/comments",
+                "events_url": "https://api.github.com/repos/visionmedia/mocha/issues/960/events",
+                "html_url": "https://github.com/visionmedia/mocha/issues/960",
+                "id": 18534362,
+                "number": 960,
+                "title": "Feature request: make it possible for Mocha to run on node-webkit without a complex workaround",
+                "user": {
+                    "login": "Mithgol",
+                    "id": 1088720,
+                    "avatar_url": "https://avatars.githubusercontent.com/u/1088720?",
+                    "gravatar_id": "794261fc53b3e7ea6ba2d19a4f265803",
+                    "url": "https://api.github.com/users/Mithgol",
+                    "html_url": "https://github.com/Mithgol",
+                    "followers_url": "https://api.github.com/users/Mithgol/followers",
+                    "following_url": "https://api.github.com/users/Mithgol/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/Mithgol/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/Mithgol/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/Mithgol/subscriptions",
+                    "organizations_url": "https://api.github.com/users/Mithgol/orgs",
+                    "repos_url": "https://api.github.com/users/Mithgol/repos",
+                    "events_url": "https://api.github.com/users/Mithgol/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/Mithgol/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "labels": [],
+                "state": "closed",
+                "assignee": null,
+                "milestone": null,
+                "comments": 4,
+                "created_at": "2013-08-26T05:48:44Z",
+                "updated_at": "2014-04-24T04:46:01Z",
+                "closed_at": "2013-12-07T20:34:36Z",
+                "body": "As some of you might already know, **[node-webkit](https://github.com/rogerwang/node-webkit/)** is a fine amalgamation of the [Node](http://nodejs.org/)'s API and a WebKit-based (Chromium-based) web browser. The resulting engine makes it possible for cross-platform GUI applications (for Windows, Mac OS X and Linux) to be developed with web technologies (HTML, CSS, JS, WebGL, etc.), their windows are essentially “local webpages” using [Node API](http://nodejs.org/docs/latest/api/) to access the underlying system.\r\n\r\nAnd it's quite possible to use [existing Node modules](https://github.com/rogerwang/node-webkit/wiki/Using-Node-modules) in a node-webkit-based application.\r\n\r\nHowever, when I try running Mocha on node-webkit, there's an issue.\r\n\r\nMost of Mocha's reporters use `console.log` output with ANSI commands to define colours and to move the cursor. However, inside the node-webkit `console.log()` is [rerouted to the WebKit's “Developer Tools” window,](https://github.com/rogerwang/node-webkit/wiki/Changes-related-to-node#console) and the reports of Mocha are far from being pretty there.\r\n\r\nMocha does also have [a browser-oriented reporter,](http://visionmedia.github.io/mocha/#browser-support) but, when it runs on node-webkit, there are two problems with it:\r\n\r\n* It tries to create some minimal versions for a couple of Node interfaces (`require` and `process`), though both exist in node-webkit and have their complete form.\r\n\r\n* It does not walk through the `test/` subdirectory; the tests have to be enumerated (as `<script src=\"…\"></script>`) below.\r\n\r\nThat's because the reporter thinks it has only browser's interfaces in its avail, while actually it could also use Node API in node-webkit.\r\n\r\nOf course, there's always a workaround. For example, the authors of node-webkit still use Mocha for testing. It is possible to read [`/tests/index.html`](https://github.com/rogerwang/node-webkit/blob/925d1e03dfd74f045169f74f88464f9dc4b3748c/tests/index.html) and discover how it has been done:\r\n\r\n* The Node API objects [are hidden](https://github.com/rogerwang/node-webkit/blob/925d1e03dfd74f045169f74f88464f9dc4b3748c/tests/index.html#L6-13) from the Mocha's browser-oriented reporter:\r\n\r\n```html\r\n<script type=\"text/javascript\" charset=\"utf-8\">\r\n// Remove symbols of node-webkit to avoid conficts with mocha in browser.\r\nvar nodeRequire = require;\r\nvar nodeGlobal = global;\r\nvar nodeProcess = process;\r\nrequire = undefined;\r\nglobal = undefined;\r\nprocess = undefined;\r\n</script>\r\n```\r\n\r\n* These objects [are then restored](https://github.com/rogerwang/node-webkit/blob/925d1e03dfd74f045169f74f88464f9dc4b3748c/tests/index.html#L19-24) in their original form, replacing the reporter's minimalistic mockups:\r\n\r\n```html\r\n<script type=\"text/javascript\" charset=\"utf-8\">\r\n// Restore default node-webkit environment.\r\nrequire = nodeRequire;\r\nglobal = nodeGlobal;\r\nprocess = nodeProcess;\r\n</script>\r\n```\r\n\r\n* Mocha is [used programmatically](https://github.com/visionmedia/mocha/wiki/Using-mocha-programmatically). A wrapper script discovers the necessary options and traverses subdirectories in a search for tests.\r\n\r\nHowever, that workaround is a complex one. It's unreasonable to expect the end users of node-webkit to be willing to repeat all these steps to run Mocha tests for their node-webkit-based applications.\r\n\r\nHence the feature request.\r\n\r\nPlease make a node-webkit-oriented reporter.\r\n\r\nIt should be similar to the browser-oriented reporter (should make some HTML output inside a `<div>`), with a couple of differences:\r\n\r\n* It should expect (and use) Node API instead of building its own versions of them.\r\n\r\n* It should use Node API to walk through the `test/` subdirectory for tests. These tests should then run in the same window's context (by adding `<script src=\"…\"></script>` to the DOM) instead of the Node's isolated context (`require()`), because the tests should have access to that window's DOM.\r\n\r\nThe reporter could check `process.versions['node-webkit']` to ensure that it's indeed running on node-webkit (not in a traditional web browser, not on a vanilla Node.js, not on some other Node+browser system such as [AppJS.)](https://github.com/appjs/appjs)"
+            },
+            "comment": {
+                "url": "https://api.github.com/repos/visionmedia/mocha/issues/comments/41242251",
+                "html_url": "https://github.com/visionmedia/mocha/issues/960#issuecomment-41242251",
+                "issue_url": "https://api.github.com/repos/visionmedia/mocha/issues/960",
+                "id": 41242251,
+                "user": {
+                    "login": "jamesmortensen",
+                    "id": 1315816,
+                    "avatar_url": "https://avatars.githubusercontent.com/u/1315816?",
+                    "gravatar_id": "5b36a81be1209394d5b70daa1767e0d7",
+                    "url": "https://api.github.com/users/jamesmortensen",
+                    "html_url": "https://github.com/jamesmortensen",
+                    "followers_url": "https://api.github.com/users/jamesmortensen/followers",
+                    "following_url": "https://api.github.com/users/jamesmortensen/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/jamesmortensen/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/jamesmortensen/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/jamesmortensen/subscriptions",
+                    "organizations_url": "https://api.github.com/users/jamesmortensen/orgs",
+                    "repos_url": "https://api.github.com/users/jamesmortensen/repos",
+                    "events_url": "https://api.github.com/users/jamesmortensen/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/jamesmortensen/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "created_at": "2014-04-24T04:46:01Z",
+                "updated_at": "2014-04-24T04:46:01Z",
+                "body": "It's also worth noting that after about v1.12.0 of Mocha, even the workarounds don't work anymore.  Thus, this means node-webkit developers are relying on outdated versions of Mocha to operate."
+            }
+        },
+        "public": true,
+        "created_at": "2014-04-24T04:46:01Z"
+    },
+    {
+        "id": "2070404467",
+        "type": "GollumEvent",
+        "actor": {
+            "id": 53785,
+            "login": "jaekwon",
+            "gravatar_id": "44f47adfcff58848fd96e055c04437d0",
+            "url": "https://api.github.com/users/jaekwon",
+            "avatar_url": "https://avatars.githubusercontent.com/u/53785?"
+        },
+        "repo": {
+            "id": 211666,
+            "name": "joyent/node",
+            "url": "https://api.github.com/repos/joyent/node"
+        },
+        "payload": {
+            "pages": [
+                {
+                    "page_name": "Modules",
+                    "title": "Modules",
+                    "summary": null,
+                    "action": "edited",
+                    "sha": "cfeed05ff833685a4c92ec90cea27532d8931ff0",
+                    "html_url": "https://github.com/joyent/node/wiki/Modules"
+                }
+            ]
+        },
+        "public": true,
+        "created_at": "2014-04-24T04:42:57Z",
+        "org": {
+            "id": 10161,
+            "login": "joyent",
+            "gravatar_id": "95c8b4070c2ba024f87a8fdca63e9d24",
+            "url": "https://api.github.com/orgs/joyent",
+            "avatar_url": "https://avatars.githubusercontent.com/u/10161?"
+        }
+    },
+    {
+        "id": "2070387951",
+        "type": "WatchEvent",
+        "actor": {
+            "id": 66100,
+            "login": "taichi",
+            "gravatar_id": "bb720baee7aef49cecf54dbd91e8c57a",
+            "url": "https://api.github.com/users/taichi",
+            "avatar_url": "https://avatars.githubusercontent.com/u/66100?"
+        },
+        "repo": {
+            "id": 15437343,
+            "name": "docker-atlassian/stash",
+            "url": "https://api.github.com/repos/docker-atlassian/stash"
+        },
+        "payload": {
+            "action": "started"
+        },
+        "public": true,
+        "created_at": "2014-04-24T04:15:07Z"
+    },
+    {
+        "id": "2070387377",
+        "type": "WatchEvent",
+        "actor": {
+            "id": 66100,
+            "login": "taichi",
+            "gravatar_id": "bb720baee7aef49cecf54dbd91e8c57a",
+            "url": "https://api.github.com/users/taichi",
+            "avatar_url": "https://avatars.githubusercontent.com/u/66100?"
+        },
+        "repo": {
+            "id": 15406929,
+            "name": "docker-atlassian/jira",
+            "url": "https://api.github.com/repos/docker-atlassian/jira"
+        },
+        "payload": {
+            "action": "started"
+        },
+        "public": true,
+        "created_at": "2014-04-24T04:14:12Z"
+    },
+    {
+        "id": "2070386659",
+        "type": "WatchEvent",
+        "actor": {
+            "id": 66100,
+            "login": "taichi",
+            "gravatar_id": "bb720baee7aef49cecf54dbd91e8c57a",
+            "url": "https://api.github.com/users/taichi",
+            "avatar_url": "https://avatars.githubusercontent.com/u/66100?"
+        },
+        "repo": {
+            "id": 18286232,
+            "name": "GitbookIO/javascript",
+            "url": "https://api.github.com/repos/GitbookIO/javascript"
+        },
+        "payload": {
+            "action": "started"
+        },
+        "public": true,
+        "created_at": "2014-04-24T04:13:04Z",
+        "org": {
+            "id": 7111340,
+            "login": "GitbookIO",
+            "gravatar_id": null,
+            "url": "https://api.github.com/orgs/GitbookIO",
+            "avatar_url": "https://avatars.githubusercontent.com/u/7111340?"
+        }
+    },
+    {
+        "id": "2070386134",
+        "type": "WatchEvent",
+        "actor": {
+            "id": 66100,
+            "login": "taichi",
+            "gravatar_id": "bb720baee7aef49cecf54dbd91e8c57a",
+            "url": "https://api.github.com/users/taichi",
+            "avatar_url": "https://avatars.githubusercontent.com/u/66100?"
+        },
+        "repo": {
+            "id": 18655678,
+            "name": "GitbookIO/editor",
+            "url": "https://api.github.com/repos/GitbookIO/editor"
+        },
+        "payload": {
+            "action": "started"
+        },
+        "public": true,
+        "created_at": "2014-04-24T04:12:13Z",
+        "org": {
+            "id": 7111340,
+            "login": "GitbookIO",
+            "gravatar_id": null,
+            "url": "https://api.github.com/orgs/GitbookIO",
+            "avatar_url": "https://avatars.githubusercontent.com/u/7111340?"
+        }
+    },
+    {
+        "id": "2070385250",
+        "type": "IssueCommentEvent",
+        "actor": {
+            "id": 201344,
+            "login": "lazd",
+            "gravatar_id": "764bf1eb322b51f2db54f2e09266d5be",
+            "url": "https://api.github.com/users/lazd",
+            "avatar_url": "https://avatars.githubusercontent.com/u/201344?"
+        },
+        "repo": {
+            "id": 2560988,
+            "name": "karma-runner/karma",
+            "url": "https://api.github.com/repos/karma-runner/karma"
+        },
+        "payload": {
+            "action": "created",
+            "issue": {
+                "url": "https://api.github.com/repos/karma-runner/karma/issues/1037",
+                "labels_url": "https://api.github.com/repos/karma-runner/karma/issues/1037/labels{/name}",
+                "comments_url": "https://api.github.com/repos/karma-runner/karma/issues/1037/comments",
+                "events_url": "https://api.github.com/repos/karma-runner/karma/issues/1037/events",
+                "html_url": "https://github.com/karma-runner/karma/issues/1037",
+                "id": 31779825,
+                "number": 1037,
+                "title": "Public API does not provide hooks for server started, all browsers captured, etc",
+                "user": {
+                    "login": "lazd",
+                    "id": 201344,
+                    "avatar_url": "https://avatars.githubusercontent.com/u/201344?",
+                    "gravatar_id": "764bf1eb322b51f2db54f2e09266d5be",
+                    "url": "https://api.github.com/users/lazd",
+                    "html_url": "https://github.com/lazd",
+                    "followers_url": "https://api.github.com/users/lazd/followers",
+                    "following_url": "https://api.github.com/users/lazd/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/lazd/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/lazd/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/lazd/subscriptions",
+                    "organizations_url": "https://api.github.com/users/lazd/orgs",
+                    "repos_url": "https://api.github.com/users/lazd/repos",
+                    "events_url": "https://api.github.com/users/lazd/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/lazd/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "labels": [
+                    {
+                        "url": "https://api.github.com/repos/karma-runner/karma/labels/type%3A+feature",
+                        "name": "type: feature",
+                        "color": "02e10c"
+                    }
+                ],
+                "state": "open",
+                "assignee": null,
+                "milestone": {
+                    "url": "https://api.github.com/repos/karma-runner/karma/milestones/4",
+                    "labels_url": "https://api.github.com/repos/karma-runner/karma/milestones/4/labels",
+                    "id": 611486,
+                    "number": 4,
+                    "title": "Backlog",
+                    "description": "Holds the backlog of issues and pull requests that have been triaged.",
+                    "creator": {
+                        "login": "vojtajina",
+                        "id": 46647,
+                        "avatar_url": "https://avatars.githubusercontent.com/u/46647?",
+                        "gravatar_id": "d59bdceef864e67df13167d806d6da63",
+                        "url": "https://api.github.com/users/vojtajina",
+                        "html_url": "https://github.com/vojtajina",
+                        "followers_url": "https://api.github.com/users/vojtajina/followers",
+                        "following_url": "https://api.github.com/users/vojtajina/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/vojtajina/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/vojtajina/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/vojtajina/subscriptions",
+                        "organizations_url": "https://api.github.com/users/vojtajina/orgs",
+                        "repos_url": "https://api.github.com/users/vojtajina/repos",
+                        "events_url": "https://api.github.com/users/vojtajina/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/vojtajina/received_events",
+                        "type": "User",
+                        "site_admin": false
+                    },
+                    "open_issues": 7,
+                    "closed_issues": 2,
+                    "state": "open",
+                    "created_at": "2014-03-27T04:13:48Z",
+                    "updated_at": "2014-04-23T21:39:04Z",
+                    "due_on": null
+                },
+                "comments": 5,
+                "created_at": "2014-04-18T03:45:27Z",
+                "updated_at": "2014-04-24T04:10:57Z",
+                "closed_at": null,
+                "body": "### Problem\r\n\r\nThe [public API](http://karma-runner.github.io/0.12/dev/public-api.html) does not provide enough insight into the state of the server.\r\n\r\n### Why?\r\n\r\nBecause server tasks that are dependent on its state can be triggered programmatically by outside entities, it is necessary for said entities to have knowledge of the server's state.\r\n\r\nFor instance, imagine if you wanted to do the following, programmatically:\r\n\r\n1. Start a Karma server (`server.start()`)\r\n2. When all browsers are connected, run tests (`runner.run()`)\r\n3. Trigger additional runs at arbitrary times (such as when files change) (`runner.run()`)\r\n\r\nCurrently, this is not possible. Yes, this is exactly what `autoWatch` does, but runs cannot being triggered programatically. Yes, `singleRun` will run tests when all browsers are connected, but it will kill the server and exit when tests are done running, which makes the third step impossible.\r\n\r\n### Workaround\r\n\r\nIn order to work around this, implementors are forced watch `process.stdout` for messages to infer what's going on inside of Karma, which is incredibly brittle and hackish.\r\n\r\n### Solution\r\n\r\nI tried digging to find a way to get access to the event emitter that triggers some of these events, but it seems it's not currently possible via the public API.\r\n\r\nIf `server.start` returned and object with a reference the `globalEmitter` object, we'd be halfway there."
+            },
+            "comment": {
+                "url": "https://api.github.com/repos/karma-runner/karma/issues/comments/41241033",
+                "html_url": "https://github.com/karma-runner/karma/issues/1037#issuecomment-41241033",
+                "issue_url": "https://api.github.com/repos/karma-runner/karma/issues/1037",
+                "id": 41241033,
+                "user": {
+                    "login": "lazd",
+                    "id": 201344,
+                    "avatar_url": "https://avatars.githubusercontent.com/u/201344?",
+                    "gravatar_id": "764bf1eb322b51f2db54f2e09266d5be",
+                    "url": "https://api.github.com/users/lazd",
+                    "html_url": "https://github.com/lazd",
+                    "followers_url": "https://api.github.com/users/lazd/followers",
+                    "following_url": "https://api.github.com/users/lazd/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/lazd/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/lazd/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/lazd/subscriptions",
+                    "organizations_url": "https://api.github.com/users/lazd/orgs",
+                    "repos_url": "https://api.github.com/users/lazd/repos",
+                    "events_url": "https://api.github.com/users/lazd/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/lazd/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "created_at": "2014-04-24T04:10:57Z",
+                "updated_at": "2014-04-24T04:10:57Z",
+                "body": "@pkozlowski-opensource, the practical need is to know when Karma is in certain states so we can trigger test runs (as described above).\r\n\r\n@vojtajina, registering events on `globalEmitter` might be sufficient, but it may cause the expected public API to break when when Karma's internals change (removed events, event names changed). Furthermore, the events emitted by `globalEmitter` are underscore_separated, whereas configuration file keys are camelCase, and it would make sense for the public events to be camelCase as well. As such, it may be better to expose a specific subset of events triggered on `globalEmitter` on the objects returned by `start()` and `run()` under different names.\r\n\r\nWithout knowing if all of these are possible, I imagine the events could be something like this:\r\n\r\n### runner\r\n\r\n* **runStart** - Test run started\r\n* **runComplete** - Test run completed\r\n* **runFailure** - Test run completed with failing tests\r\n* **runSuccess** - Test run completed with all tests passing\r\n\r\n### server\r\n\r\n* **browserRegister** - Browser registered, but not ready\r\n* **browserReady** - Browser ready to run tests\r\n* **browserRunStart** - Browser started test run\r\n* **browserRunComplete** - Browser finished test run\r\n* **browsersReady** - All browsers are ready\r\n* **browsersChange** - Browser removed or added\r\n\r\nI'm not sure what other events are available or useful, but **server.browsersReady** is the one that's blocking my use case."
+            }
+        },
+        "public": true,
+        "created_at": "2014-04-24T04:10:58Z",
+        "org": {
+            "id": 3284117,
+            "login": "karma-runner",
+            "gravatar_id": "847cab27bf461c01b135512af49191d6",
+            "url": "https://api.github.com/orgs/karma-runner",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3284117?"
+        }
+    },
+    {
+        "id": "2070384089",
+        "type": "WatchEvent",
+        "actor": {
+            "id": 66100,
+            "login": "taichi",
+            "gravatar_id": "bb720baee7aef49cecf54dbd91e8c57a",
+            "url": "https://api.github.com/users/taichi",
+            "avatar_url": "https://avatars.githubusercontent.com/u/66100?"
+        },
+        "repo": {
+            "id": 6400367,
+            "name": "EngineeringMode/Grapnel.js",
+            "url": "https://api.github.com/repos/EngineeringMode/Grapnel.js"
+        },
+        "payload": {
+            "action": "started"
+        },
+        "public": true,
+        "created_at": "2014-04-24T04:09:04Z"
+    },
+    {
+        "id": "2070382684",
+        "type": "WatchEvent",
+        "actor": {
+            "id": 66100,
+            "login": "taichi",
+            "gravatar_id": "bb720baee7aef49cecf54dbd91e8c57a",
+            "url": "https://api.github.com/users/taichi",
+            "avatar_url": "https://avatars.githubusercontent.com/u/66100?"
+        },
+        "repo": {
+            "id": 17327241,
+            "name": "zenazn/goji",
+            "url": "https://api.github.com/repos/zenazn/goji"
+        },
+        "payload": {
+            "action": "started"
+        },
+        "public": true,
+        "created_at": "2014-04-24T04:06:48Z"
+    },
+    {
+        "id": "2070381993",
+        "type": "IssueCommentEvent",
+        "actor": {
+            "id": 633843,
+            "login": "jpillora",
+            "gravatar_id": "37c81072743814b8b9af1f963e6f7ecb",
+            "url": "https://api.github.com/users/jpillora",
+            "avatar_url": "https://avatars.githubusercontent.com/u/633843?"
+        },
+        "repo": {
+            "id": 317757,
+            "name": "Modernizr/Modernizr",
+            "url": "https://api.github.com/repos/Modernizr/Modernizr"
+        },
+        "payload": {
+            "action": "created",
+            "issue": {
+                "url": "https://api.github.com/repos/Modernizr/Modernizr/issues/388",
+                "labels_url": "https://api.github.com/repos/Modernizr/Modernizr/issues/388/labels{/name}",
+                "comments_url": "https://api.github.com/repos/Modernizr/Modernizr/issues/388/comments",
+                "events_url": "https://api.github.com/repos/Modernizr/Modernizr/issues/388/events",
+                "html_url": "https://github.com/Modernizr/Modernizr/issues/388",
+                "id": 1820109,
+                "number": 388,
+                "title": "postMessage string or data",
+                "user": {
+                    "login": "forresto",
+                    "id": 395307,
+                    "avatar_url": "https://avatars.githubusercontent.com/u/395307?",
+                    "gravatar_id": "4f084531176322b8d3fdfa1dc1ff01b7",
+                    "url": "https://api.github.com/users/forresto",
+                    "html_url": "https://github.com/forresto",
+                    "followers_url": "https://api.github.com/users/forresto/followers",
+                    "following_url": "https://api.github.com/users/forresto/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/forresto/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/forresto/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/forresto/subscriptions",
+                    "organizations_url": "https://api.github.com/users/forresto/orgs",
+                    "repos_url": "https://api.github.com/users/forresto/repos",
+                    "events_url": "https://api.github.com/users/forresto/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/forresto/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "labels": [],
+                "state": "open",
+                "assignee": null,
+                "milestone": null,
+                "comments": 25,
+                "created_at": "2011-10-05T02:44:06Z",
+                "updated_at": "2014-04-24T04:05:52Z",
+                "closed_at": null,
+                "body": "FF 6+ and Safari 5+ allow any data (except dom) to be passed as the postMessage() message. Before, it was only Strings.\r\n\r\nhttps://developer.mozilla.org/en/DOM/The_structured_clone_algorithm\r\n\r\nIt would be helpful if Modernizr could report if the browser can send only strings or data. Any idea how to test for this?"
+            },
+            "comment": {
+                "url": "https://api.github.com/repos/Modernizr/Modernizr/issues/comments/41240844",
+                "html_url": "https://github.com/Modernizr/Modernizr/issues/388#issuecomment-41240844",
+                "issue_url": "https://api.github.com/repos/Modernizr/Modernizr/issues/388",
+                "id": 41240844,
+                "user": {
+                    "login": "jpillora",
+                    "id": 633843,
+                    "avatar_url": "https://avatars.githubusercontent.com/u/633843?",
+                    "gravatar_id": "37c81072743814b8b9af1f963e6f7ecb",
+                    "url": "https://api.github.com/users/jpillora",
+                    "html_url": "https://github.com/jpillora",
+                    "followers_url": "https://api.github.com/users/jpillora/followers",
+                    "following_url": "https://api.github.com/users/jpillora/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/jpillora/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/jpillora/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/jpillora/subscriptions",
+                    "organizations_url": "https://api.github.com/users/jpillora/orgs",
+                    "repos_url": "https://api.github.com/users/jpillora/repos",
+                    "events_url": "https://api.github.com/users/jpillora/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/jpillora/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "created_at": "2014-04-24T04:05:52Z",
+                "updated_at": "2014-04-24T04:05:52Z",
+                "body": "\r\n\r\n@gregersrygg Ah great there's a fix :) A cross-domain version of the test would be awesome. Probably doesn't need an extra box, though maybe just flag it somehow it if either same/cross domains tests fail. Maybe for cross-domain, you could use http://rawgit.com/ to serve a file on github (like a `test.html`) with the proper content-type (`text/html`). Or Amazon or dropbox etc etc. :)\r\n\r\n@ryanseddon As @gregersrygg mentioned, there's a bug fix, on the bug tracker, so it like a firefox only browser bug, though I guess it could be spec'ed somewhere to prevent Blobs from being sent cross-domain. Though that would be very strange as Array Buffers are allowed, which I'm [currently using](https://github.com/jpillora/xdomain/blob/gh-pages/src/master.coffee#L27-L62) to get around this issue."
+            }
+        },
+        "public": true,
+        "created_at": "2014-04-24T04:05:53Z",
+        "org": {
+            "id": 131060,
+            "login": "Modernizr",
+            "gravatar_id": "af17f0f78f7697b3e2bf70b26fb184ac",
+            "url": "https://api.github.com/orgs/Modernizr",
+            "avatar_url": "https://avatars.githubusercontent.com/u/131060?"
+        }
+    },
+    {
+        "id": "2070379868",
+        "type": "IssueCommentEvent",
+        "actor": {
+            "id": 465414,
+            "login": "patrickkettner",
+            "gravatar_id": "3fada965c1f65adc0599bb9cd606524d",
+            "url": "https://api.github.com/users/patrickkettner",
+            "avatar_url": "https://avatars.githubusercontent.com/u/465414?"
+        },
+        "repo": {
+            "id": 317757,
+            "name": "Modernizr/Modernizr",
+            "url": "https://api.github.com/repos/Modernizr/Modernizr"
+        },
+        "payload": {
+            "action": "created",
+            "issue": {
+                "url": "https://api.github.com/repos/Modernizr/Modernizr/issues/100",
+                "labels_url": "https://api.github.com/repos/Modernizr/Modernizr/issues/100/labels{/name}",
+                "comments_url": "https://api.github.com/repos/Modernizr/Modernizr/issues/100/comments",
+                "events_url": "https://api.github.com/repos/Modernizr/Modernizr/issues/100/events",
+                "html_url": "https://github.com/Modernizr/Modernizr/issues/100",
+                "id": 273196,
+                "number": 100,
+                "title": "camera input detection",
+                "user": {
+                    "login": "paulirish",
+                    "id": 39191,
+                    "avatar_url": "https://avatars.githubusercontent.com/u/39191?",
+                    "gravatar_id": "ffe68d6f71b225f7661d33f2a8908281",
+                    "url": "https://api.github.com/users/paulirish",
+                    "html_url": "https://github.com/paulirish",
+                    "followers_url": "https://api.github.com/users/paulirish/followers",
+                    "following_url": "https://api.github.com/users/paulirish/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/paulirish/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/paulirish/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/paulirish/subscriptions",
+                    "organizations_url": "https://api.github.com/users/paulirish/orgs",
+                    "repos_url": "https://api.github.com/users/paulirish/repos",
+                    "events_url": "https://api.github.com/users/paulirish/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/paulirish/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "labels": [
+                    {
+                        "url": "https://api.github.com/repos/Modernizr/Modernizr/labels/port+to+plugin",
+                        "name": "port to plugin",
+                        "color": "e102d8"
+                    }
+                ],
+                "state": "open",
+                "assignee": null,
+                "milestone": null,
+                "comments": 6,
+                "created_at": "2010-08-09T17:37:54Z",
+                "updated_at": "2014-04-24T04:02:23Z",
+                "closed_at": null,
+                "body": "    <input type=\"file\" accept=\"image/*;source=camera\">\r\n\r\nWill be the HTML required.. detectability unknown.\r\n\r\nvia https://groups.google.com/a/chromium.org/group/chromium-html5/browse_thread/thread/e6f125022dfadb39"
+            },
+            "comment": {
+                "url": "https://api.github.com/repos/Modernizr/Modernizr/issues/comments/41240703",
+                "html_url": "https://github.com/Modernizr/Modernizr/issues/100#issuecomment-41240703",
+                "issue_url": "https://api.github.com/repos/Modernizr/Modernizr/issues/100",
+                "id": 41240703,
+                "user": {
+                    "login": "patrickkettner",
+                    "id": 465414,
+                    "avatar_url": "https://avatars.githubusercontent.com/u/465414?",
+                    "gravatar_id": "3fada965c1f65adc0599bb9cd606524d",
+                    "url": "https://api.github.com/users/patrickkettner",
+                    "html_url": "https://github.com/patrickkettner",
+                    "followers_url": "https://api.github.com/users/patrickkettner/followers",
+                    "following_url": "https://api.github.com/users/patrickkettner/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/patrickkettner/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/patrickkettner/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/patrickkettner/subscriptions",
+                    "organizations_url": "https://api.github.com/users/patrickkettner/orgs",
+                    "repos_url": "https://api.github.com/users/patrickkettner/repos",
+                    "events_url": "https://api.github.com/users/patrickkettner/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/patrickkettner/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "created_at": "2014-04-24T04:02:23Z",
+                "updated_at": "2014-04-24T04:02:23Z",
+                "body": "@stucox wanna open up that as a PR to get the ball rolling?"
+            }
+        },
+        "public": true,
+        "created_at": "2014-04-24T04:02:24Z",
+        "org": {
+            "id": 131060,
+            "login": "Modernizr",
+            "gravatar_id": "af17f0f78f7697b3e2bf70b26fb184ac",
+            "url": "https://api.github.com/orgs/Modernizr",
+            "avatar_url": "https://avatars.githubusercontent.com/u/131060?"
+        }
+    },
+    {
+        "id": "2070375931",
+        "type": "IssuesEvent",
+        "actor": {
+            "id": 77849,
+            "login": "jameswomack",
+            "gravatar_id": "472e3bfb17175fb5d741356aa40b9605",
+            "url": "https://api.github.com/users/jameswomack",
+            "avatar_url": "https://avatars.githubusercontent.com/u/77849?"
+        },
+        "repo": {
+            "id": 2328523,
+            "name": "n1k0/casperjs",
+            "url": "https://api.github.com/repos/n1k0/casperjs"
+        },
+        "payload": {
+            "action": "opened",
+            "issue": {
+                "url": "https://api.github.com/repos/n1k0/casperjs/issues/898",
+                "labels_url": "https://api.github.com/repos/n1k0/casperjs/issues/898/labels{/name}",
+                "comments_url": "https://api.github.com/repos/n1k0/casperjs/issues/898/comments",
+                "events_url": "https://api.github.com/repos/n1k0/casperjs/issues/898/events",
+                "html_url": "https://github.com/n1k0/casperjs/issues/898",
+                "id": 32118616,
+                "number": 898,
+                "title": "Cannot find module 'path'",
+                "user": {
+                    "login": "jameswomack",
+                    "id": 77849,
+                    "avatar_url": "https://avatars.githubusercontent.com/u/77849?",
+                    "gravatar_id": "472e3bfb17175fb5d741356aa40b9605",
+                    "url": "https://api.github.com/users/jameswomack",
+                    "html_url": "https://github.com/jameswomack",
+                    "followers_url": "https://api.github.com/users/jameswomack/followers",
+                    "following_url": "https://api.github.com/users/jameswomack/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/jameswomack/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/jameswomack/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/jameswomack/subscriptions",
+                    "organizations_url": "https://api.github.com/users/jameswomack/orgs",
+                    "repos_url": "https://api.github.com/users/jameswomack/repos",
+                    "events_url": "https://api.github.com/users/jameswomack/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/jameswomack/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "labels": [],
+                "state": "open",
+                "assignee": null,
+                "milestone": null,
+                "comments": 0,
+                "created_at": "2014-04-24T03:56:43Z",
+                "updated_at": "2014-04-24T03:56:43Z",
+                "closed_at": null,
+                "body": "Hello Casper folks :ghost: \r\n\r\nIn a casper test, I import another JS module, which itself requires the node core module 'path'. Upon running the test, I get the error:\r\n```\r\nError: Cannot find module 'path'\r\n\r\n  phantomjs://bootstrap.js:289\r\n  phantomjs://bootstrap.js:254 in require\r\n```\r\n\r\nThe test:\r\n```\r\nvar server = require('../..'); // this module requires path, i.e. `require('path')`\r\n\r\nvar port = server.httpListener.address().port;\r\nvar url = 'http://localhost:'+String(port);\r\n\r\ncasper.test.begin('titles', 2, function(test){\r\n  casper\r\n    .start(url)\r\n    .waitForSelector('header#header', function(){\r\n      test.assertSelectorHasText('.timeZoneTitle:nth-child(1), :not(.timeZoneTitle) + .timeZoneTitle', 'Tokyo');\r\n      test.assertSelectorHasText('.timeZoneTitle:nth-child(2), :not(.timeZoneTitle) + .timeZoneTitle', 'Tijuana');\r\n    })\r\n    .run();\r\n});\r\n```\r\n\r\nRunning a nearly identical script using NightwatchJS works."
+            }
+        },
+        "public": true,
+        "created_at": "2014-04-24T03:56:44Z"
+    },
+    {
+        "id": "2070375330",
+        "type": "IssueCommentEvent",
+        "actor": {
+            "id": 143402,
+            "login": "ryanseddon",
+            "gravatar_id": "8677c9f7c0f6d947bf318c1430d00bfd",
+            "url": "https://api.github.com/users/ryanseddon",
+            "avatar_url": "https://avatars.githubusercontent.com/u/143402?"
+        },
+        "repo": {
+            "id": 317757,
+            "name": "Modernizr/Modernizr",
+            "url": "https://api.github.com/repos/Modernizr/Modernizr"
+        },
+        "payload": {
+            "action": "created",
+            "issue": {
+                "url": "https://api.github.com/repos/Modernizr/Modernizr/issues/388",
+                "labels_url": "https://api.github.com/repos/Modernizr/Modernizr/issues/388/labels{/name}",
+                "comments_url": "https://api.github.com/repos/Modernizr/Modernizr/issues/388/comments",
+                "events_url": "https://api.github.com/repos/Modernizr/Modernizr/issues/388/events",
+                "html_url": "https://github.com/Modernizr/Modernizr/issues/388",
+                "id": 1820109,
+                "number": 388,
+                "title": "postMessage string or data",
+                "user": {
+                    "login": "forresto",
+                    "id": 395307,
+                    "avatar_url": "https://avatars.githubusercontent.com/u/395307?",
+                    "gravatar_id": "4f084531176322b8d3fdfa1dc1ff01b7",
+                    "url": "https://api.github.com/users/forresto",
+                    "html_url": "https://github.com/forresto",
+                    "followers_url": "https://api.github.com/users/forresto/followers",
+                    "following_url": "https://api.github.com/users/forresto/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/forresto/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/forresto/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/forresto/subscriptions",
+                    "organizations_url": "https://api.github.com/users/forresto/orgs",
+                    "repos_url": "https://api.github.com/users/forresto/repos",
+                    "events_url": "https://api.github.com/users/forresto/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/forresto/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "labels": [],
+                "state": "open",
+                "assignee": null,
+                "milestone": null,
+                "comments": 24,
+                "created_at": "2011-10-05T02:44:06Z",
+                "updated_at": "2014-04-24T03:55:51Z",
+                "closed_at": null,
+                "body": "FF 6+ and Safari 5+ allow any data (except dom) to be passed as the postMessage() message. Before, it was only Strings.\r\n\r\nhttps://developer.mozilla.org/en/DOM/The_structured_clone_algorithm\r\n\r\nIt would be helpful if Modernizr could report if the browser can send only strings or data. Any idea how to test for this?"
+            },
+            "comment": {
+                "url": "https://api.github.com/repos/Modernizr/Modernizr/issues/comments/41240445",
+                "html_url": "https://github.com/Modernizr/Modernizr/issues/388#issuecomment-41240445",
+                "issue_url": "https://api.github.com/repos/Modernizr/Modernizr/issues/388",
+                "id": 41240445,
+                "user": {
+                    "login": "ryanseddon",
+                    "id": 143402,
+                    "avatar_url": "https://avatars.githubusercontent.com/u/143402?",
+                    "gravatar_id": "8677c9f7c0f6d947bf318c1430d00bfd",
+                    "url": "https://api.github.com/users/ryanseddon",
+                    "html_url": "https://github.com/ryanseddon",
+                    "followers_url": "https://api.github.com/users/ryanseddon/followers",
+                    "following_url": "https://api.github.com/users/ryanseddon/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/ryanseddon/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/ryanseddon/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/ryanseddon/subscriptions",
+                    "organizations_url": "https://api.github.com/users/ryanseddon/orgs",
+                    "repos_url": "https://api.github.com/users/ryanseddon/repos",
+                    "events_url": "https://api.github.com/users/ryanseddon/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/ryanseddon/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "created_at": "2014-04-24T03:55:51Z",
+                "updated_at": "2014-04-24T03:55:51Z",
+                "body": "@jpillora is that a firefox only issue is it spec'ed behaviour or a browser bug?"
+            }
+        },
+        "public": true,
+        "created_at": "2014-04-24T03:55:51Z",
+        "org": {
+            "id": 131060,
+            "login": "Modernizr",
+            "gravatar_id": "af17f0f78f7697b3e2bf70b26fb184ac",
+            "url": "https://api.github.com/orgs/Modernizr",
+            "avatar_url": "https://avatars.githubusercontent.com/u/131060?"
+        }
+    },
+    {
+        "id": "2070372883",
+        "type": "IssuesEvent",
+        "actor": {
+            "id": 1162160,
+            "login": "Rich-Harris",
+            "gravatar_id": "329f9d32fe20b186838ee237d3eb2d43",
+            "url": "https://api.github.com/users/Rich-Harris",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1162160?"
+        },
+        "repo": {
+            "id": 5245894,
+            "name": "ractivejs/ractive",
+            "url": "https://api.github.com/repos/ractivejs/ractive"
+        },
+        "payload": {
+            "action": "opened",
+            "issue": {
+                "url": "https://api.github.com/repos/ractivejs/ractive/issues/629",
+                "labels_url": "https://api.github.com/repos/ractivejs/ractive/issues/629/labels{/name}",
+                "comments_url": "https://api.github.com/repos/ractivejs/ractive/issues/629/comments",
+                "events_url": "https://api.github.com/repos/ractivejs/ractive/issues/629/events",
+                "html_url": "https://github.com/ractivejs/ractive/issues/629",
+                "id": 32118462,
+                "number": 629,
+                "title": "Pattern observers fail if the first key is *",
+                "user": {
+                    "login": "Rich-Harris",
+                    "id": 1162160,
+                    "avatar_url": "https://avatars.githubusercontent.com/u/1162160?",
+                    "gravatar_id": "329f9d32fe20b186838ee237d3eb2d43",
+                    "url": "https://api.github.com/users/Rich-Harris",
+                    "html_url": "https://github.com/Rich-Harris",
+                    "followers_url": "https://api.github.com/users/Rich-Harris/followers",
+                    "following_url": "https://api.github.com/users/Rich-Harris/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/Rich-Harris/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/Rich-Harris/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/Rich-Harris/subscriptions",
+                    "organizations_url": "https://api.github.com/users/Rich-Harris/orgs",
+                    "repos_url": "https://api.github.com/users/Rich-Harris/repos",
+                    "events_url": "https://api.github.com/users/Rich-Harris/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/Rich-Harris/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "labels": [],
+                "state": "open",
+                "assignee": null,
+                "milestone": null,
+                "comments": 0,
+                "created_at": "2014-04-24T03:52:00Z",
+                "updated_at": "2014-04-24T03:52:00Z",
+                "closed_at": null,
+                "body": "This fails:\r\n\r\n```js\r\nractive.observe('*.foo', function (n, o, k) {\r\n  // k will be 'foo' the first time this function is called!\r\n});\r\n```\r\n\r\nThe offending code is [here](https://github.com/ractivejs/ractive/blob/master/src/Ractive/prototype/observe/getPattern.js)."
+            }
+        },
+        "public": true,
+        "created_at": "2014-04-24T03:52:00Z",
+        "org": {
+            "id": 4751469,
+            "login": "ractivejs",
+            "gravatar_id": "9ab10f16b1b77550d4d0f58adb1eab17",
+            "url": "https://api.github.com/orgs/ractivejs",
+            "avatar_url": "https://avatars.githubusercontent.com/u/4751469?"
+        }
+    },
+    {
+        "id": "2070369463",
+        "type": "CreateEvent",
+        "actor": {
+            "id": 1042866,
+            "login": "jason0x43",
+            "gravatar_id": "17f86938646f77675595f346c485bb14",
+            "url": "https://api.github.com/users/jason0x43",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1042866?"
+        },
+        "repo": {
+            "id": 9037631,
+            "name": "theintern/intern",
+            "url": "https://api.github.com/repos/theintern/intern"
+        },
+        "payload": {
+            "ref": "sinon",
+            "ref_type": "branch",
+            "master_branch": "master",
+            "description": "A next-generation code testing stack for JavaScript.",
+            "pusher_type": "user"
+        },
+        "public": true,
+        "created_at": "2014-04-24T03:46:55Z",
+        "org": {
+            "id": 3977877,
+            "login": "theintern",
+            "gravatar_id": "8dfcc23c784d69800577e249b0891bda",
+            "url": "https://api.github.com/orgs/theintern",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3977877?"
+        }
+    },
+    {
+        "id": "2070368142",
+        "type": "WatchEvent",
+        "actor": {
+            "id": 86519,
+            "login": "t32k",
+            "gravatar_id": "4cf842e43a782a585d8707f2ba7f9a5c",
+            "url": "https://api.github.com/users/t32k",
+            "avatar_url": "https://avatars.githubusercontent.com/u/86519?"
+        },
+        "repo": {
+            "id": 2913921,
+            "name": "fbzhong/sublime-closure-linter",
+            "url": "https://api.github.com/repos/fbzhong/sublime-closure-linter"
+        },
+        "payload": {
+            "action": "started"
+        },
+        "public": true,
+        "created_at": "2014-04-24T03:45:11Z"
+    },
+    {
+        "id": "2070365775",
+        "type": "IssuesEvent",
+        "actor": {
+            "id": 229244,
+            "login": "csnover",
+            "gravatar_id": "ffe1561ee79aea59ef8a68a56c365883",
+            "url": "https://api.github.com/users/csnover",
+            "avatar_url": "https://avatars.githubusercontent.com/u/229244?"
+        },
+        "repo": {
+            "id": 9037631,
+            "name": "theintern/intern",
+            "url": "https://api.github.com/repos/theintern/intern"
+        },
+        "payload": {
+            "action": "closed",
+            "issue": {
+                "url": "https://api.github.com/repos/theintern/intern/issues/173",
+                "labels_url": "https://api.github.com/repos/theintern/intern/issues/173/labels{/name}",
+                "comments_url": "https://api.github.com/repos/theintern/intern/issues/173/comments",
+                "events_url": "https://api.github.com/repos/theintern/intern/issues/173/events",
+                "html_url": "https://github.com/theintern/intern/issues/173",
+                "id": 31019876,
+                "number": 173,
+                "title": "lengthOf assertion in geezer fails with 0-length array",
+                "user": {
+                    "login": "jason0x43",
+                    "id": 1042866,
+                    "avatar_url": "https://avatars.githubusercontent.com/u/1042866?",
+                    "gravatar_id": "17f86938646f77675595f346c485bb14",
+                    "url": "https://api.github.com/users/jason0x43",
+                    "html_url": "https://github.com/jason0x43",
+                    "followers_url": "https://api.github.com/users/jason0x43/followers",
+                    "following_url": "https://api.github.com/users/jason0x43/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/jason0x43/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/jason0x43/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/jason0x43/subscriptions",
+                    "organizations_url": "https://api.github.com/users/jason0x43/orgs",
+                    "repos_url": "https://api.github.com/users/jason0x43/repos",
+                    "events_url": "https://api.github.com/users/jason0x43/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/jason0x43/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "labels": [
+                    {
+                        "url": "https://api.github.com/repos/theintern/intern/labels/bug",
+                        "name": "bug",
+                        "color": "fc2929"
+                    }
+                ],
+                "state": "closed",
+                "assignee": null,
+                "milestone": null,
+                "comments": 2,
+                "created_at": "2014-04-07T20:38:34Z",
+                "updated_at": "2014-04-24T03:41:43Z",
+                "closed_at": "2014-04-24T03:41:43Z",
+                "body": "The `lengthOf` assertion in geezer uses `!object.length` to check if the object being tested has a length property. This fails when length is 0."
+            }
+        },
+        "public": true,
+        "created_at": "2014-04-24T03:41:43Z",
+        "org": {
+            "id": 3977877,
+            "login": "theintern",
+            "gravatar_id": "8dfcc23c784d69800577e249b0891bda",
+            "url": "https://api.github.com/orgs/theintern",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3977877?"
+        }
+    },
+    {
+        "id": "2070365773",
+        "type": "IssueCommentEvent",
+        "actor": {
+            "id": 229244,
+            "login": "csnover",
+            "gravatar_id": "ffe1561ee79aea59ef8a68a56c365883",
+            "url": "https://api.github.com/users/csnover",
+            "avatar_url": "https://avatars.githubusercontent.com/u/229244?"
+        },
+        "repo": {
+            "id": 9037631,
+            "name": "theintern/intern",
+            "url": "https://api.github.com/repos/theintern/intern"
+        },
+        "payload": {
+            "action": "created",
+            "issue": {
+                "url": "https://api.github.com/repos/theintern/intern/issues/173",
+                "labels_url": "https://api.github.com/repos/theintern/intern/issues/173/labels{/name}",
+                "comments_url": "https://api.github.com/repos/theintern/intern/issues/173/comments",
+                "events_url": "https://api.github.com/repos/theintern/intern/issues/173/events",
+                "html_url": "https://github.com/theintern/intern/issues/173",
+                "id": 31019876,
+                "number": 173,
+                "title": "lengthOf assertion in geezer fails with 0-length array",
+                "user": {
+                    "login": "jason0x43",
+                    "id": 1042866,
+                    "avatar_url": "https://avatars.githubusercontent.com/u/1042866?",
+                    "gravatar_id": "17f86938646f77675595f346c485bb14",
+                    "url": "https://api.github.com/users/jason0x43",
+                    "html_url": "https://github.com/jason0x43",
+                    "followers_url": "https://api.github.com/users/jason0x43/followers",
+                    "following_url": "https://api.github.com/users/jason0x43/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/jason0x43/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/jason0x43/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/jason0x43/subscriptions",
+                    "organizations_url": "https://api.github.com/users/jason0x43/orgs",
+                    "repos_url": "https://api.github.com/users/jason0x43/repos",
+                    "events_url": "https://api.github.com/users/jason0x43/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/jason0x43/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "labels": [
+                    {
+                        "url": "https://api.github.com/repos/theintern/intern/labels/bug",
+                        "name": "bug",
+                        "color": "fc2929"
+                    }
+                ],
+                "state": "closed",
+                "assignee": null,
+                "milestone": null,
+                "comments": 2,
+                "created_at": "2014-04-07T20:38:34Z",
+                "updated_at": "2014-04-24T03:41:43Z",
+                "closed_at": "2014-04-24T03:41:43Z",
+                "body": "The `lengthOf` assertion in geezer uses `!object.length` to check if the object being tested has a length property. This fails when length is 0."
+            },
+            "comment": {
+                "url": "https://api.github.com/repos/theintern/intern/issues/comments/41239886",
+                "html_url": "https://github.com/theintern/intern/issues/173#issuecomment-41239886",
+                "issue_url": "https://api.github.com/repos/theintern/intern/issues/173",
+                "id": 41239886,
+                "user": {
+                    "login": "csnover",
+                    "id": 229244,
+                    "avatar_url": "https://avatars.githubusercontent.com/u/229244?",
+                    "gravatar_id": "ffe1561ee79aea59ef8a68a56c365883",
+                    "url": "https://api.github.com/users/csnover",
+                    "html_url": "https://github.com/csnover",
+                    "followers_url": "https://api.github.com/users/csnover/followers",
+                    "following_url": "https://api.github.com/users/csnover/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/csnover/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/csnover/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/csnover/subscriptions",
+                    "organizations_url": "https://api.github.com/users/csnover/orgs",
+                    "repos_url": "https://api.github.com/users/csnover/repos",
+                    "events_url": "https://api.github.com/users/csnover/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/csnover/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "created_at": "2014-04-24T03:41:43Z",
+                "updated_at": "2014-04-24T03:41:43Z",
+                "body": "Fixed in 7e2c546e4df970caca4a81ea13a70264a95b424f"
+            }
+        },
+        "public": true,
+        "created_at": "2014-04-24T03:41:43Z",
+        "org": {
+            "id": 3977877,
+            "login": "theintern",
+            "gravatar_id": "8dfcc23c784d69800577e249b0891bda",
+            "url": "https://api.github.com/orgs/theintern",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3977877?"
+        }
+    },
+    {
+        "id": "2070365629",
+        "type": "PushEvent",
+        "actor": {
+            "id": 229244,
+            "login": "csnover",
+            "gravatar_id": "ffe1561ee79aea59ef8a68a56c365883",
+            "url": "https://api.github.com/users/csnover",
+            "avatar_url": "https://avatars.githubusercontent.com/u/229244?"
+        },
+        "repo": {
+            "id": 9037631,
+            "name": "theintern/intern",
+            "url": "https://api.github.com/repos/theintern/intern"
+        },
+        "payload": {
+            "push_id": 352948307,
+            "size": 1,
+            "distinct_size": 1,
+            "ref": "refs/heads/geezer",
+            "head": "7e2c546e4df970caca4a81ea13a70264a95b424f",
+            "before": "46ce00addfcd0a062cd512c483d3bcf140488132",
+            "commits": [
+                {
+                    "sha": "7e2c546e4df970caca4a81ea13a70264a95b424f",
+                    "author": {
+                        "email": "github.com@zetafleet.com",
+                        "name": "Colin Snover"
+                    },
+                    "message": "Make lengthOf detect length property the same way as Chai\n\nFixes #173.",
+                    "distinct": true,
+                    "url": "https://api.github.com/repos/theintern/intern/commits/7e2c546e4df970caca4a81ea13a70264a95b424f"
+                }
+            ]
+        },
+        "public": true,
+        "created_at": "2014-04-24T03:41:31Z",
+        "org": {
+            "id": 3977877,
+            "login": "theintern",
+            "gravatar_id": "8dfcc23c784d69800577e249b0891bda",
+            "url": "https://api.github.com/orgs/theintern",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3977877?"
+        }
+    },
+    {
+        "id": "2070360109",
+        "type": "PushEvent",
+        "actor": {
+            "id": 229244,
+            "login": "csnover",
+            "gravatar_id": "ffe1561ee79aea59ef8a68a56c365883",
+            "url": "https://api.github.com/users/csnover",
+            "avatar_url": "https://avatars.githubusercontent.com/u/229244?"
+        },
+        "repo": {
+            "id": 9037631,
+            "name": "theintern/intern",
+            "url": "https://api.github.com/repos/theintern/intern"
+        },
+        "payload": {
+            "push_id": 352945466,
+            "size": 2,
+            "distinct_size": 1,
+            "ref": "refs/heads/geezer",
+            "head": "46ce00addfcd0a062cd512c483d3bcf140488132",
+            "before": "f00aacf2a1feb03b8c375842715c07a4879fd255",
+            "commits": [
+                {
+                    "sha": "c72adf14887d52a8ddd3bd93aee525cdeebe622f",
+                    "author": {
+                        "email": "github.com@zetafleet.com",
+                        "name": "Colin Snover"
+                    },
+                    "message": "Update sauce-connect-launcher\n\nFixes #179.",
+                    "distinct": false,
+                    "url": "https://api.github.com/repos/theintern/intern/commits/c72adf14887d52a8ddd3bd93aee525cdeebe622f"
+                },
+                {
+                    "sha": "46ce00addfcd0a062cd512c483d3bcf140488132",
+                    "author": {
+                        "email": "github.com@zetafleet.com",
+                        "name": "Colin Snover"
+                    },
+                    "message": "Merge branch 'master' into geezer\n\nConflicts:\n\tpackage.json",
+                    "distinct": true,
+                    "url": "https://api.github.com/repos/theintern/intern/commits/46ce00addfcd0a062cd512c483d3bcf140488132"
+                }
+            ]
+        },
+        "public": true,
+        "created_at": "2014-04-24T03:33:18Z",
+        "org": {
+            "id": 3977877,
+            "login": "theintern",
+            "gravatar_id": "8dfcc23c784d69800577e249b0891bda",
+            "url": "https://api.github.com/orgs/theintern",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3977877?"
+        }
+    },
+    {
+        "id": "2070359714",
+        "type": "PushEvent",
+        "actor": {
+            "id": 229244,
+            "login": "csnover",
+            "gravatar_id": "ffe1561ee79aea59ef8a68a56c365883",
+            "url": "https://api.github.com/users/csnover",
+            "avatar_url": "https://avatars.githubusercontent.com/u/229244?"
+        },
+        "repo": {
+            "id": 9037631,
+            "name": "theintern/intern",
+            "url": "https://api.github.com/repos/theintern/intern"
+        },
+        "payload": {
+            "push_id": 352945276,
+            "size": 1,
+            "distinct_size": 1,
+            "ref": "refs/heads/master",
+            "head": "c72adf14887d52a8ddd3bd93aee525cdeebe622f",
+            "before": "71cc8891a9aa2f7687a228b00cb6e107ccf312be",
+            "commits": [
+                {
+                    "sha": "c72adf14887d52a8ddd3bd93aee525cdeebe622f",
+                    "author": {
+                        "email": "github.com@zetafleet.com",
+                        "name": "Colin Snover"
+                    },
+                    "message": "Update sauce-connect-launcher\n\nFixes #179.",
+                    "distinct": true,
+                    "url": "https://api.github.com/repos/theintern/intern/commits/c72adf14887d52a8ddd3bd93aee525cdeebe622f"
+                }
+            ]
+        },
+        "public": true,
+        "created_at": "2014-04-24T03:32:43Z",
+        "org": {
+            "id": 3977877,
+            "login": "theintern",
+            "gravatar_id": "8dfcc23c784d69800577e249b0891bda",
+            "url": "https://api.github.com/orgs/theintern",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3977877?"
+        }
+    },
+    {
+        "id": "2070359710",
+        "type": "IssuesEvent",
+        "actor": {
+            "id": 229244,
+            "login": "csnover",
+            "gravatar_id": "ffe1561ee79aea59ef8a68a56c365883",
+            "url": "https://api.github.com/users/csnover",
+            "avatar_url": "https://avatars.githubusercontent.com/u/229244?"
+        },
+        "repo": {
+            "id": 9037631,
+            "name": "theintern/intern",
+            "url": "https://api.github.com/repos/theintern/intern"
+        },
+        "payload": {
+            "action": "closed",
+            "issue": {
+                "url": "https://api.github.com/repos/theintern/intern/issues/179",
+                "labels_url": "https://api.github.com/repos/theintern/intern/issues/179/labels{/name}",
+                "comments_url": "https://api.github.com/repos/theintern/intern/issues/179/comments",
+                "events_url": "https://api.github.com/repos/theintern/intern/issues/179/events",
+                "html_url": "https://github.com/theintern/intern/issues/179",
+                "id": 32085842,
+                "number": 179,
+                "title": "update sauce-connect-launcher to 0.4.2",
+                "user": {
+                    "login": "lbod",
+                    "id": 733371,
+                    "avatar_url": "https://avatars.githubusercontent.com/u/733371?",
+                    "gravatar_id": "bb097c169912557514d09aa387819199",
+                    "url": "https://api.github.com/users/lbod",
+                    "html_url": "https://github.com/lbod",
+                    "followers_url": "https://api.github.com/users/lbod/followers",
+                    "following_url": "https://api.github.com/users/lbod/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/lbod/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/lbod/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/lbod/subscriptions",
+                    "organizations_url": "https://api.github.com/users/lbod/orgs",
+                    "repos_url": "https://api.github.com/users/lbod/repos",
+                    "events_url": "https://api.github.com/users/lbod/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/lbod/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "labels": [],
+                "state": "closed",
+                "assignee": null,
+                "milestone": null,
+                "comments": 4,
+                "created_at": "2014-04-23T18:20:44Z",
+                "updated_at": "2014-04-24T03:32:43Z",
+                "closed_at": "2014-04-24T03:32:43Z",
+                "body": "I'd submit a pr but it's just an npm config change. \r\nOne reason to move quickly to it is private keys are exposed in travis e.g. https://github.com/bermi/sauce-connect-launcher/issues/23\r\n"
+            }
+        },
+        "public": true,
+        "created_at": "2014-04-24T03:32:43Z",
+        "org": {
+            "id": 3977877,
+            "login": "theintern",
+            "gravatar_id": "8dfcc23c784d69800577e249b0891bda",
+            "url": "https://api.github.com/orgs/theintern",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3977877?"
+        }
+    },
+    {
+        "id": "2070346032",
+        "type": "WatchEvent",
+        "actor": {
+            "id": 137,
+            "login": "josh",
+            "gravatar_id": "bbe5dc8dcf248706525ab76f46185520",
+            "url": "https://api.github.com/users/josh",
+            "avatar_url": "https://avatars.githubusercontent.com/u/137?"
+        },
+        "repo": {
+            "id": 12271469,
+            "name": "JoshData/mailinabox",
+            "url": "https://api.github.com/repos/JoshData/mailinabox"
+        },
+        "payload": {
+            "action": "started"
+        },
+        "public": true,
+        "created_at": "2014-04-24T03:12:09Z"
+    },
+    {
+        "id": "2070344752",
+        "type": "CreateEvent",
+        "actor": {
+            "id": 28143,
+            "login": "edvakf",
+            "gravatar_id": "ccecb4725f29a35a9dd6d1d0bef096ea",
+            "url": "https://api.github.com/users/edvakf",
+            "avatar_url": "https://avatars.githubusercontent.com/u/28143?"
+        },
+        "repo": {
+            "id": 19094027,
+            "name": "edvakf/heroku-php-sample",
+            "url": "https://api.github.com/repos/edvakf/heroku-php-sample"
+        },
+        "payload": {
+            "ref": null,
+            "ref_type": "repository",
+            "master_branch": "master",
+            "description": "",
+            "pusher_type": "user"
+        },
+        "public": true,
+        "created_at": "2014-04-24T03:10:15Z"
+    },
+    {
+        "id": "2070342297",
+        "type": "IssueCommentEvent",
+        "actor": {
+            "id": 1355710,
+            "login": "sheelc",
+            "gravatar_id": "e6efc5eee76717888394fc0d7057af0f",
+            "url": "https://api.github.com/users/sheelc",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1355710?"
+        },
+        "repo": {
+            "id": 84009,
+            "name": "pivotal/jasmine",
+            "url": "https://api.github.com/repos/pivotal/jasmine"
+        },
+        "payload": {
+            "action": "created",
+            "issue": {
+                "url": "https://api.github.com/repos/pivotal/jasmine/issues/579",
+                "labels_url": "https://api.github.com/repos/pivotal/jasmine/issues/579/labels{/name}",
+                "comments_url": "https://api.github.com/repos/pivotal/jasmine/issues/579/comments",
+                "events_url": "https://api.github.com/repos/pivotal/jasmine/issues/579/events",
+                "html_url": "https://github.com/pivotal/jasmine/issues/579",
+                "id": 31915361,
+                "number": 579,
+                "title": "-0 should equal 0",
+                "user": {
+                    "login": "jonatr35",
+                    "id": 1761692,
+                    "avatar_url": "https://avatars.githubusercontent.com/u/1761692?",
+                    "gravatar_id": "d327f615f6275cb23f9f6ef08e5e1158",
+                    "url": "https://api.github.com/users/jonatr35",
+                    "html_url": "https://github.com/jonatr35",
+                    "followers_url": "https://api.github.com/users/jonatr35/followers",
+                    "following_url": "https://api.github.com/users/jonatr35/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/jonatr35/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/jonatr35/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/jonatr35/subscriptions",
+                    "organizations_url": "https://api.github.com/users/jonatr35/orgs",
+                    "repos_url": "https://api.github.com/users/jonatr35/repos",
+                    "events_url": "https://api.github.com/users/jonatr35/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/jonatr35/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "labels": [],
+                "state": "open",
+                "assignee": null,
+                "milestone": null,
+                "comments": 1,
+                "created_at": "2014-04-21T18:50:46Z",
+                "updated_at": "2014-04-24T03:06:32Z",
+                "closed_at": null,
+                "body": "I've written a unit test for a function were I expect my returned value to be rounded to 0 (example -0.4 should return 0). I've written my unit test as expect(result).toEqual(0) and it is failing. \r\n\r\nWhen attempting to debug I eventually found out that it was failing because it thought that -0 did not equal 0. It did however pass when using expect(result).toBe(0), however I should still be able to use expect(-0).toEqual(0)."
+            },
+            "comment": {
+                "url": "https://api.github.com/repos/pivotal/jasmine/issues/comments/41238392",
+                "html_url": "https://github.com/pivotal/jasmine/issues/579#issuecomment-41238392",
+                "issue_url": "https://api.github.com/repos/pivotal/jasmine/issues/579",
+                "id": 41238392,
+                "user": {
+                    "login": "sheelc",
+                    "id": 1355710,
+                    "avatar_url": "https://avatars.githubusercontent.com/u/1355710?",
+                    "gravatar_id": "e6efc5eee76717888394fc0d7057af0f",
+                    "url": "https://api.github.com/users/sheelc",
+                    "html_url": "https://github.com/sheelc",
+                    "followers_url": "https://api.github.com/users/sheelc/followers",
+                    "following_url": "https://api.github.com/users/sheelc/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/sheelc/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/sheelc/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/sheelc/subscriptions",
+                    "organizations_url": "https://api.github.com/users/sheelc/orgs",
+                    "repos_url": "https://api.github.com/users/sheelc/repos",
+                    "events_url": "https://api.github.com/users/sheelc/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/sheelc/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "created_at": "2014-04-24T03:06:32Z",
+                "updated_at": "2014-04-24T03:06:32Z",
+                "body": "There's more discussion about this issue [here](https://github.com/pivotal/jasmine/issues/496) which can hopefully give some context as to why -0 does not `toEqual` 0. There's still some ongoing discussion if this is the correct decision.\r\n\r\nA quick summary though, `toBe` is JavaScript's `===` while `toEqual` is Underscore.js's notion of what equality means. The error message is better on master now where it does print out that one of the values is '-0' which can help users debug this more quickly."
+            }
+        },
+        "public": true,
+        "created_at": "2014-04-24T03:06:32Z",
+        "org": {
+            "id": 9148,
+            "login": "pivotal",
+            "gravatar_id": "9f7ca4684008e71a26ff490caa985d8b",
+            "url": "https://api.github.com/orgs/pivotal",
+            "avatar_url": "https://avatars.githubusercontent.com/u/9148?"
+        }
+    },
+    {
+        "id": "2070336435",
+        "type": "IssueCommentEvent",
+        "actor": {
+            "id": 43438,
+            "login": "timoxley",
+            "gravatar_id": "f0deca4576206207a882928e7ff32ddb",
+            "url": "https://api.github.com/users/timoxley",
+            "avatar_url": "https://avatars.githubusercontent.com/u/43438?"
+        },
+        "repo": {
+            "id": 11456310,
+            "name": "termi/es6-transpiler",
+            "url": "https://api.github.com/repos/termi/es6-transpiler"
+        },
+        "payload": {
+            "action": "created",
+            "issue": {
+                "url": "https://api.github.com/repos/termi/es6-transpiler/issues/34",
+                "labels_url": "https://api.github.com/repos/termi/es6-transpiler/issues/34/labels{/name}",
+                "comments_url": "https://api.github.com/repos/termi/es6-transpiler/issues/34/comments",
+                "events_url": "https://api.github.com/repos/termi/es6-transpiler/issues/34/events",
+                "html_url": "https://github.com/termi/es6-transpiler/issues/34",
+                "id": 32114197,
+                "number": 34,
+                "title": "Semicolon insertion",
+                "user": {
+                    "login": "timoxley",
+                    "id": 43438,
+                    "avatar_url": "https://avatars.githubusercontent.com/u/43438?",
+                    "gravatar_id": "f0deca4576206207a882928e7ff32ddb",
+                    "url": "https://api.github.com/users/timoxley",
+                    "html_url": "https://github.com/timoxley",
+                    "followers_url": "https://api.github.com/users/timoxley/followers",
+                    "following_url": "https://api.github.com/users/timoxley/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/timoxley/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/timoxley/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/timoxley/subscriptions",
+                    "organizations_url": "https://api.github.com/users/timoxley/orgs",
+                    "repos_url": "https://api.github.com/users/timoxley/repos",
+                    "events_url": "https://api.github.com/users/timoxley/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/timoxley/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "labels": [],
+                "state": "open",
+                "assignee": null,
+                "milestone": null,
+                "comments": 1,
+                "created_at": "2014-04-24T01:39:41Z",
+                "updated_at": "2014-04-24T02:58:41Z",
+                "closed_at": null,
+                "body": "The transpiler should probably insert semicolons wherever they would be inserted automatically in the source code, otherwise it can generate invalid JS when semicolons are omitted. See example below.\r\n\r\nMaybe it'd be possible to only auto-insert them whenever a *generated* line will be broken by their omission e.g. any generated line starting with ( or [.\r\n\r\nedit: found more minimal test case.\r\n\r\nES6 input:\r\n```js\r\nlet a = {\r\n  b: {\r\n    c: () => 0\r\n  }\r\n}\r\n\r\nlet exec = () => {\r\n  let args = []\r\n  a.b.c(...args)\r\n}\r\n\r\nexec()\r\n```\r\n\r\nGenerated output:\r\n\r\n```js\r\nvar a = {\r\n  b: {\r\n    c: function()  {return 0}\r\n  }\r\n}\r\n\r\nvar exec = function()  {var $D$0;function ITER$0(v,f){var $Symbol_iterator=typeof Symbol!=='undefined'&&Symbol.iterator||'@@iterator';if(v){if(Array.isArray(v))return f?v.slice():v;var i,r;if(typeof v==='object'&&typeof (f=v[$Symbol_iterator])==='function'){i=f.call(v);r=[];while((f=i['next']()),f['done']!==true)r.push(f['value']);return r;}}throw new Error(v+' is not iterable')};\r\n  var args = []\r\n  ($D$0 = a.b).c.apply($D$0, ITER$0(args))\r\n;$D$0 = void 0}\r\n\r\nexec()\r\n```\r\n\r\nError: \r\n\r\n```js\r\n  ($D$0 = a.b).c.apply($D$0, ITER$0(args))\r\n  ^\r\nTypeError: object is not a function\r\n```\r\n\r\nProblem is there's no semi between these two lines, so it's interpreted as `var args = []($D$0 = a.b)`, but would be valid es6 without the transpiler.\r\n```js\r\n...\r\n var args = []\r\n  ($D$0 = a.b).c.apply($D$0, ITER$0(args))\r\n...\r\n```\r\n\r\nPerhaps the most minimal fix would be to just add a semi for the specific case of accessing arrow functions nested in other objects."
+            },
+            "comment": {
+                "url": "https://api.github.com/repos/termi/es6-transpiler/issues/comments/41238088",
+                "html_url": "https://github.com/termi/es6-transpiler/issues/34#issuecomment-41238088",
+                "issue_url": "https://api.github.com/repos/termi/es6-transpiler/issues/34",
+                "id": 41238088,
+                "user": {
+                    "login": "timoxley",
+                    "id": 43438,
+                    "avatar_url": "https://avatars.githubusercontent.com/u/43438?",
+                    "gravatar_id": "f0deca4576206207a882928e7ff32ddb",
+                    "url": "https://api.github.com/users/timoxley",
+                    "html_url": "https://github.com/timoxley",
+                    "followers_url": "https://api.github.com/users/timoxley/followers",
+                    "following_url": "https://api.github.com/users/timoxley/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/timoxley/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/timoxley/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/timoxley/subscriptions",
+                    "organizations_url": "https://api.github.com/users/timoxley/orgs",
+                    "repos_url": "https://api.github.com/users/timoxley/repos",
+                    "events_url": "https://api.github.com/users/timoxley/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/timoxley/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "created_at": "2014-04-24T02:58:41Z",
+                "updated_at": "2014-04-24T02:58:41Z",
+                "body": "Dug into this a bit, it's this spread handling code causing the problem: \r\n```js\r\n\t\t\t\tlet tempVar = core.getScopeTempVar(node.callee.object, node.$scope);\r\n\r\n\t\t\t\tthis.alter.wrap(\r\n\t\t\t\t\tnode.callee.object.range[0]\r\n\t\t\t\t\t, node.callee.object.range[1]\r\n\t\t\t\t\t, \"(\" + tempVar + \" = \"\r\n\t\t\t\t\t, \")\"\r\n\t\t\t\t);\r\n\r\n\t\t\t\texpressionAfter =\r\n\t\t\t\t\t\".apply(\" + tempVar\r\n\t\t\t\t\t+ \", \"\r\n\t\t\t\t;\r\n\r\n\t\t\t\tcore.setScopeTempVar(tempVar, node, node.$scope, true);\r\n```\r\n[Source](https://github.com/termi/es6-transpiler/blob/ce76ed49bb4fffe6866d3f5d8ca6ffb96c0c7fed/transpiler/spread.js#L90-L94)\r\n\r\nOne can fix this specific issue with:\r\n\r\n```js\r\n\t\t\t\tthis.alter.wrap(\r\n\t\t\t\t\tnode.callee.object.range[0]\r\n\t\t\t\t\t, node.callee.object.range[1]\r\n\t\t\t\t\t, \";(\" + tempVar + \" = \" // added leading semi\r\n\t\t\t\t\t, \")\"\r\n\t\t\t\t);\r\n```\r\n\r\nBut this causes a bunch of other issues if the statement isn't at the start of the line, e.g:\r\n\r\n```js\r\nconsole.log( ;($D$0 = obj$0.obj).test.apply($D$0, [28].concat(ITER$0(arr))) === \"THIS|28|6|3\" )\r\n```\r\n```js\r\n var T$3 = ;($D$0 = obj$0.obj).test.apply($D$0, [27].concat(ITER$0(arr)));\r\n```\r\nso looks like it requires some probing around the context to detect if there's any leading code… or perhaps some other type of handling, going to have to leave this to you though, sorry!\r\n\r\n\r\n\r\n\r\n"
+            }
+        },
+        "public": true,
+        "created_at": "2014-04-24T02:58:44Z"
+    },
+    {
+        "id": "2070328849",
+        "type": "PullRequestEvent",
+        "actor": {
+            "id": 164497,
+            "login": "jgable",
+            "gravatar_id": "2ed341e37f2c3ef44296019c9e9829bf",
+            "url": "https://api.github.com/users/jgable",
+            "avatar_url": "https://avatars.githubusercontent.com/u/164497?"
+        },
+        "repo": {
+            "id": 12670444,
+            "name": "petkaantonov/bluebird",
+            "url": "https://api.github.com/repos/petkaantonov/bluebird"
+        },
+        "payload": {
+            "action": "opened",
+            "number": 188,
+            "pull_request": {
+                "url": "https://api.github.com/repos/petkaantonov/bluebird/pulls/188",
+                "id": 15100350,
+                "html_url": "https://github.com/petkaantonov/bluebird/pull/188",
+                "diff_url": "https://github.com/petkaantonov/bluebird/pull/188.diff",
+                "patch_url": "https://github.com/petkaantonov/bluebird/pull/188.patch",
+                "issue_url": "https://api.github.com/repos/petkaantonov/bluebird/issues/188",
+                "number": 188,
+                "state": "open",
+                "title": "Clarify .spread tip in example",
+                "user": {
+                    "login": "jgable",
+                    "id": 164497,
+                    "avatar_url": "https://avatars.githubusercontent.com/u/164497?",
+                    "gravatar_id": "2ed341e37f2c3ef44296019c9e9829bf",
+                    "url": "https://api.github.com/users/jgable",
+                    "html_url": "https://github.com/jgable",
+                    "followers_url": "https://api.github.com/users/jgable/followers",
+                    "following_url": "https://api.github.com/users/jgable/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/jgable/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/jgable/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/jgable/subscriptions",
+                    "organizations_url": "https://api.github.com/users/jgable/orgs",
+                    "repos_url": "https://api.github.com/users/jgable/repos",
+                    "events_url": "https://api.github.com/users/jgable/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/jgable/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "body": "Naming the parameter `request` could lead to confusion and possible unexpected behavior since there is already a `request` module defined.",
+                "created_at": "2014-04-24T02:47:46Z",
+                "updated_at": "2014-04-24T02:47:46Z",
+                "closed_at": null,
+                "merged_at": null,
+                "merge_commit_sha": null,
+                "assignee": null,
+                "milestone": null,
+                "commits_url": "https://api.github.com/repos/petkaantonov/bluebird/pulls/188/commits",
+                "review_comments_url": "https://api.github.com/repos/petkaantonov/bluebird/pulls/188/comments",
+                "review_comment_url": "https://api.github.com/repos/petkaantonov/bluebird/pulls/comments/{number}",
+                "comments_url": "https://api.github.com/repos/petkaantonov/bluebird/issues/188/comments",
+                "statuses_url": "https://api.github.com/repos/petkaantonov/bluebird/statuses/ccebcbe86b6a52c43291ed4ed07e8feea9c4960a",
+                "head": {
+                    "label": "jgable:patch-1",
+                    "ref": "patch-1",
+                    "sha": "ccebcbe86b6a52c43291ed4ed07e8feea9c4960a",
+                    "user": {
+                        "login": "jgable",
+                        "id": 164497,
+                        "avatar_url": "https://avatars.githubusercontent.com/u/164497?",
+                        "gravatar_id": "2ed341e37f2c3ef44296019c9e9829bf",
+                        "url": "https://api.github.com/users/jgable",
+                        "html_url": "https://github.com/jgable",
+                        "followers_url": "https://api.github.com/users/jgable/followers",
+                        "following_url": "https://api.github.com/users/jgable/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/jgable/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/jgable/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/jgable/subscriptions",
+                        "organizations_url": "https://api.github.com/users/jgable/orgs",
+                        "repos_url": "https://api.github.com/users/jgable/repos",
+                        "events_url": "https://api.github.com/users/jgable/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/jgable/received_events",
+                        "type": "User",
+                        "site_admin": false
+                    },
+                    "repo": {
+                        "id": 19093382,
+                        "name": "bluebird",
+                        "full_name": "jgable/bluebird",
+                        "owner": {
+                            "login": "jgable",
+                            "id": 164497,
+                            "avatar_url": "https://avatars.githubusercontent.com/u/164497?",
+                            "gravatar_id": "2ed341e37f2c3ef44296019c9e9829bf",
+                            "url": "https://api.github.com/users/jgable",
+                            "html_url": "https://github.com/jgable",
+                            "followers_url": "https://api.github.com/users/jgable/followers",
+                            "following_url": "https://api.github.com/users/jgable/following{/other_user}",
+                            "gists_url": "https://api.github.com/users/jgable/gists{/gist_id}",
+                            "starred_url": "https://api.github.com/users/jgable/starred{/owner}{/repo}",
+                            "subscriptions_url": "https://api.github.com/users/jgable/subscriptions",
+                            "organizations_url": "https://api.github.com/users/jgable/orgs",
+                            "repos_url": "https://api.github.com/users/jgable/repos",
+                            "events_url": "https://api.github.com/users/jgable/events{/privacy}",
+                            "received_events_url": "https://api.github.com/users/jgable/received_events",
+                            "type": "User",
+                            "site_admin": false
+                        },
+                        "private": false,
+                        "html_url": "https://github.com/jgable/bluebird",
+                        "description": "Bluebird is a full featured promise library with unmatched performance.",
+                        "fork": true,
+                        "url": "https://api.github.com/repos/jgable/bluebird",
+                        "forks_url": "https://api.github.com/repos/jgable/bluebird/forks",
+                        "keys_url": "https://api.github.com/repos/jgable/bluebird/keys{/key_id}",
+                        "collaborators_url": "https://api.github.com/repos/jgable/bluebird/collaborators{/collaborator}",
+                        "teams_url": "https://api.github.com/repos/jgable/bluebird/teams",
+                        "hooks_url": "https://api.github.com/repos/jgable/bluebird/hooks",
+                        "issue_events_url": "https://api.github.com/repos/jgable/bluebird/issues/events{/number}",
+                        "events_url": "https://api.github.com/repos/jgable/bluebird/events",
+                        "assignees_url": "https://api.github.com/repos/jgable/bluebird/assignees{/user}",
+                        "branches_url": "https://api.github.com/repos/jgable/bluebird/branches{/branch}",
+                        "tags_url": "https://api.github.com/repos/jgable/bluebird/tags",
+                        "blobs_url": "https://api.github.com/repos/jgable/bluebird/git/blobs{/sha}",
+                        "git_tags_url": "https://api.github.com/repos/jgable/bluebird/git/tags{/sha}",
+                        "git_refs_url": "https://api.github.com/repos/jgable/bluebird/git/refs{/sha}",
+                        "trees_url": "https://api.github.com/repos/jgable/bluebird/git/trees{/sha}",
+                        "statuses_url": "https://api.github.com/repos/jgable/bluebird/statuses/{sha}",
+                        "languages_url": "https://api.github.com/repos/jgable/bluebird/languages",
+                        "stargazers_url": "https://api.github.com/repos/jgable/bluebird/stargazers",
+                        "contributors_url": "https://api.github.com/repos/jgable/bluebird/contributors",
+                        "subscribers_url": "https://api.github.com/repos/jgable/bluebird/subscribers",
+                        "subscription_url": "https://api.github.com/repos/jgable/bluebird/subscription",
+                        "commits_url": "https://api.github.com/repos/jgable/bluebird/commits{/sha}",
+                        "git_commits_url": "https://api.github.com/repos/jgable/bluebird/git/commits{/sha}",
+                        "comments_url": "https://api.github.com/repos/jgable/bluebird/comments{/number}",
+                        "issue_comment_url": "https://api.github.com/repos/jgable/bluebird/issues/comments/{number}",
+                        "contents_url": "https://api.github.com/repos/jgable/bluebird/contents/{+path}",
+                        "compare_url": "https://api.github.com/repos/jgable/bluebird/compare/{base}...{head}",
+                        "merges_url": "https://api.github.com/repos/jgable/bluebird/merges",
+                        "archive_url": "https://api.github.com/repos/jgable/bluebird/{archive_format}{/ref}",
+                        "downloads_url": "https://api.github.com/repos/jgable/bluebird/downloads",
+                        "issues_url": "https://api.github.com/repos/jgable/bluebird/issues{/number}",
+                        "pulls_url": "https://api.github.com/repos/jgable/bluebird/pulls{/number}",
+                        "milestones_url": "https://api.github.com/repos/jgable/bluebird/milestones{/number}",
+                        "notifications_url": "https://api.github.com/repos/jgable/bluebird/notifications{?since,all,participating}",
+                        "labels_url": "https://api.github.com/repos/jgable/bluebird/labels{/name}",
+                        "releases_url": "https://api.github.com/repos/jgable/bluebird/releases{/id}",
+                        "created_at": "2014-04-24T02:44:50Z",
+                        "updated_at": "2014-04-24T02:47:46Z",
+                        "pushed_at": "2014-04-24T02:47:33Z",
+                        "git_url": "git://github.com/jgable/bluebird.git",
+                        "ssh_url": "git@github.com:jgable/bluebird.git",
+                        "clone_url": "https://github.com/jgable/bluebird.git",
+                        "svn_url": "https://github.com/jgable/bluebird",
+                        "homepage": "",
+                        "size": 9569,
+                        "stargazers_count": 0,
+                        "watchers_count": 0,
+                        "language": "JavaScript",
+                        "has_issues": false,
+                        "has_downloads": true,
+                        "has_wiki": true,
+                        "forks_count": 0,
+                        "mirror_url": null,
+                        "open_issues_count": 0,
+                        "forks": 0,
+                        "open_issues": 0,
+                        "watchers": 0,
+                        "default_branch": "master"
+                    }
+                },
+                "base": {
+                    "label": "petkaantonov:master",
+                    "ref": "master",
+                    "sha": "35453ee5e20256e510d0d6adf80ba211add48d2b",
+                    "user": {
+                        "login": "petkaantonov",
+                        "id": 829734,
+                        "avatar_url": "https://avatars.githubusercontent.com/u/829734?",
+                        "gravatar_id": "9f54c1f814e618404997a7291930064a",
+                        "url": "https://api.github.com/users/petkaantonov",
+                        "html_url": "https://github.com/petkaantonov",
+                        "followers_url": "https://api.github.com/users/petkaantonov/followers",
+                        "following_url": "https://api.github.com/users/petkaantonov/following{/other_user}",
+                        "gists_url": "https://api.github.com/users/petkaantonov/gists{/gist_id}",
+                        "starred_url": "https://api.github.com/users/petkaantonov/starred{/owner}{/repo}",
+                        "subscriptions_url": "https://api.github.com/users/petkaantonov/subscriptions",
+                        "organizations_url": "https://api.github.com/users/petkaantonov/orgs",
+                        "repos_url": "https://api.github.com/users/petkaantonov/repos",
+                        "events_url": "https://api.github.com/users/petkaantonov/events{/privacy}",
+                        "received_events_url": "https://api.github.com/users/petkaantonov/received_events",
+                        "type": "User",
+                        "site_admin": false
+                    },
+                    "repo": {
+                        "id": 12670444,
+                        "name": "bluebird",
+                        "full_name": "petkaantonov/bluebird",
+                        "owner": {
+                            "login": "petkaantonov",
+                            "id": 829734,
+                            "avatar_url": "https://avatars.githubusercontent.com/u/829734?",
+                            "gravatar_id": "9f54c1f814e618404997a7291930064a",
+                            "url": "https://api.github.com/users/petkaantonov",
+                            "html_url": "https://github.com/petkaantonov",
+                            "followers_url": "https://api.github.com/users/petkaantonov/followers",
+                            "following_url": "https://api.github.com/users/petkaantonov/following{/other_user}",
+                            "gists_url": "https://api.github.com/users/petkaantonov/gists{/gist_id}",
+                            "starred_url": "https://api.github.com/users/petkaantonov/starred{/owner}{/repo}",
+                            "subscriptions_url": "https://api.github.com/users/petkaantonov/subscriptions",
+                            "organizations_url": "https://api.github.com/users/petkaantonov/orgs",
+                            "repos_url": "https://api.github.com/users/petkaantonov/repos",
+                            "events_url": "https://api.github.com/users/petkaantonov/events{/privacy}",
+                            "received_events_url": "https://api.github.com/users/petkaantonov/received_events",
+                            "type": "User",
+                            "site_admin": false
+                        },
+                        "private": false,
+                        "html_url": "https://github.com/petkaantonov/bluebird",
+                        "description": "Bluebird is a full featured promise library with unmatched performance.",
+                        "fork": false,
+                        "url": "https://api.github.com/repos/petkaantonov/bluebird",
+                        "forks_url": "https://api.github.com/repos/petkaantonov/bluebird/forks",
+                        "keys_url": "https://api.github.com/repos/petkaantonov/bluebird/keys{/key_id}",
+                        "collaborators_url": "https://api.github.com/repos/petkaantonov/bluebird/collaborators{/collaborator}",
+                        "teams_url": "https://api.github.com/repos/petkaantonov/bluebird/teams",
+                        "hooks_url": "https://api.github.com/repos/petkaantonov/bluebird/hooks",
+                        "issue_events_url": "https://api.github.com/repos/petkaantonov/bluebird/issues/events{/number}",
+                        "events_url": "https://api.github.com/repos/petkaantonov/bluebird/events",
+                        "assignees_url": "https://api.github.com/repos/petkaantonov/bluebird/assignees{/user}",
+                        "branches_url": "https://api.github.com/repos/petkaantonov/bluebird/branches{/branch}",
+                        "tags_url": "https://api.github.com/repos/petkaantonov/bluebird/tags",
+                        "blobs_url": "https://api.github.com/repos/petkaantonov/bluebird/git/blobs{/sha}",
+                        "git_tags_url": "https://api.github.com/repos/petkaantonov/bluebird/git/tags{/sha}",
+                        "git_refs_url": "https://api.github.com/repos/petkaantonov/bluebird/git/refs{/sha}",
+                        "trees_url": "https://api.github.com/repos/petkaantonov/bluebird/git/trees{/sha}",
+                        "statuses_url": "https://api.github.com/repos/petkaantonov/bluebird/statuses/{sha}",
+                        "languages_url": "https://api.github.com/repos/petkaantonov/bluebird/languages",
+                        "stargazers_url": "https://api.github.com/repos/petkaantonov/bluebird/stargazers",
+                        "contributors_url": "https://api.github.com/repos/petkaantonov/bluebird/contributors",
+                        "subscribers_url": "https://api.github.com/repos/petkaantonov/bluebird/subscribers",
+                        "subscription_url": "https://api.github.com/repos/petkaantonov/bluebird/subscription",
+                        "commits_url": "https://api.github.com/repos/petkaantonov/bluebird/commits{/sha}",
+                        "git_commits_url": "https://api.github.com/repos/petkaantonov/bluebird/git/commits{/sha}",
+                        "comments_url": "https://api.github.com/repos/petkaantonov/bluebird/comments{/number}",
+                        "issue_comment_url": "https://api.github.com/repos/petkaantonov/bluebird/issues/comments/{number}",
+                        "contents_url": "https://api.github.com/repos/petkaantonov/bluebird/contents/{+path}",
+                        "compare_url": "https://api.github.com/repos/petkaantonov/bluebird/compare/{base}...{head}",
+                        "merges_url": "https://api.github.com/repos/petkaantonov/bluebird/merges",
+                        "archive_url": "https://api.github.com/repos/petkaantonov/bluebird/{archive_format}{/ref}",
+                        "downloads_url": "https://api.github.com/repos/petkaantonov/bluebird/downloads",
+                        "issues_url": "https://api.github.com/repos/petkaantonov/bluebird/issues{/number}",
+                        "pulls_url": "https://api.github.com/repos/petkaantonov/bluebird/pulls{/number}",
+                        "milestones_url": "https://api.github.com/repos/petkaantonov/bluebird/milestones{/number}",
+                        "notifications_url": "https://api.github.com/repos/petkaantonov/bluebird/notifications{?since,all,participating}",
+                        "labels_url": "https://api.github.com/repos/petkaantonov/bluebird/labels{/name}",
+                        "releases_url": "https://api.github.com/repos/petkaantonov/bluebird/releases{/id}",
+                        "created_at": "2013-09-07T19:39:57Z",
+                        "updated_at": "2014-04-24T00:45:55Z",
+                        "pushed_at": "2014-04-23T10:17:34Z",
+                        "git_url": "git://github.com/petkaantonov/bluebird.git",
+                        "ssh_url": "git@github.com:petkaantonov/bluebird.git",
+                        "clone_url": "https://github.com/petkaantonov/bluebird.git",
+                        "svn_url": "https://github.com/petkaantonov/bluebird",
+                        "homepage": "",
+                        "size": 9569,
+                        "stargazers_count": 1886,
+                        "watchers_count": 1886,
+                        "language": "JavaScript",
+                        "has_issues": true,
+                        "has_downloads": true,
+                        "has_wiki": true,
+                        "forks_count": 102,
+                        "mirror_url": null,
+                        "open_issues_count": 4,
+                        "forks": 102,
+                        "open_issues": 4,
+                        "watchers": 1886,
+                        "default_branch": "master"
+                    }
+                },
+                "_links": {
+                    "self": {
+                        "href": "https://api.github.com/repos/petkaantonov/bluebird/pulls/188"
+                    },
+                    "html": {
+                        "href": "https://github.com/petkaantonov/bluebird/pull/188"
+                    },
+                    "issue": {
+                        "href": "https://api.github.com/repos/petkaantonov/bluebird/issues/188"
+                    },
+                    "comments": {
+                        "href": "https://api.github.com/repos/petkaantonov/bluebird/issues/188/comments"
+                    },
+                    "review_comments": {
+                        "href": "https://api.github.com/repos/petkaantonov/bluebird/pulls/188/comments"
+                    },
+                    "review_comment": {
+                        "href": "https://api.github.com/repos/petkaantonov/bluebird/pulls/comments/{number}"
+                    },
+                    "commits": {
+                        "href": "https://api.github.com/repos/petkaantonov/bluebird/pulls/188/commits"
+                    },
+                    "statuses": {
+                        "href": "https://api.github.com/repos/petkaantonov/bluebird/statuses/ccebcbe86b6a52c43291ed4ed07e8feea9c4960a"
+                    }
+                },
+                "merged": false,
+                "mergeable": null,
+                "mergeable_state": "unknown",
+                "merged_by": null,
+                "comments": 0,
+                "review_comments": 0,
+                "commits": 1,
+                "additions": 1,
+                "deletions": 1,
+                "changed_files": 1
+            }
+        },
+        "public": true,
+        "created_at": "2014-04-24T02:47:46Z"
+    },
+    {
+        "id": "2070328344",
+        "type": "IssuesEvent",
+        "actor": {
+            "id": 4852269,
+            "login": "cdisdero",
+            "gravatar_id": "fc893cde1f76b4b3ca86518b026b74c0",
+            "url": "https://api.github.com/users/cdisdero",
+            "avatar_url": "https://avatars.githubusercontent.com/u/4852269?"
+        },
+        "repo": {
+            "id": 9639981,
+            "name": "facebook/xctool",
+            "url": "https://api.github.com/repos/facebook/xctool"
+        },
+        "payload": {
+            "action": "opened",
+            "issue": {
+                "url": "https://api.github.com/repos/facebook/xctool/issues/359",
+                "labels_url": "https://api.github.com/repos/facebook/xctool/issues/359/labels{/name}",
+                "comments_url": "https://api.github.com/repos/facebook/xctool/issues/359/comments",
+                "events_url": "https://api.github.com/repos/facebook/xctool/issues/359/events",
+                "html_url": "https://github.com/facebook/xctool/issues/359",
+                "id": 32116375,
+                "number": 359,
+                "title": "Jenkins error \"Process leaked file descriptors\" running xctool",
+                "user": {
+                    "login": "cdisdero",
+                    "id": 4852269,
+                    "avatar_url": "https://avatars.githubusercontent.com/u/4852269?",
+                    "gravatar_id": "fc893cde1f76b4b3ca86518b026b74c0",
+                    "url": "https://api.github.com/users/cdisdero",
+                    "html_url": "https://github.com/cdisdero",
+                    "followers_url": "https://api.github.com/users/cdisdero/followers",
+                    "following_url": "https://api.github.com/users/cdisdero/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/cdisdero/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/cdisdero/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/cdisdero/subscriptions",
+                    "organizations_url": "https://api.github.com/users/cdisdero/orgs",
+                    "repos_url": "https://api.github.com/users/cdisdero/repos",
+                    "events_url": "https://api.github.com/users/cdisdero/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/cdisdero/received_events",
+                    "type": "User",
+                    "site_admin": false
+                },
+                "labels": [],
+                "state": "open",
+                "assignee": null,
+                "milestone": null,
+                "comments": 0,
+                "created_at": "2014-04-24T02:47:02Z",
+                "updated_at": "2014-04-24T02:47:02Z",
+                "closed_at": null,
+                "body": "Why is it that when I try to run the latest version of xctool.sh from Jenkins (latest version) I get the following error?\r\n\r\nStarted by user cdisdero\r\nBuilding in workspace /Users/Shared/Jenkins/Home/jobs/MyProject/workspace\r\nFetching changes from the remote Git repository\r\nFetching upstream changes from git@bitbucket.org:cdisdero/MyProject.git\r\nusing GIT_SSH to set credentials jenkins Bitbucket.org key\r\nChecking out Revision 6da41d06cf7da87d01204f8ce0951cab6f359523 (origin/master)\r\n[workspace] $ /bin/sh -xe /Users/Shared/Jenkins/tmp/hudson4580931669760076203.sh\r\n+ /Users/Shared/Jenkins/Home/tools/xctool/scripts/xctool.sh -project MyProject.xcodeproj -scheme MyProject -sdk iphonesimulator -reporter junit:test-reports/junit-report.xml clean build\r\n\r\n...\r\n** BUILD SUCCEEDED ** (3502 ms)\r\n\r\nProcess leaked file descriptors. See http://wiki.jenkins-ci.org/display/JENKINS/Spawning+processes+from+build for more information\r\nFATAL: Could not initialize class hudson.util.ProcessTree$UnixReflection\r\njava.lang.NoClassDefFoundError: Could not initialize class hudson.util.ProcessTree$UnixReflection\r\n\tat hudson.util.ProcessTree$UnixProcess.kill(ProcessTree.java:553)\r\n\tat hudson.util.ProcessTree$UnixProcess.killRecursively(ProcessTree.java:573)\r\n\tat hudson.util.ProcessTree$UnixProcess.killRecursively(ProcessTree.java:572)\r\n\tat hudson.util.ProcessTree$Unix.killAll(ProcessTree.java:497)\r\n\tat hudson.Launcher$LocalLauncher.kill(Launcher.java:798)\r\n\tat hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:546)\r\n\tat hudson.model.Run.execute(Run.java:1700)\r\n\tat hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)\r\n\tat hudson.model.ResourceController.execute(ResourceController.java:88)\r\n\tat hudson.model.Executor.run(Executor.java:231)\r\n\r\n----\r\n\r\nI can run the exact same xctool.sh command from the command line using the jenkins user account on my Mac without error."
+            }
+        },
+        "public": true,
+        "created_at": "2014-04-24T02:47:02Z",
+        "org": {
+            "id": 69631,
+            "login": "facebook",
+            "gravatar_id": "18a83f753fa76b3ea0d594247f4c93b1",
+            "url": "https://api.github.com/orgs/facebook",
+            "avatar_url": "https://avatars.githubusercontent.com/u/69631?"
+        }
+    }
+];

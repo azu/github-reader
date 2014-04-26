@@ -1,0 +1,19 @@
+{
+  "name": "github-reader",
+  "version": "0.0.0",
+  "authors": [
+    "azu <azuciao@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pure": "~0.4.2",
+    "mousetrap": "~1.4.6"
+  }
+}
