@@ -30,11 +30,11 @@
         <div class="event-item pure-g" v-repeat="items"
              v-on='click: loadHTMLView(this)'
              v-class="
-             event-item-selected: this === selectedItem
+             event-item-selected: this.$data === selectedItem
              ">
             <div class="pure-u">
                 <div class="event-header">
-                    <img src="{{avatar_url}}" class="avatar-img"/>
+                    <img v-attr="src:avatar_url" class="avatar-img"/>
                     <h5 class="event-username">{{user_name}}</h5>
                     <h4 class="event-subject">{{title}}</h4>
                 </div>
@@ -46,8 +46,8 @@
     </div>
 
     <div id="github-webview" class="pure-u-1">
-        <div id="comment-preview-header" class="event-content-header pure-g">
-            <img src="{{avatar_url}}" class="avatar-img"/>
+        <div id="comment-preview-header" class="event-content-header">
+            <img v-attr="src:avatar_url" class="avatar-img" />
 
             <p class="event-desc">
                 {{body}}
