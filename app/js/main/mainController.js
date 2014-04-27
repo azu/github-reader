@@ -18,7 +18,10 @@ module.exports = function () {
         scrollController.scrollToTop();
         var currentIndex = listController.indexOfItem(item);
         var cellElement = listController.elementAtIndex(currentIndex);
-        document.getElementById("content-list").scrollTop = cellElement.offsetTop;
+
+        setImmediate(function () {
+            document.getElementById("content-list").scrollTop = cellElement.offsetTop;
+        });
     });
     window.Mousetrap.bind('j', function () {
         listView.selectNextItem();
@@ -37,20 +40,11 @@ module.exports = function () {
         var eventsPromise = githubClient.eventsAsPromise(userData.getUserData().name);
         var notificationsAsPromise = githubClient.notificationsAsPromise();
         Promise.all([eventsPromise, notificationsAsPromise]).spread(function (events, notifications) {
-            var parseGithubEvent = require("parse-github-event");
-
-            var list = events.map(function (event) {
-                var parsedEvent = parseGithubEvent.parse(event);
-                return {
-                    "id": event.id,// github global event id
-                    "user_name": event.actor.login,
-                    "avatar_url": event.actor.avatar_url,
-                    "title": parseGithubEvent.compile(event),
-                    "html_url": parsedEvent.html_url,
-                    "body": require("../github/parse-event-body").parseEventBody(event) || parseGithubEvent.compile(event)
-                };
-            });
-            listController.mergeData(list);
+            var builder = require("../github/response-builder");
+            var eventList = builder.buildEvents(events);
+            var notificationList = builder.buildNotifications(notifications);
+            listController.mergeData(eventList);
+            listController.mergeData(notificationList);
         }).catch(function (error) {
             console.log("ReloadData Error", error);
         });

@@ -141,7 +141,6 @@ a {
   float: left; }
 
 .event-item {
-  cursor: pointer;
   padding: 0.9em 1em;
   border-bottom: 1px solid #ddd;
   border-left: 6px solid transparent; }
@@ -168,6 +167,9 @@ a {
   max-height: 150px; }
 
 .event-item-selected {
+  background: #eee; }
+
+.event-item-selected * {
   background: #eee; }
 
 .email-item-unread {

@@ -4,9 +4,12 @@
  */
 "use strict";
 var assert = require("assert");
+var userData = require("../config/userData");
 var Vue = require('vue');
 var frameController = require("./frameController");
 var _ = require("lodash");
+var Promise = require("bluebird");
+var request = Promise.promisify(require("request"));
 
 var listView;
 function reloadView() {
@@ -45,6 +48,23 @@ function reloadView() {
             loadHTMLView: function (item) {
                 this.selectedItem = item.$data || item;// raw data
                 frameController.loadURL(item.html_url);
+                if ("request_url" in item) {
+                    var options = {
+                        url: item.request_url,
+                        headers: {
+                            'User-Agent': 'github-reader',
+                            'Authorization': 'token ' + userData.getUserData().token
+                        }
+                    };
+                    request(options).spread(function (request, body) {
+                        var res = JSON.parse(body);
+                        if (res.html_url.indexOf("#") !== -1) {
+                            frameController.loadURL(res.html_url);
+                        }
+                    }).catch(function (error) {
+                        console.error(error);
+                    });
+                }
             }
         }
     });
@@ -57,8 +77,8 @@ function mergeData(list) {
     var newItems = list.filter(function (item) {
         return !_.contains(existKeys, item.id);
     });
-    console.log(newItems.length);
-    listView.items = existItems.concat(newItems);
+    var mergeItem = existItems.concat(newItems);
+    listView.items = _.sortBy(mergeItem, "date");
 }
 
 

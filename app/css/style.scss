@@ -178,7 +178,7 @@ a {
 }
 
 .event-item {
-  cursor: pointer;
+//  cursor: pointer;
   padding: 0.9em 1em;
   border-bottom: 1px solid #ddd;
   border-left: 6px solid transparent;
@@ -212,6 +212,9 @@ a {
 }
 
 .event-item-selected {
+  background: #eee;
+}
+.event-item-selected *{
   background: #eee;
 }
 

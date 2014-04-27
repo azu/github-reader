@@ -26,6 +26,7 @@
     "github": "^0.1.16",
     "lodash": "^2.4.1",
     "parse-github-event": "^0.1.6",
+    "request": "^2.34.0",
     "vue": "^0.10.3"
   },
   "devDependencies": {
