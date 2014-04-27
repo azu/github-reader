@@ -6,7 +6,7 @@
 var userData = require("./config/userData");
 module.exports = function () {
     if (userData.hasUserData()) {
-        require("./list/list")();
+        require("./main/mainController")();
     } else {
         window.open('./view/oauth-token.html', '_blank', 'width=400,height=400');
     }
