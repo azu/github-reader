@@ -23,7 +23,8 @@
   },
   "dependencies": {
     "es6-promise": "^0.1.1",
-    "octokit": "^0.9.20",
+    "github": "^0.1.16",
+    "lodash": "^2.4.1",
     "parse-github-event": "^0.1.6",
     "vue": "^0.10.3"
   },

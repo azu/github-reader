@@ -6,6 +6,8 @@
 var assert = require("assert");
 var Vue = require('vue');
 var frameController = require("./frameController");
+var _ = require("lodash");
+
 var listView;
 function reloadView() {
     listView = new Vue({
@@ -13,10 +15,6 @@ function reloadView() {
         data: {
             selectedItem: null,
             items: [
-                {
-                    "avatar_url": "",
-                    "user_name": ""
-                }
             ]
         },
         methods: {
@@ -53,6 +51,17 @@ function reloadView() {
     return listView
 }
 
+function mergeData(list) {
+    var existItems = listView.items;
+    var existKeys = _.pluck(existItems, "id");
+    var newItems = list.filter(function (item) {
+        return !_.contains(existKeys, item.id);
+    });
+    console.log(newItems);
+    listView.items = existItems.concat(newItems);
+}
+
+
 function indexOfItem(item) {
     assert(listView != null, "listView doesn't initialize. Please call `reloadView`")
     var items = listView.$data.items;
@@ -63,5 +72,6 @@ function elementAtIndex(currentIndex) {
     return target.children[currentIndex];
 }
 module.exports.elementAtIndex = elementAtIndex;
-module.exports.reloadView = reloadView;
 module.exports.indexOfItem = indexOfItem;
+module.exports.mergeData = mergeData;
+module.exports.reloadView = reloadView;
