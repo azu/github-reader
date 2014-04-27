@@ -72,6 +72,12 @@ function reloadView() {
     return listView
 }
 
+var growler = require('growler');
+var myApp = new growler.GrowlApplication('GithubReader');
+myApp.setNotifications({
+    'Server Status': {}
+});
+myApp.register();
 function mergeData(list) {
     var existItems = listView.items;
     var existKeys = _.pluck(existItems, "id");
@@ -79,7 +85,28 @@ function mergeData(list) {
         return !_.contains(existKeys, item.id);
     });
     var mergeItem = existItems.concat(newItems);
-    listView.items = _.sortBy(mergeItem, "date");
+    console.log("new Item : " + newItems.length);
+    if (existItems.length !== 0) {
+        // Create a tray icon
+        newItems.forEach(function (item) {
+            myApp.sendNotification('Server Status', {
+                title: item.title,
+                text: item.body,
+                coalescingID : item.id
+            });
+        });
+    }
+    listView.items = _.sortBy(mergeItem, function (aItem, bItem) {
+        var aDate = new Date(aItem.date).getTime();
+        var bDate = new Date(bItem.date).getTime();
+        if (aDate > bDate) {
+            return -1;
+        }
+        if (aDate < bDate) {
+            return 1;
+        }
+        return 0;
+    });
 }
 
 

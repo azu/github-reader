@@ -37,6 +37,7 @@
             <div class="pure-u">
                 <div class="event-header">
                     <img v-attr="src:avatar_url" class="avatar-img"/>
+                    <p>{{date}}</p>
                     <h5 class="event-username">{{user_name}}</h5>
                     <h4 class="event-subject">{{title}}</h4>
                 </div>
@@ -59,8 +60,7 @@
     </div>
 </div>
 <script src="node-webkit/workaround.js"></script>
-<scr<script src="node-webkit/workaround.js"></script>
-ipt src="node-webkit/winstate.js"></script>
+<script src="node-webkit/winstate.js"></script>
 <script src="../bower_components/mousetrap/mousetrap.min.js"></script>
 <script>
     window.Mousetrap.bind('command+r', function () {

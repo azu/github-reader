@@ -29,14 +29,21 @@ GithubClientPromise.prototype.eventsAsPromise = function (user) {
             });
     });
 };
-
-GithubClientPromise.prototype.notificationsAsPromise = function (callback) {
+GithubClientPromise.prototype.notificationsAsPromise = function () {
     var client = this.client;
     return new Promise(function (resolve, reject) {
-        client.ex_notifications(function (error, events) {
+        var options = {
+            "all": true
+        };
+        var lastUpdated = require("../config/reloadTimer").getLastUpdated();
+        if (lastUpdated) {
+            options["since"] = lastUpdated;
+        }
+        client.ex_notifications(options, function (error, events) {
             if (error) {
                 return reject(error);
             }
+            require("../config/reloadTimer").setLastUpdated(new Date());
             resolve(events);
         });
     });

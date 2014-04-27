@@ -5,15 +5,13 @@
 "use strict";
 
 function applyNotificationExtend(Client) {
-    Client.prototype.ex_notifications = function (callback) {
+    Client.prototype.ex_notifications = function (options, callback) {
         var client = this;
         // base block
         var block = {
             url: "/notifications",
             method: "GET",
-            params: {
-                "all": true
-            }
+            params: options
         };
         client.httpSend({
             // query

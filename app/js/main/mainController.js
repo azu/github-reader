@@ -33,18 +33,18 @@ module.exports = function () {
         console.log("reload");
         reloadData();
     });
-
+    var timerID = setInterval(reloadData, require("../config/reloadTimer").getAutoReloadTime());
     var githubClient = require("../github/github-client").newClient(userData);
 
     function reloadData() {
+        console.log("reload");
         var eventsPromise = githubClient.eventsAsPromise(userData.getUserData().name);
         var notificationsAsPromise = githubClient.notificationsAsPromise();
         Promise.all([eventsPromise, notificationsAsPromise]).spread(function (events, notifications) {
             var builder = require("../github/response-builder");
             var eventList = builder.buildEvents(events);
             var notificationList = builder.buildNotifications(notifications);
-            listController.mergeData(eventList);
-            listController.mergeData(notificationList);
+            listController.mergeData(eventList.concat(notificationList));
         }).catch(function (error) {
             console.log("ReloadData Error", error);
         });
