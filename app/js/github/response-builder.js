@@ -28,7 +28,7 @@ function buildNotifications(notifications) {
             "user_name": notification.repository.owner.login,
             "avatar_url": notification.repository.owner.avatar_url,
             "title": notification.repository.full_name,
-            "html_url": notification.subject.url.replace(/^https:\/\/api\.github\.com\/repos\/(.*?)\/(pulls|issues)\/(.*?)/, function (all, repo, type, number) {
+            "html_url": notification.subject.url.replace(/^https:\/\/api\.github\.com\/repos\/(.*?)\/(commits|pulls|issues)\/(.*?)/, function (all, repo, type, number) {
                 return "https://github.com/" + repo + "/" + type.replace("pulls", "pull") + "/" + number
             }),
             "request_url": notification.subject.latest_comment_url,

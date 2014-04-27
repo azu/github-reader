@@ -11,7 +11,9 @@ function applyNotificationExtend(Client) {
         var block = {
             url: "/notifications",
             method: "GET",
-            params: {}
+            params: {
+                "all": true
+            }
         };
         client.httpSend({
             // query

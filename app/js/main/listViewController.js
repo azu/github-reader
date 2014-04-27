@@ -47,6 +47,7 @@ function reloadView() {
             },
             loadHTMLView: function (item) {
                 this.selectedItem = item.$data || item;// raw data
+                console.log(this.selectedItem);
                 frameController.loadURL(item.html_url);
                 if ("request_url" in item) {
                     var options = {
