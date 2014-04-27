@@ -11,7 +11,8 @@
     "show": false
   },
   "scripts": {
-    "test": "mocha test/*.js"
+    "test": "mocha test/*.js",
+    "build": "nwbuild --run ./"
   },
   "directories": {
     "test": "test/"
@@ -34,6 +35,7 @@
     "intelli-espower-loader": "0.0.7",
     "json-server": "^0.3.1",
     "mocha": "^1.18.2",
+    "node-webkit-builder": "0.0.2",
     "power-assert": "^0.6.1"
   }
 }

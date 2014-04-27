@@ -208,7 +208,7 @@ a {
 
 /* Move the layout over so we can fit the nav + list in on the left */
 #layout {
-  padding-left: 300px;
+  padding-left: 250px;
   /* "left col (nav + list)" width */
   position: relative; }
 
@@ -220,9 +220,9 @@ a {
   overflow: auto; }
 
 #nav {
-  margin-left: -300px;
+  margin-left: -250px;
   /* "left col (nav + list)" width */
-  width: 50px;
+  width: 0;
   height: 100%; }
 
 /* Show the menu items on the larger screen */
@@ -239,7 +239,7 @@ a {
   top: 33%;
   right: 0;
   bottom: 0;
-  left: 50px;
+  left: 0;
   overflow: auto;
   width: auto;
   /* so that it's not 100% */ }

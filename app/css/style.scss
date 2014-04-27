@@ -1,7 +1,7 @@
 @charset "UTF-8";
 $left-margin: 50px;
 $list-width: 200px;
-$menu-width: 50px;
+$menu-width: 0;
 $left-width: $list-width +$menu-width +$left-margin;
 
 #layout {
