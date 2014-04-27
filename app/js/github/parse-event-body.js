@@ -6,7 +6,6 @@
 // https://developer.github.com/v3/repos/commits/
 function compileFormPushEvent(event) {
     var commits = event.payload.commits;
-    console.log(commits);
     return commits.map(function (commit) {
         return "- " + commit.message;
     }).join("\n");

@@ -57,7 +57,7 @@ function mergeData(list) {
     var newItems = list.filter(function (item) {
         return !_.contains(existKeys, item.id);
     });
-    console.log(newItems);
+    console.log(newItems.length);
     listView.items = existItems.concat(newItems);
 }
 

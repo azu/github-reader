@@ -3,7 +3,7 @@
  * LICENSE : MIT
  */
 "use strict";
-var user = require("../config/userData");
+var userData = require("../config/userData");
 var builder = require("parse-github-event");
 var scrollController = require("./scrollController");
 var commentHeaderController = require("./commentHeaderViewController");
@@ -32,28 +32,26 @@ module.exports = function () {
         reloadData();
     });
 
-    var client = require("../github/github-client").newClient();
+    var githubClient = require("../github/github-client").newClient(userData);
 
     function reloadData() {
-        client.events.getReceived({ user: user.getUserData().name },
-            function (error, events) {
-                if (error) {
-                    return console.log(error);
-                }
-                var list = events.map(function (event) {
-                    var parsedEvent = builder.parse(event);
-                    return {
-                        "id": event.id,// github global event id
-                        "user_name": event.actor.login,
-                        "avatar_url": event.actor.avatar_url,
-                        "title": builder.compile(event),
-                        "html_url": parsedEvent.html_url,
-                        "body": require("../github/parse-event-body").parseEventBody(event) || builder.compile(event)
-                    };
-                });
-                listController.mergeData(list);
-            }
-        );
+        var promise = githubClient.getEventsAsPromise(userData.getUserData().name);
+        promise.then(function (events) {
+            var list = events.map(function (event) {
+                var parsedEvent = builder.parse(event);
+                return {
+                    "id": event.id,// github global event id
+                    "user_name": event.actor.login,
+                    "avatar_url": event.actor.avatar_url,
+                    "title": builder.compile(event),
+                    "html_url": parsedEvent.html_url,
+                    "body": require("../github/parse-event-body").parseEventBody(event) || builder.compile(event)
+                };
+            });
+            listController.mergeData(list);
+        }).catch(function (error) {
+            console.log("ReceiveEvent Error", error);
+        });
     }
 
     reloadData();

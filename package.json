@@ -22,7 +22,7 @@
     "url": "https://github.com/azu/github-reader/issues"
   },
   "dependencies": {
-    "es6-promise": "^0.1.1",
+    "bluebird": "^1.2.3",
     "github": "^0.1.16",
     "lodash": "^2.4.1",
     "parse-github-event": "^0.1.6",
