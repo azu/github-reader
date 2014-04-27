@@ -33,7 +33,7 @@ GithubClientPromise.prototype.notificationsAsPromise = function () {
     var client = this.client;
     return new Promise(function (resolve, reject) {
         var options = {
-            "all": true
+            all : true
         };
         var lastUpdated = require("../config/reloadTimer").getLastUpdated();
         if (lastUpdated) {
