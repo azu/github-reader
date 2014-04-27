@@ -27,7 +27,10 @@
 
     <div id="content-list" class="pure-u-1-4">
         <div class="event-item pure-g" v-repeat="items"
-             v-on='click: loadHTMLView(this)'
+             v-on="
+             click: loadHTMLView(this),
+             dbclick: dump(this)
+             "
              v-class="
              event-item-selected: this.$data === selectedItem
              ">

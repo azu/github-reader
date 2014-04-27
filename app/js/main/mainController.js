@@ -20,7 +20,7 @@ module.exports = function () {
         var cellElement = listController.elementAtIndex(currentIndex);
 
         setImmediate(function () {
-            document.getElementById("content-list").scrollTop = cellElement.offsetTop;
+            document.getElementById("content-list").scrollTop = cellElement.offsetTop - 50;
         });
     });
     window.Mousetrap.bind('j', function () {
