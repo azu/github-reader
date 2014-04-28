@@ -26,7 +26,7 @@
     <!--</div>-->
 
     <div id="content-list" class="pure-u-1-4">
-        <div class="event-item pure-g" v-repeat="items"
+        <div class="event-item pure-g" v-repeat="items | orderBy orderIndex"
              v-on="
              click: loadHTMLView(this),
              dbclick: dump(this)

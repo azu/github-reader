@@ -78,35 +78,34 @@ myApp.setNotifications({
     'Server Status': {}
 });
 myApp.register();
+
+function sortDate(aItem, bItem) {
+    var a = new Date(aItem.date),
+        b = new Date(bItem.date);
+    return (b.getTime() - a.getTime());
+}
 function mergeData(list) {
     var existItems = listView.items;
     var existKeys = _.pluck(existItems, "id");
     var newItems = list.filter(function (item) {
         return !_.contains(existKeys, item.id);
     });
-    var mergeItem = existItems.concat(newItems);
     console.log("new Item : " + newItems.length);
+    if (newItems.length === 0) {
+        return;
+    }
     if (existItems.length !== 0) {
         // Create a tray icon
         newItems.forEach(function (item) {
             myApp.sendNotification('Server Status', {
                 title: item.title,
                 text: item.body,
-                coalescingID : item.id
+                coalescingID: item.id
             });
         });
     }
-    listView.items = _.sortBy(mergeItem, function (aItem, bItem) {
-        var aDate = new Date(aItem.date).getTime();
-        var bDate = new Date(bItem.date).getTime();
-        if (aDate > bDate) {
-            return -1;
-        }
-        if (aDate < bDate) {
-            return 1;
-        }
-        return 0;
-    });
+    var mergeItem = existItems.concat(newItems);
+    listView.items = mergeItem.sort(sortDate);
 }
 
 

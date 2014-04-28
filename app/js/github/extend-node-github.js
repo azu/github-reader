@@ -15,7 +15,7 @@ function applyNotificationExtend(Client) {
         };
         client.httpSend(options, block, function (err, res) {
             if (err) {
-                return self.sendError(err, null, msg, callback);
+                return client.sendError(err, null, msg, callback);
             }
 
             var ret;

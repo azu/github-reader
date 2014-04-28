@@ -256,3 +256,6 @@ a {
   position: static;
   margin: 0;
   padding: 0; }
+
+#github-webview {
+  height: 100%; }
