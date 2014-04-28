@@ -18,17 +18,27 @@ $left-width: $list-width +$menu-width +$left-margin;
 }
 
 #github-webview {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  #comment-preview-header {
+    height: 50px;
+    max-height: 50px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.3em;
+    overflow: hidden;
+  }
+  #github-iframe {
+    width: 100%;
+    height: calc(90% - 50px);
+    overflow: hidden;
+    border: none;
+  }
+
   .comment-description {
     margin: 0 .5em;
     overflow: hidden;
   }
-}
-
-#github-iframe {
-  width: 100%;
-  min-height: 100%;
-  overflow: hidden;
-  border: none;
 }
 
 //
@@ -224,14 +234,6 @@ a {
   padding: 1em 2em;
 }
 
-.event-content-header {
-  border-bottom: 1px solid #ddd;
-  max-height: 50px;
-  height: 50px;
-  font-size: 1.3em;
-  overflow: hidden;
-}
-
 .email-content-title {
   margin: 0.5em 0 0;
 }
@@ -314,8 +316,4 @@ a {
   position: static;
   margin: 0;
   padding: 0;
-}
-
-#github-webview {
-  height: 100%;
 }
