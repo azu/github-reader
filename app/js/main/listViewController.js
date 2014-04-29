@@ -49,7 +49,7 @@ function reloadView() {
                 this.selectedItem = item.$data || item;// raw data
                 console.log(this.selectedItem);
                 frameController.loadURL(item.html_url);
-                if ("request_url" in item) {
+                if (item.request_url != null) {
                     var options = {
                         url: item.request_url,
                         headers: {
