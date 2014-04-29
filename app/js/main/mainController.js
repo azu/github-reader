@@ -33,7 +33,7 @@ module.exports = function () {
         console.log("reload");
         reloadData();
     });
-    var timerID = setInterval(reloadData, require("../config/reloadTimer").getAutoReloadTime());
+    var timerID = setInterval(reloadData, require("../config/reloadConfig").getAutoReloadTime());
     var githubClient = require("../github/github-client").newClient(userData);
 
     function reloadData() {

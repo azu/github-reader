@@ -35,7 +35,7 @@ GithubClientPromise.prototype.notificationsAsPromise = function () {
         var options = {
             all : true
         };
-        var lastUpdated = require("../config/reloadTimer").getLastUpdated();
+        var lastUpdated = require("../config/reloadConfig").getLastUpdated();
         if (lastUpdated) {
             options["since"] = lastUpdated;
         }
@@ -43,7 +43,7 @@ GithubClientPromise.prototype.notificationsAsPromise = function () {
             if (error) {
                 return reject(error);
             }
-            require("../config/reloadTimer").setLastUpdated(new Date());
+            require("../config/reloadConfig").setLastUpdated(new Date());
             resolve(events);
         });
     });
