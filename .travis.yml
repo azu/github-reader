@@ -1,0 +1,13 @@
+language: node_js
+before_install:
+- npm install -g bower
+after_success:
+  - bower install
+  - ./_travis/build.sh
+  - ./_travis/deploy-gh-pages.sh
+env:
+  global:
+  - GH_REF: github.com/azu/github-reader.git
+  - secure: pNtiVeWTe/kPWmERJURFoCVfzDVOc19IPbr9rK9CDJHo9aFtBPXkRwYzXfjlIwnzzkrAnfowxNNerHxYXuiNK7z+xNT9H79pmYtd1Qap9fNZCFNIFkdaArAXoq635VWmGRdArGiQGNM4Am+bZdsgG4dJR4DEsjx6dcisfyb8yso=
+node_js:
+- '0.10'
