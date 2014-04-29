@@ -2,7 +2,7 @@
 
 Github Client - Viewer for [Notifications](https://github.com/notifications "Notifications") and [News Feed](https://github.com/ "GitHub")
 
-![ScreenShot](http://f.cl.ly/items/37400e1C0w0A2K2y3Y17/2014-04-29%2022_22_08.gif)
+![ScreenShot](http://cl.ly/image/2v053R0Y0s0a/2014-04-29%2022_38_04.gif)
 
 Built with [node-webkit](https://github.com/rogerwang/node-webkit "node-webkit").
 
