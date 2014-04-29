@@ -11,16 +11,22 @@
   width: 100%;
   overflow: hidden; }
   #github-webview #comment-preview-header {
-    height: 50px;
-    max-height: 50px;
-    border-bottom: 1px solid #ddd;
-    font-size: 1.3em;
+    height: 80px;
+    max-height: 80px;
+    margin: 0 10px;
+    border-bottom: 2px solid #ddd;
+    font-size: 1.2em;
     overflow: hidden; }
-    #github-webview #comment-preview-header footer .comment-subject {
-      font-size: 0.8em; }
+    #github-webview #comment-preview-header .repo_name {
+      position: relative;
+      font-size: 0.7em;
+      right: 0;
+      top: 0;
+      margin: 0;
+      padding: 0; }
   #github-webview #github-iframe {
     width: 100%;
-    height: calc(90% - 50px);
+    height: calc(90% - 80px);
     overflow: hidden;
     border: none; }
   #github-webview .comment-description {

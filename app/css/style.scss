@@ -4,6 +4,8 @@ $list-width: 200px;
 $menu-width: 0;
 $left-width: $list-width +$menu-width +$left-margin;
 
+$preview-header-height: 80px;
+
 #layout {
   margin: 0;
   padding: 0;
@@ -22,18 +24,27 @@ $left-width: $list-width +$menu-width +$left-margin;
   width: 100%;
   overflow: hidden;
   #comment-preview-header {
-    height: 50px;
-    max-height: 50px;
-    border-bottom: 1px solid #ddd;
-    font-size: 1.3em;
+    height: $preview-header-height;
+    max-height: $preview-header-height;
+    margin: 0 10px;
+    border-bottom: 2px solid #ddd;
+    font-size: 1.2em;
     overflow: hidden;
-    footer .comment-subject {
-      font-size: 0.8em;
+    .repo_name {
+      position: relative;
+      font-size: 0.7em;
+      right: 0;
+      top: 0;
+      margin: 0;
+      padding: 0;
+    }
+    .comment-preview-body {
+
     }
   }
   #github-iframe {
     width: 100%;
-    height: calc(90% - 50px);
+    height: calc(90% - 80px);
     overflow: hidden;
     border: none;
   }

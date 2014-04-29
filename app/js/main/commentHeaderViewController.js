@@ -23,6 +23,7 @@ function updateWithItem(item) {
     headerView.title = item.title;
     headerView.user_name = item.user_name;
     headerView.body = item.body;
+    headerView.repo_name = item.repo_name;
 }
 module.exports.reloadView = reloadView;
 module.exports.updateWithItem = updateWithItem;

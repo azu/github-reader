@@ -33,15 +33,16 @@
     </div>
 
     <div id="github-webview" class="pure-u-1">
-        <div id="comment-preview-header" class="event-content-header">
-            <img v-attr="src:avatar_url" class="avatar-img"/>
+        <div id="comment-preview-header">
+            <p class="repo_name"><a href="https://github.com/{{repo_name}}">{{repo_name}}</a></p>
 
-            <p class="comment-description">
-                {{body}}
-            </p>
-            <footer>
-                <p class="comment-subject">{{title}}</p>
-            </footer>
+            <div class="comment-preview-body">
+                <img v-attr="src:avatar_url" class="avatar-img"/>
+
+                <p class="comment-description">
+                    {{body}}
+                </p>
+            </div>
         </div>
         <iframe id="github-iframe" nwfaketop></iframe>
     </div>
