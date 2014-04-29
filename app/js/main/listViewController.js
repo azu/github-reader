@@ -4,6 +4,7 @@
  */
 "use strict";
 var assert = require("assert");
+var notifier = require("../notification/notification");
 var userData = require("../config/userData");
 var Vue = require('vue');
 var frameController = require("./frameController");
@@ -72,12 +73,6 @@ function reloadView() {
     return listView
 }
 
-var growler = require('growler');
-var myApp = new growler.GrowlApplication('GithubReader');
-myApp.setNotifications({
-    'Server Status': {}
-});
-myApp.register();
 
 function sortDate(aItem, bItem) {
     var a = new Date(aItem.date),
@@ -97,7 +92,7 @@ function mergeData(list) {
     if (existItems.length !== 0) {
         // Create a tray icon
         newItems.forEach(function (item) {
-            myApp.sendNotification('Server Status', {
+            notifier.sendNotification('Server Status', {
                 title: item.title,
                 icon: item.avatar_url,
                 text: item.body,
