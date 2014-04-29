@@ -13,6 +13,20 @@ Built with [node-webkit](https://github.com/rogerwang/node-webkit "node-webkit")
 3. Download [github-reader.nw](https://github.com/azu/github-reader/blob/gh-pages/github-reader.nw?raw=true)
 4. Open github-reader.nw
 
+### Config
+
+![token](http://monosnap.com/image/xNMXVDIlfH6Lom2Q2DMDKxPbc3kLaJ.png)
+
+* Create [New personal access token](https://github.com/settings/tokens/new "New personal access token")
+    * require **scopes** are `notifications` and `user`
+
+![config](http://monosnap.com/image/Dgh7zSUetiJTNuQQ55w76CYVur7G0h.png)
+
+* Open `Config` in Github-Reader.app
+    * Input Github **username**
+    * Input personal access token
+* Save & Reload
+
 ## Develop
 
 ``` sh
