@@ -1,6 +1,7 @@
 {
   "name": "github-reader",
   "description": "github-reader app on node-webkit",
+  "keywords": ["node-webkit","github","viewer","notitification"],
   "version": "0.0.1",
   "homepage": "https://github.com/azu/github-reader/",
   "repository": {
