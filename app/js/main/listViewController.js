@@ -99,6 +99,7 @@ function mergeData(list) {
         newItems.forEach(function (item) {
             myApp.sendNotification('Server Status', {
                 title: item.title,
+                icon: item.avatar_url,
                 text: item.body,
                 url: item.html_url
             });
