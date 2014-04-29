@@ -13,6 +13,7 @@ function buildEvents(events) {
             "date": event.created_at,
             "user_name": event.actor.login,
             "avatar_url": event.actor.avatar_url,
+            "repo_name": event.repo.name,
             "title": parseGithubEvent.compile(event),
             "html_url": parsedEvent.html_url,
             "body": require("./parse-event-body").parseEventBody(event) || parseGithubEvent.compile(event)
@@ -27,6 +28,7 @@ function buildNotifications(notifications) {
             "date": notification.updated_at,
             "user_name": notification.repository.owner.login,
             "avatar_url": notification.repository.owner.avatar_url,
+            "repo_name": notification.repository.name,
             "title": notification.repository.full_name,
             "html_url": require("./builder-util").normalizeResponseAPIURL(notification.subject.url),
             "request_url": notification.subject.latest_comment_url,

@@ -93,7 +93,7 @@ function mergeData(list) {
         // Create a tray icon
         newItems.forEach(function (item) {
             notifier.sendNotification('Server Status', {
-                title: item.title,
+                title: item.repo_name,
                 icon: item.avatar_url,
                 text: item.body,
                 url: item.html_url
@@ -106,7 +106,7 @@ function mergeData(list) {
 
 
 function indexOfItem(item) {
-    assert(listView != null, "listView doesn't initialize. Please call `reloadView`")
+    assert(listView != null, "listView doesn't initialize. Please call `reloadView`");
     var items = listView.$data.items;
     return items.indexOf(item);
 }
