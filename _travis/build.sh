@@ -1,4 +1,4 @@
 #!/bin/sh
 
-declare parentDir=$(cd $(dirname $(cd $(dirname $0);pwd));pwd)
-zip -r github-reader.nw ${parentDir}/*
+parentDir=$(cd $(dirname $(cd $(dirname $0);pwd));pwd)
+zip -r ${parentDir}/github-reader.nw ${parentDir}/*
