@@ -1,7 +1,7 @@
 language: node_js
 before_install:
-- npm install -g bower
 after_success:
+  - npm install -g bower
   - bower install
   - ./_travis/build.sh
   - ./_travis/deploy-gh-pages.sh
