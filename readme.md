@@ -1,4 +1,4 @@
-# github-reader
+# github-reader [![Build Status](https://travis-ci.org/azu/github-reader.svg?branch=master)](https://travis-ci.org/azu/github-reader)
 
 Github Client - Viewer for [Notifications](https://github.com/notifications "Notifications") and [News Feed](https://github.com/ "GitHub")
 
@@ -8,11 +8,19 @@ Built with [node-webkit](https://github.com/rogerwang/node-webkit "node-webkit")
 
 ## Installation
 
-- [ ] Describe the installation process
+1. [Downloads](https://github.com/rogerwang/node-webkit#downloads "Downloads") node-webkit
+2. Install node-webkit
+3. Download [github-reader.nw](https://github.com/azu/github-reader/blob/gh-pages/github-reader.nw?raw=true)
+4. Open github-reader.nw
 
-## Usage
+## Develop
 
-- [ ] Write usage instructions
+``` sh
+npm install
+bower install
+```
+
+[Run apps](https://github.com/rogerwang/node-webkit/wiki/How-to-run-apps "run apps") with node-webkit.
 
 ## Contributing
 
