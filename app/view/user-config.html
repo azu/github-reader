@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>User Data</title>
+    <link rel="stylesheet" href="../../bower_components/pure/pure-min.css">
+    <style>
+        .content {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="content" id="config-content">
+    <form class="pure-form pure-form-aligned">
+        <fieldset>
+            <div class="pure-control-group">
+                <label for="name">Username</label>
+                <input id="name" type="text" placeholder="Username" v-model="name">
+            </div>
+
+            <div class="pure-control-group">
+                <label for="password">Access Token</label>
+                <input id="password" type="password" placeholder="Access Token" v-model="token">
+            </div>
+            <div class="pure-control-group">
+                <label for="reload-time-interval">Reload time interval(ms)</label>
+                <input id="reload-time-interval" type="number" placeholder="Reload time interval" v-model="timeInterval">
+            </div>
+            <div class="pure-controls">
+                <button type="submit" id="js-save" class="pure-button pure-button-primary">Save</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<script src="../node-webkit/workaround.js"></script>
+<script src="user-config.js"></script>
+</body>
+</html>

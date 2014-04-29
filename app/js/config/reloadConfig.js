@@ -4,15 +4,19 @@
  */
 "use strict";
 function getAutoReloadTime() {
-    return 60 * 1000;
+    return window.localStorage.getItem("auto-reload-interval") || 60 * 1000;
 }
-function setLastUpdated(date){
+function setAutoReloadTime(timeInterval) {
+    return window.localStorage.setItem("auto-reload-interval", timeInterval);
+}
+function setLastUpdated(date) {
     window.localStorage.setItem("last-updated", date.toISOString());
 }
-function getLastUpdated(){
+function getLastUpdated() {
     return window.localStorage.getItem("last-updated");
 }
 
 module.exports.getAutoReloadTime = getAutoReloadTime;
+module.exports.setAutoReloadTime = setAutoReloadTime;
 module.exports.getLastUpdated = getLastUpdated;
 module.exports.setLastUpdated = setLastUpdated;
