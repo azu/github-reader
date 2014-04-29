@@ -100,7 +100,7 @@ function mergeData(list) {
             myApp.sendNotification('Server Status', {
                 title: item.title,
                 text: item.body,
-                coalescingID: item.id
+                url: item.html_url
             });
         });
     }

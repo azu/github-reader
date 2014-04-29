@@ -27,6 +27,9 @@ $left-width: $list-width +$menu-width +$left-margin;
     border-bottom: 1px solid #ddd;
     font-size: 1.3em;
     overflow: hidden;
+    footer .comment-subject {
+      font-size: 0.8em;
+    }
   }
   #github-iframe {
     width: 100%;

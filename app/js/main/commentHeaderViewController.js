@@ -12,6 +12,7 @@ function reloadView() {
         data: {
             "avatar_url": "",
             "user_name": "",
+            "title": "",
             "body": ""
         }
     });
@@ -19,6 +20,7 @@ function reloadView() {
 }
 function updateWithItem(item) {
     headerView.avatar_url = item.avatar_url;
+    headerView.title = item.title;
     headerView.user_name = item.user_name;
     headerView.body = item.body;
 }
