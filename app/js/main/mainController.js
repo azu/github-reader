@@ -8,7 +8,8 @@ var scrollController = require("./scrollController");
 var commentHeaderController = require("./commentHeaderViewController");
 var listController = require("./listViewController");
 var Promise = require("bluebird");
-module.exports = function () {
+// gui is chrome context object
+module.exports = function (gui) {
     var commentHeaderView = commentHeaderController.reloadView();
     var listView = listController.reloadView();
     listView.$watch("selectedItem", function (item) {
@@ -22,6 +23,13 @@ module.exports = function () {
         setImmediate(function () {
             document.getElementById("content-list").scrollTop = cellElement.offsetTop - 50;
         });
+    });
+    window.Mousetrap.bind('o', function () {
+        var iframeURL = document.getElementById("github-iframe").src;
+        if (!iframeURL) {
+            return;
+        }
+        gui.Shell.openExternal(iframeURL);
     });
     window.Mousetrap.bind('j', function () {
         listView.selectNextItem();
