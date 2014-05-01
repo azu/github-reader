@@ -11,8 +11,9 @@
   width: 100%;
   overflow: hidden; }
   #github-webview #comment-preview-header {
+    box-sizing: border-box;
     height: 80px;
-    max-height: 80px;
+    max-height: 10%;
     margin: 0 10px;
     border-bottom: 2px solid #ddd;
     font-size: 1.2em;
@@ -26,7 +27,7 @@
       padding: 0; }
   #github-webview #github-iframe {
     width: 100%;
-    height: calc(90% - 80px);
+    height: 89%;
     overflow: hidden;
     border: none; }
   #github-webview .comment-description {

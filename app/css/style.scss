@@ -4,8 +4,6 @@ $list-width: 200px;
 $menu-width: 0;
 $left-width: $list-width +$menu-width +$left-margin;
 
-$preview-header-height: 80px;
-
 #layout {
   margin: 0;
   padding: 0;
@@ -24,8 +22,9 @@ $preview-header-height: 80px;
   width: 100%;
   overflow: hidden;
   #comment-preview-header {
-    height: $preview-header-height;
-    max-height: $preview-header-height;
+    box-sizing: border-box;
+    height: 80px;
+    max-height: 10%;
     margin: 0 10px;
     border-bottom: 2px solid #ddd;
     font-size: 1.2em;
@@ -38,13 +37,10 @@ $preview-header-height: 80px;
       margin: 0;
       padding: 0;
     }
-    .comment-preview-body {
-
-    }
   }
   #github-iframe {
     width: 100%;
-    height: calc(90% - 80px);
+    height: 89%;// TOOD: missing 1%...
     overflow: hidden;
     border: none;
   }
