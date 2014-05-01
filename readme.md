@@ -11,6 +11,7 @@ Built with [node-webkit](https://github.com/rogerwang/node-webkit "node-webkit")
 * Viewer for mixed [Notifications](https://github.com/notifications "Notifications") and [News Feed](https://github.com/ "GitHub")
 * Growl Notification(for Mac only, relate issue - [Implement desktop notifications](https://github.com/rogerwang/node-webkit/issues/27 "Implement desktop notifications [$50] · Issue #27 · rogerwang/node-webkit"))
 * `J`,`K` scroll shortcut
+* `O` : open in browser
 * `Cmd+R` reload
 
 ## Installation
