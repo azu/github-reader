@@ -14,13 +14,16 @@ module.exports = function (gui) {
     var commentHeaderView = commentHeaderController.reloadView();
     var listView = listController.reloadView();
     listView.$watch("selectedItem", function (item) {
+        if (item == null) {
+            return;
+        }
         // update header
         commentHeaderController.updateWithItem(item);
         // Scroll position
         scrollController.scrollToTop();
         var currentIndex = listController.indexOfItem(item);
         var cellElement = listController.elementAtIndex(currentIndex);
-        if(!cellElement) {
+        if (!cellElement) {
             return;
         }
         window.setTimeout(function () {
@@ -50,7 +53,7 @@ module.exports = function (gui) {
     ['command+f', 'ctrl+f'].forEach(function (key) {
         window.Mousetrap.bind(key, function () {
             listController.toggleSearchMode();
-            if(listController.isSearchMode()){
+            if (listController.isSearchMode()) {
                 inputFocusController.focus();
             }
         })

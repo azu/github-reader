@@ -136,6 +136,8 @@ function toggleSearchMode() {
     if (!listView.isSearchMode) {
         // remove search word when no search mode.
         reloadData();
+    }else{
+        listView.selectedItem = null;
     }
 }
 

@@ -16,7 +16,7 @@ $left-width: $list-width +$menu-width +$left-margin;
   width: $list-width;
   word-wrap: break-word;
   .content-list-filter-input {
-    transition: all .3s ease;
+    transition: all .1s ease;
     box-sizing: border-box;
     border: 1px solid #0b97c4;
     width: 100%;
