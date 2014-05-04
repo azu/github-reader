@@ -13,7 +13,7 @@ Built with [node-webkit](https://github.com/rogerwang/node-webkit "node-webkit")
 * `J`,`K` scroll shortcut
 * `O` : open in browser
 * `Ctrl + R` reload
-* `Ctrl + f` : toggle search bar
+* `Ctrl + f` : toggle search bar - [gif](http://gyazo.com/0c5ed12adcc0b22e50457d1e7e6f82e3)
 
 ## Installation
 
