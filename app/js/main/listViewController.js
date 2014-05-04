@@ -104,6 +104,9 @@ function mergeData(list) {
 }
 
 function reloadData() {
+    if (isSearchMode()) {
+        return;
+    }
     listView.displayItems = listView.items;
 }
 function filterByWord(word) {
@@ -114,9 +117,10 @@ function filterByWord(word) {
         "html_url"
         "body"
      */
-    function escapeRegExp(string){
+    function escapeRegExp(string) {
         return string.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
     }
+
     var regexp = new RegExp(escapeRegExp(word), "i");
     listView.displayItems = listView.items.filter(function (item) {
         return [item.user_name, item.repo_name, item.html_url, item.body].some(function (target) {
