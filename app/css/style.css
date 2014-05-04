@@ -5,6 +5,16 @@
 #content-list {
   width: 200px;
   word-wrap: break-word; }
+  #content-list .content-list-filter-input {
+    transition: all .3s ease;
+    box-sizing: border-box;
+    border: 1px solid #0b97c4;
+    width: 100%;
+    overflow: hidden; }
+  #content-list .content-list-filter-input.v-enter, #content-list .content-list-filter-input.v-leave {
+    height: 0;
+    padding: 0 10px;
+    opacity: 0; }
 
 #github-webview {
   height: 100%;
@@ -187,9 +197,6 @@ a {
 
 .event-item-selected {
   background: #eee; }
-
-.email-item-unread {
-  order-left: 6px solid #1b98f8; }
 
 /* Email Content Styles */
 .event-content-header, .email-content-body, .email-content-footer {

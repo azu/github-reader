@@ -7,6 +7,7 @@ var userData = require("../config/userData");
 var scrollController = require("./scrollController");
 var commentHeaderController = require("./commentHeaderViewController");
 var listController = require("./listViewController");
+var inputFocusController = require("./inputFocusController");
 var Promise = require("bluebird");
 // gui is chrome context object
 module.exports = function (gui) {
@@ -19,10 +20,15 @@ module.exports = function (gui) {
         scrollController.scrollToTop();
         var currentIndex = listController.indexOfItem(item);
         var cellElement = listController.elementAtIndex(currentIndex);
-
-        setImmediate(function () {
+        if(!cellElement) {
+            return;
+        }
+        window.setTimeout(function () {
             document.getElementById("content-list").scrollTop = cellElement.offsetTop - 50;
-        });
+        }, 0);
+    });
+    listView.$watch("searchWord", function (word) {
+        listController.filterByWord(word);
     });
     window.Mousetrap.bind('o', function () {
         var iframeURL = document.getElementById("github-iframe").src;
@@ -41,6 +47,14 @@ module.exports = function (gui) {
         console.log("reload");
         reloadData();
     });
+    ['command+f', 'ctrl+f'].forEach(function (key) {
+        window.Mousetrap.bind(key, function () {
+            listController.toggleSearchMode();
+            if(listController.isSearchMode()){
+                inputFocusController.focus();
+            }
+        })
+    });
     var timerID = setInterval(reloadData, require("../config/reloadConfig").getAutoReloadTime());
     var githubClient = require("../github/github-client").newClient(userData);
 
@@ -53,6 +67,7 @@ module.exports = function (gui) {
             var eventList = builder.buildEvents(events);
             var notificationList = builder.buildNotifications(notifications);
             listController.mergeData(eventList.concat(notificationList));
+            listController.reloadData();
         }).catch(function (error) {
             console.log("ReloadData Error", error);
         });

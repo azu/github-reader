@@ -12,7 +12,8 @@ Built with [node-webkit](https://github.com/rogerwang/node-webkit "node-webkit")
 * Growl Notification(for Mac only, relate issue - [Implement desktop notifications](https://github.com/rogerwang/node-webkit/issues/27 "Implement desktop notifications [$50] · Issue #27 · rogerwang/node-webkit"))
 * `J`,`K` scroll shortcut
 * `O` : open in browser
-* `Cmd+R` reload
+* `Ctrl + R` reload
+* `Ctrl + f` : toggle search bar
 
 ## Installation
 

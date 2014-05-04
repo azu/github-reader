@@ -9,10 +9,11 @@
 
 <div id="layout" class="content pure-g">
     <div id="content-list" class="pure-u-1-4">
-        <div class="event-item pure-g" v-repeat="items | orderBy orderIndex"
+        <input class="content-list-filter-input" v-show="isSearchMode" v-transition v-model="searchWord"/>
+
+        <div class="event-item pure-g" v-repeat="displayItems"
              v-on="
-             click: loadHTMLView(this),
-             dbclick: dump(this)
+             click: loadHTMLView(this)
              "
              v-class="
              event-item-selected: this.$data === selectedItem

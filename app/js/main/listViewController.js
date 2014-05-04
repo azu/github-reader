@@ -18,37 +18,36 @@ function reloadView() {
         el: '#content-list',
         data: {
             selectedItem: null,
-            items: [
-            ]
+            items: [],
+            displayItems: []
         },
         methods: {
             selectPrevItem: function () {
                 if (this.selectedItem == null) {
                     return;
                 }
-                var items = this.$data.items;
+                var items = this.displayItems;
                 var currentIndex = items.indexOf(this.selectedItem);
                 if (currentIndex !== -1 && 0 <= currentIndex - 1) {
-                    this.$root.loadHTMLView(this.items[currentIndex - 1]);
+                    this.$root.loadHTMLView(items[currentIndex - 1]);
                 }
             },
             selectNextItem: function () {
+                var items = this.displayItems;
                 if (this.selectedItem == null) {
-                    if (this.items.length > 0) {
-                        this.$root.loadHTMLView(this.items[0]);
+                    if (items.length > 0) {
+                        this.$root.loadHTMLView(items[0]);
                     }
                     return;
                 }
-                var items = this.$data.items;
                 var currentIndex = items.indexOf(this.selectedItem);
                 if (currentIndex !== -1 && items.length > currentIndex + 1) {
-                    var nextItem = this.items[currentIndex + 1];
+                    var nextItem = items[currentIndex + 1];
                     this.$root.loadHTMLView(nextItem);
                 }
             },
             loadHTMLView: function (item) {
                 this.selectedItem = item.$data || item;// raw data
-                console.log(this.selectedItem);
                 frameController.loadURL(item.html_url);
                 if (item.request_url != null) {
                     var options = {
@@ -104,10 +103,37 @@ function mergeData(list) {
     listView.items = mergeItem.sort(sortDate);
 }
 
+function reloadData() {
+    listView.displayItems = listView.items;
+}
+function filterByWord(word) {
+    /*  Filter target
+
+        "user_name"
+        "repo_name"
+        "html_url"
+        "body"
+     */
+    listView.displayItems = listView.items.filter(function (item) {
+        return [item.user_name, item.repo_name, item.html_url, item.body].some(function (target) {
+            return _.contains(target, word);
+        })
+    });
+}
+function isSearchMode() {
+    return listView.isSearchMode;
+}
+function toggleSearchMode() {
+    listView.isSearchMode = !listView.isSearchMode;
+    if (!listView.isSearchMode) {
+        // remove search word when no search mode.
+        reloadData();
+    }
+}
 
 function indexOfItem(item) {
     assert(listView != null, "listView doesn't initialize. Please call `reloadView`");
-    var items = listView.$data.items;
+    var items = listView.$data.displayItems;
     return items.indexOf(item);
 }
 function elementAtIndex(currentIndex) {
@@ -117,4 +143,8 @@ function elementAtIndex(currentIndex) {
 module.exports.elementAtIndex = elementAtIndex;
 module.exports.indexOfItem = indexOfItem;
 module.exports.mergeData = mergeData;
+module.exports.reloadData = reloadData;
 module.exports.reloadView = reloadView;
+module.exports.filterByWord = filterByWord;
+module.exports.toggleSearchMode = toggleSearchMode;
+module.exports.isSearchMode = isSearchMode;
