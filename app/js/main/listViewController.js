@@ -114,9 +114,13 @@ function filterByWord(word) {
         "html_url"
         "body"
      */
+    function escapeRegExp(string){
+        return string.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
+    }
+    var regexp = new RegExp(escapeRegExp(word), "i");
     listView.displayItems = listView.items.filter(function (item) {
         return [item.user_name, item.repo_name, item.html_url, item.body].some(function (target) {
-            return _.contains(target, word);
+            return regexp.test(target);
         })
     });
 }
