@@ -1,7 +1,12 @@
 {
   "name": "github-reader",
   "description": "github-reader app on node-webkit",
-  "keywords": ["node-webkit","github","viewer","notitification"],
+  "keywords": [
+    "node-webkit",
+    "github",
+    "viewer",
+    "notitification"
+  ],
   "version": "0.0.1",
   "homepage": "https://github.com/azu/github-reader/",
   "repository": {
@@ -33,10 +38,11 @@
     "vue": "^0.10.3"
   },
   "devDependencies": {
-    "intelli-espower-loader": "0.0.7",
+    "espower-loader": "^0.7.1",
+    "intelli-espower-loader": "^0.1.0",
     "json-server": "^0.3.1",
     "mocha": "^1.18.2",
     "node-webkit-builder": "0.0.2",
-    "power-assert": "^0.6.1"
+    "power-assert": "^0.7.2"
   }
 }
