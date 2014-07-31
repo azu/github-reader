@@ -13,6 +13,8 @@
     });
 
     githubReaderMenu.append(openMenuItem);
-    win.menu = new gui.Menu({ type: 'menubar' });
+    var nativeMenuBar = new gui.Menu({ type: 'menubar' });
+    nativeMenuBar.createMacBuiltin("My App");
+    win.menu = nativeMenuBar;
     win.menu.insert(new gui.MenuItem({ label: 'GithubReader', submenu: githubReaderMenu}), 1);
 })();
