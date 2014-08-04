@@ -29,9 +29,9 @@
     "url": "https://github.com/azu/github-reader/issues"
   },
   "dependencies": {
-    "bluebird": "^1.2.3",
-    "github": "^0.1.16",
-    "growler": "https://github.com/betamos/Node-Growler/archive/master.tar.gz",
+    "bluebird": "^2.2.2",
+    "github": "^0.2.1",
+    "growler": "0.0.1",
     "lodash": "^2.4.1",
     "parse-github-event": "^0.1.6",
     "request": "^2.34.0",
@@ -39,10 +39,10 @@
   },
   "devDependencies": {
     "espower-loader": "^0.7.1",
-    "intelli-espower-loader": "^0.1.0",
+    "intelli-espower-loader": "^0.2.0",
     "json-server": "^0.3.1",
     "mocha": "^1.18.2",
-    "node-webkit-builder": "0.0.2",
+    "node-webkit-builder": "^0.1.1",
     "power-assert": "^0.7.2"
   }
 }
