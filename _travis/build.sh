@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 CURRENT=$(cd $(dirname $0) && pwd)
 
 if [[ "$TRAVIS_TAG" ]]; then
