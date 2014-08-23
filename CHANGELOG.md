@@ -1,3 +1,11 @@
+### 1.0.1 (2014-08-24)
+
+
+#### Features
+
+* **travis:** add release build task ([e1cc3e9f](https://github.com/azu/github-reader/commit/e1cc3e9f228de0d7c2c11e1fa15029697e76d299))
+
+
 ## 1.0.0 (2014-08-04)
 
 
