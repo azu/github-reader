@@ -17,7 +17,7 @@ Built with [node-webkit](https://github.com/rogerwang/node-webkit "node-webkit")
 
 ## Installation
 
-Download from [latest binary](https://github.com/azu/github-reader/releases/latest)
+**[Download latest binary](https://github.com/azu/github-reader/releases/latest)**
 
 Multi-platform support
 
