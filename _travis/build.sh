@@ -2,8 +2,6 @@
 
 if [[ "$TRAVIS_TAG" ]]; then
     rm -rf build
-    # remove without production
-    npm prune --production
     npm run dist
     cd build
     # ziped in build/
