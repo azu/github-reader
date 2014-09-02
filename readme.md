@@ -21,9 +21,9 @@ Built with [node-webkit](https://github.com/rogerwang/node-webkit "node-webkit")
 
 Multi-platform support
 
-- win
-- os x
-- linux 32,64bit
+- Windows
+- Mac OS X
+- Linux 32,64bit
 
 ### NOTE
 
