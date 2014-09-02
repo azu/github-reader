@@ -18,7 +18,7 @@
   },
   "scripts": {
     "test": "mocha test/*.js",
-    "dist": "nwbuild -p 'osx' ./ -o ./build"
+    "dist": "nwbuild -p 'win,osx,linux32,linux64' ./ -o ./build"
   },
   "directories": {
     "test": "test/"
