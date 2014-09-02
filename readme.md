@@ -17,10 +17,13 @@ Built with [node-webkit](https://github.com/rogerwang/node-webkit "node-webkit")
 
 ## Installation
 
-1. [Downloads](https://github.com/rogerwang/node-webkit#downloads "Downloads") node-webkit **>= 0.10.1**
-2. Install node-webkit
-3. Download [github-reader.nw](https://github.com/azu/github-reader/blob/gh-pages/github-reader.nw?raw=true)
-4. Open github-reader.nw
+Download from [latest binary](https://github.com/azu/github-reader/releases/latest)
+
+Multi-platform support
+
+- win
+- os x
+- linux 32,64bit
 
 ### NOTE
 
