@@ -25,10 +25,6 @@ Multi-platform support
 - Mac OS X
 - Linux 32,64bit
 
-### NOTE
-
-Currently, Not support node-webkit 0.8.x
-
 ### Config
 
 ![token](http://monosnap.com/image/xNMXVDIlfH6Lom2Q2DMDKxPbc3kLaJ.png)
