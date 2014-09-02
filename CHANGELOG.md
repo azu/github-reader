@@ -1,3 +1,11 @@
+## 1.1.0 (2014-09-02)
+
+
+#### Features
+
+* **travis:** integrate automatically releasing binary ([93567fd2](https://github.com/azu/github-reader/commit/93567fd2346f44005fc6f93f979edcd2e619b658))
+
+
 ### 1.0.3 (2014-08-24)
 
 
