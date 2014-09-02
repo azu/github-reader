@@ -18,7 +18,7 @@
   },
   "scripts": {
     "test": "mocha test/*.js",
-    "build": "nwbuild --run ./"
+    "dist": "nwbuild -p 'osx' ./ -o ./build"
   },
   "directories": {
     "test": "test/"
@@ -42,7 +42,7 @@
     "intelli-espower-loader": "^0.2.0",
     "json-server": "^0.3.1",
     "mocha": "^1.18.2",
-    "node-webkit-builder": "^0.1.1",
+    "node-webkit-builder": "^0.1.2",
     "power-assert": "^0.7.2"
   }
 }
