@@ -96,19 +96,20 @@ function mergeData(list) {
     if (newItems.length === 0) {
         return;
     }
-    newItems.forEach(function (item) {
-        notifier.sendNotification({
-            title: item.repo_name,
-            icon: item.avatar_url,
-            text: item.body,
-            url: item.html_url
-        }, function (error) {
-            if (error) {
-                console.error("Growl Error", error);
-            }
+    if (existItems.length !== 0) {
+        newItems.forEach(function (item) {
+            notifier.sendNotification({
+                title: item.repo_name,
+                icon: item.avatar_url,
+                text: item.body,
+                url: item.html_url
+            }, function (error) {
+                if (error) {
+                    console.error("Growl Error", error);
+                }
+            });
         });
-    });
-
+    }
     var mergeItem = existItems.concat(newItems);
     listView.items = mergeItem.sort(sortDate);
 }
