@@ -31,10 +31,10 @@
   "dependencies": {
     "bluebird": "^2.2.2",
     "github": "^0.2.1",
-    "growler": "0.0.1",
     "lodash": "^2.4.1",
+    "node-notifier": "^4.0.3",
     "parse-github-event": "^0.2.0",
-    "request": "^2.34.0",
+    "request": "^2.51.0",
     "vue": "^0.11.0"
   },
   "devDependencies": {

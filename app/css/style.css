@@ -19,6 +19,7 @@
 #github-webview {
   height: 100%;
   width: 100%;
+  position: fixed;
   overflow: hidden; }
   #github-webview #comment-preview-header {
     box-sizing: border-box;
@@ -274,3 +275,5 @@ a {
   position: static;
   margin: 0;
   padding: 0; }
+
+/*# sourceMappingURL=style.css.map */

@@ -4,14 +4,42 @@
  */
 "use strict";
 
-var growler = require('growler');
-var myApp = new growler.GrowlApplication('GithubReader');
-myApp.setNotifications({
-    'Server Status': {}
-});
-myApp.register();
 
-function sendNotification(name, options, callback) {
-    myApp.sendNotification(name, options, callback);
+var notifier = require('node-notifier');
+var growl = new notifier.Growl();
+var EventEmitter = require('events').EventEmitter;
+var request = require('request');
+var notificationEvent = new EventEmitter();
+var __CLICK_EVENT = "GROWL__CLICK_EVENT";
+function addClickCallback(callback) {
+    notificationEvent.on(__CLICK_EVENT, function (event, options) {
+        callback(options);
+    });
 }
-module.exports.sendNotification = sendNotification;
+growl.on('click', function (notifierObject, options) {
+    notificationEvent.emit(__CLICK_EVENT, notifierObject, options)
+});
+
+function sendNotification(options, callback) {
+    request.get({url: options.icon, encoding: null}, function (err, res, data) {
+        if (err) {
+            return callback(err);
+        }
+        growl.notify({
+            title: options.title,
+            message: options.text,
+            icon: data,
+            gh_url: options.url,
+            sound: true, // Only Notification Center or Windows Toasters
+            wait: true // wait with callback until user action is taken on notification
+        }, function (err, response) {
+            if (err) {
+                return callback(err);
+            }
+        });
+    });
+}
+module.exports = {
+    addClickCallback: addClickCallback,
+    sendNotification: sendNotification
+};

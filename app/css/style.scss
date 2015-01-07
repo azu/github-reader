@@ -32,6 +32,7 @@ $left-width: $list-width +$menu-width +$left-margin;
 #github-webview {
   height: 100%;
   width: 100%;
+  position: fixed;
   overflow: hidden;
   #comment-preview-header {
     box-sizing: border-box;

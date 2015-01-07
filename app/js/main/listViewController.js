@@ -12,6 +12,14 @@ var _ = require("lodash");
 var Promise = require("bluebird");
 var request = Promise.promisify(require("request"));
 
+
+notifier.addClickCallback(function (options) {
+    var htmlURL = options.gh_url;
+    var gui = global.window.nwDispatcher.requireNwGui();
+    var win = gui.Window.get();
+    win.focus();
+    frameController.loadURL(htmlURL);
+});
 var listView;
 function reloadView() {
     listView = new Vue({
@@ -88,17 +96,19 @@ function mergeData(list) {
     if (newItems.length === 0) {
         return;
     }
-    if (existItems.length !== 0) {
-        // Create a tray icon
-        newItems.forEach(function (item) {
-            notifier.sendNotification('Server Status', {
-                title: item.repo_name,
-                icon: item.avatar_url,
-                text: item.body,
-                url: item.html_url
-            });
+    newItems.forEach(function (item) {
+        notifier.sendNotification({
+            title: item.repo_name,
+            icon: item.avatar_url,
+            text: item.body,
+            url: item.html_url
+        }, function (error) {
+            if (error) {
+                console.error("Growl Error", error);
+            }
         });
-    }
+    });
+
     var mergeItem = existItems.concat(newItems);
     listView.items = mergeItem.sort(sortDate);
 }
@@ -136,7 +146,7 @@ function toggleSearchMode() {
     if (!listView.isSearchMode) {
         // remove search word when no search mode.
         reloadData();
-    }else{
+    } else {
         listView.selectedItem = null;
     }
 }
