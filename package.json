@@ -7,7 +7,7 @@
     "viewer",
     "notitification"
   ],
-  "version": "1.2.0",
+  "version": "1.2.1",
   "homepage": "https://github.com/azu/github-reader/",
   "repository": {
     "url": "git://github.com/azu/github-reader.git"

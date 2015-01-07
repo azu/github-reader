@@ -1,3 +1,11 @@
+### 1.2.1 (2015-01-07)
+
+
+#### Bug Fixes
+
+* **growl:** add name ([6e43df17](https://github.com/azu/github-reader/commit/6e43df17229b54431d3d22e98d6c9217f00ef926))
+
+
 ## 1.2.0 (2015-01-07)
 
 
