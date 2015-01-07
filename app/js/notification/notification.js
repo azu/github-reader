@@ -6,7 +6,9 @@
 
 
 var notifier = require('node-notifier');
-var growl = new notifier.Growl();
+var growl = new notifier.Growl({
+    name: 'github-reader'
+});
 var EventEmitter = require('events').EventEmitter;
 var request = require('request');
 var notificationEvent = new EventEmitter();
