@@ -1,3 +1,16 @@
+## 1.2.0 (2015-01-07)
+
+
+#### Bug Fixes
+
+* **growl:** fix to check items at first ([a8016a16](https://github.com/azu/github-reader/commit/a8016a16ac769fe3f51cebd80406aaaae1b4eb41))
+
+
+#### Features
+
+* **growl:** when click the growl, then open the issue url and focus app ([1badd141](https://github.com/azu/github-reader/commit/1badd141ab0e3fa5deb6fc6c69475b9ae69a038a))
+
+
 ## 1.1.0 (2014-09-02)
 
 
