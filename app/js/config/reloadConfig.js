@@ -17,7 +17,7 @@ function getLastUpdated() {
 }
 
 function getFilterScriptPath() {
-    return window.localStorage.getItem("filter-script-path");
+    return window.localStorage.getItem("filter-script-path") || null;
 }
 
 function setFilterScriptPath(scriptPath) {

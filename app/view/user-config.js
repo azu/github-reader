@@ -33,6 +33,7 @@ saveButton.addEventListener("click", function (event) {
     if (!isNaN(interval)) {
         userConfig.setAutoReloadTime(interval);
     }
+    console.log(view.filterScriptPath);
     if (view.filterScriptPath != null) {
         userConfig.setFilterScriptPath(view.filterScriptPath);
     }

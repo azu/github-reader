@@ -28,10 +28,11 @@ function sendNotification(options, callback) {
             return callback(err);
         }
         growl.notify({
+            id: options.id,
             title: options.title,
             message: options.text,
             icon: data,
-            gh_url: options.url,
+            html_url: options.url,
             sound: true, // Only Notification Center or Windows Toasters
             wait: true // wait with callback until user action is taken on notification
         }, function (err, response) {

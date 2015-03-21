@@ -6,20 +6,12 @@
 var assert = require("assert");
 var notifier = require("../notification/notification");
 var userData = require("../config/userData");
+var userConfig = require("../config/reloadConfig");
 var Vue = require('vue');
 var frameController = require("./frameController");
 var _ = require("lodash");
 var Promise = require("bluebird");
 var request = Promise.promisify(require("request"));
-
-
-notifier.addClickCallback(function (options) {
-    var htmlURL = options.gh_url;
-    var gui = global.window.nwDispatcher.requireNwGui();
-    var win = gui.Window.get();
-    win.focus();
-    frameController.loadURL(htmlURL);
-});
 var listView;
 function reloadView() {
     listView = new Vue({
@@ -80,12 +72,26 @@ function reloadView() {
     return listView
 }
 
-
 function sortDate(aItem, bItem) {
     var a = new Date(aItem.date),
         b = new Date(bItem.date);
     return (b.getTime() - a.getTime());
 }
+
+/**
+ * if the item is filtered, then return true.
+ * @param item
+ * @returns {boolean}
+ */
+function userFilter(item) {
+    var filterScriptPath = userConfig.getFilterScriptPath();
+    if (filterScriptPath == null) {
+        return false;
+    }
+    var canFilter = require(filterScriptPath);
+    return canFilter(item);
+}
+
 function mergeData(list) {
     var existItems = listView.items;
     var existKeys = _.pluck(existItems, "id");
@@ -96,9 +102,11 @@ function mergeData(list) {
     if (newItems.length === 0) {
         return;
     }
+    var userFilteredItems = newItems.filter(userFilter);
     if (existItems.length !== 0) {
-        newItems.forEach(function (item) {
+        userFilteredItems.forEach(function (item) {
             notifier.sendNotification({
+                id: item.id,
                 title: item.repo_name,
                 icon: item.avatar_url,
                 text: item.body,
@@ -161,6 +169,20 @@ function elementAtIndex(currentIndex) {
     var target = listView.$el;
     return target.children[currentIndex];
 }
+
+notifier.addClickCallback(function (options) {
+    var gui = global.window.nwDispatcher.requireNwGui();
+    var win = gui.Window.get();
+    win.focus();
+    var itemID = options.id;
+    var matchItems = listView.displayItems.filter(function (item) {
+        return item.id === itemID;
+    });
+    if (matchItems.length > 0) {
+        listView.loadHTMLView(matchItems[0]);
+    }
+});
+
 module.exports.elementAtIndex = elementAtIndex;
 module.exports.indexOfItem = indexOfItem;
 module.exports.mergeData = mergeData;
