@@ -14,7 +14,7 @@ item
 }
  */
 /**
- * return true == filter, return false == no filter
+ * return true == preserve item, return false == ignore item
  * @param item
  * @returns {boolean}
  */
