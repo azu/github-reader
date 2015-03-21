@@ -102,8 +102,8 @@ function mergeData(list) {
     if (newItems.length === 0) {
         return;
     }
-    var userFilteredItems = newItems.filter(userFilter);
     if (existItems.length !== 0) {
+        var userFilteredItems = newItems.filter(userFilter);
         userFilteredItems.forEach(function (item) {
             notifier.sendNotification({
                 id: item.id,

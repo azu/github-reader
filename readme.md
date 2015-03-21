@@ -39,6 +39,26 @@ Multi-platform support
     * Input personal access token
 * Save & Reload
 
+#### UserFilterScript
+
+Filter notifications by using filter script
+
+![2015-03-21_13-20-50](https://cloud.githubusercontent.com/assets/19714/6763724/1cd57b6e-cfcd-11e4-90be-8ad299c82386.jpg)
+
+1. Create `UserFilterScript.js`
+2. Set `UserFilterScript` file path in config view.
+
+[examples/user-filter-example.js](examples/user-filter-example.js): ignore "coveralls" account.
+
+```js
+module.exports = function (item) {
+    if(item.user_name === "coveralls"){
+        return false;
+    }
+    return true;
+};
+```
+
 ## Develop
 
 ``` sh
