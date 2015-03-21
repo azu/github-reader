@@ -8,6 +8,6 @@ module.exports = function (gui) {
     if (userData.hasUserData()) {
         require("./main/mainController")(gui);
     } else {
-        window.open('./view/user-config.html', '_blank', 'width=400,height=400');
+        gui.Window.open('./view/user-config.html', '_blank', 'width=400,height=400');
     }
 };
