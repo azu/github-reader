@@ -25,7 +25,13 @@
             </div>
             <div class="pure-control-group">
                 <label for="reload-time-interval">Reload time interval(ms)</label>
-                <input id="reload-time-interval" type="number" placeholder="Reload time interval" v-model="timeInterval">
+                <input id="reload-time-interval" type="number" placeholder="Reload time interval"
+                       v-model="timeInterval">
+            </div>
+            <div class="pure-control-group">
+                <label for="reload-time-interval">Filter script path(js)</label>
+                <input id="filter-script-path" type="number" placeholder="Filter script path"
+                       v-model="filterScriptPath">
             </div>
             <div class="pure-controls">
                 <button type="submit" id="js-save" class="pure-button pure-button-primary">Save</button>

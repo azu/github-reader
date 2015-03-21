@@ -16,7 +16,18 @@ function getLastUpdated() {
     return window.localStorage.getItem("last-updated");
 }
 
-module.exports.getAutoReloadTime = getAutoReloadTime;
-module.exports.setAutoReloadTime = setAutoReloadTime;
-module.exports.getLastUpdated = getLastUpdated;
-module.exports.setLastUpdated = setLastUpdated;
+function getFilterScriptPath() {
+    return window.localStorage.getItem("filter-script-path");
+}
+
+function setFilterScriptPath(scriptPath) {
+    window.localStorage.setItem("filter-script-path", scriptPath)
+}
+module.exports = {
+    getAutoReloadTime: getAutoReloadTime,
+    setAutoReloadTime: setAutoReloadTime,
+    getLastUpdated: getLastUpdated,
+    setLastUpdated: setLastUpdated,
+    getFilterScriptPath: getFilterScriptPath,
+    setFilterScriptPath: setFilterScriptPath
+};

@@ -17,6 +17,7 @@ function didLodView() {
     view.name = user.name;
     view.token = user.token;
     view.timeInterval = userConfig.getAutoReloadTime();
+    view.filterScriptPath = userConfig.getFilterScriptPath();
 }
 function saveUserData(name, token) {
     userData.setUserData({
@@ -31,6 +32,9 @@ saveButton.addEventListener("click", function (event) {
     var interval = parseInt(view.timeInterval, 10);
     if (!isNaN(interval)) {
         userConfig.setAutoReloadTime(interval);
+    }
+    if (view.filterScriptPath != null) {
+        userConfig.setFilterScriptPath(view.filterScriptPath);
     }
     window.close();
 });
