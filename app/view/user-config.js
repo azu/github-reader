@@ -8,9 +8,9 @@ var view = new Vue({
     data: {
         name: "",
         token: "",
-        timeInterval: 60 * 1000
-    },
-    methods: {}
+        timeInterval: 60 * 1000,
+        filterScriptPath: ""
+    }
 });
 function didLodView() {
     var user = userData.getUserData();
@@ -33,7 +33,6 @@ saveButton.addEventListener("click", function (event) {
     if (!isNaN(interval)) {
         userConfig.setAutoReloadTime(interval);
     }
-    console.log(view.filterScriptPath);
     if (view.filterScriptPath != null) {
         userConfig.setFilterScriptPath(view.filterScriptPath);
     }
