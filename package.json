@@ -43,7 +43,6 @@
     "intelli-espower-loader": "^0.6.0",
     "json-server": "^0.6.4",
     "mocha": "^2.0.1",
-    "node-webkit-builder": "^1.0.11",
     "nw-zip-builder": "^1.0.5",
     "power-assert": "^0.10.0"
   }
