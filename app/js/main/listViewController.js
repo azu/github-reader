@@ -153,7 +153,6 @@ function isSearchMode() {
 }
 function toggleSearchMode() {
     listView.isSearchMode = !listView.isSearchMode;
-    console.log(listView.isSearchMode);
     if (!listView.isSearchMode) {
         // remove search word when no search mode.
         reloadData();

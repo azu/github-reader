@@ -1,26 +1,26 @@
 sudo: false
 language: node_js
-after_success:
-- npm install -g bower
-- bower install
-- "./_travis/build.sh"
 env:
   global:
   - GH_REF: github.com/azu/github-reader.git
   - secure: Lf1oit8BeLq7mPKBSDLrKLV9xdxwERJ/36p/nN4nonnzXoJzezbMd8RdFYq+R+uNmxeOSdiwvJV+KaNVGGJzIWhM0rdQKXE+ums+hLyLOrTDIxbI7kHpZkiRogQwB1AynAR7MvQlInXcCxNud2aplMBQUp/TfkV5HltIjOTjVOA=
 node_js:
 - '0.12'
+before_deploy:
+- npm install -g bower
+- bower install
+- npm run build
 deploy:
   provider: releases
   api_key:
     secure: qS2igPviHIlN6zGVUPa9s5lh/TnYH/nELBxb9EfjXQzhaScV1/R3csjg0AI28Bh0ReSp1xhRWc7I5EiKLsS5wqYM821MfTiyrjoKneAjDYy5XeW4+kFKXaqvMgYK+v5f1CoiuJVKtJwVv5uEVb3NsXpX5qUGcLmIvmWmUoRrjik=
   file:
-    - build/github-reader-osx32.zip
-    - build/github-reader-osx64.zip
-    - build/github-reader-win32.zip
-    - build/github-reader-win64.zip
-    - build/github-reader-linux32.zip
-    - build/github-reader-linux64.zip
+    - build/github-reader/github-reader-osx32.zip
+    - build/github-reader/github-reader-osx64.zip
+    - build/github-reader/github-reader-win32.zip
+    - build/github-reader/github-reader-win64.zip
+    - build/github-reader/github-reader-linux32.zip
+    - build/github-reader/github-reader-linux64.zip
   on:
     repo: azu/github-reader
     tags: true
