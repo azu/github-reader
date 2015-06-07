@@ -13,9 +13,6 @@
     "url": "git://github.com/azu/github-reader.git"
   },
   "main": "app/index.html",
-  "window": {
-    "show": false
-  },
   "scripts": {
     "test": "mocha test/*.js",
     "build": "nw-zip-builder -p 'win,osx,linux32,linux64' ./ -o ./build"
