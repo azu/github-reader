@@ -19,7 +19,7 @@ item
  * @returns {boolean}
  */
 module.exports = function (item) {
-    if(item.user_name === "coveralls"){
+    if (item.user_name === "coveralls") {
         return false;
     }
     return true;
