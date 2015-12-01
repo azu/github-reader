@@ -4,12 +4,12 @@ Github Client - Viewer for [Notifications](https://github.com/notifications "Not
 
 ![ScreenShot](http://cl.ly/image/2v053R0Y0s0a/2014-04-29%2022_38_04.gif)
 
-Built with [node-webkit](https://github.com/rogerwang/node-webkit "node-webkit").
+Built with [node-webkit](https://github.com/nwjs/nw.js "node-webkit").
 
 ## Features
 
 * Viewer for mixed [Notifications](https://github.com/notifications "Notifications") and [News Feed](https://github.com/ "GitHub")
-* Growl Notification(for Mac only, relate issue - [Implement desktop notifications](https://github.com/rogerwang/node-webkit/issues/27 "Implement desktop notifications [$50] · Issue #27 · rogerwang/node-webkit"))
+* Growl Notification(for Mac only, relate issue - [Implement desktop notifications](https://github.com/nwjs/nw.js/issues/27 "Implement desktop notifications [$50] · Issue #27 · rogerwang/node-webkit"))
 * `J`,`K` scroll shortcut
 * `O` : open in browser
 * `Ctrl + R` reload
@@ -66,7 +66,7 @@ npm install
 bower install
 ```
 
-[Run apps](https://github.com/rogerwang/node-webkit/wiki/How-to-run-apps "run apps") with node-webkit.
+[Run apps](https://github.com/nwjs/nw.js/wiki/How-to-run-apps "run apps") with node-webkit.
 
 ## Contributing
 
