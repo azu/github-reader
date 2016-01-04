@@ -15,7 +15,7 @@
   "main": "app/index.html",
   "scripts": {
     "test": "mocha test/*.js",
-    "build": "nw-zip-builder -p 'win,osx,linux32,linux64' ./ -o ./build"
+    "build": "nw-zip-builder -p 'win64,osx64,linux64' ./ -o ./build"
   },
   "directories": {
     "test": "test/"
