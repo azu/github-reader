@@ -7,8 +7,6 @@ env:
 node_js:
 - '0.12'
 before_deploy:
-- npm install -g bower
-- bower install
 - npm run build
 deploy:
   provider: releases
