@@ -34,6 +34,7 @@
     "node-webkit-winstate": "^1.1.0",
     "parse-github-event": "^0.2.0",
     "purecss": "^0.6.0",
+    "remove-markdown": "0.0.6",
     "request": "^2.51.0",
     "vue": "^1.0.13"
   },

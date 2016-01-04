@@ -5,7 +5,7 @@
 "use strict";
 var Vue = require('vue');
 var headerView;
-
+var removeMd = require('remove-markdown');
 function reloadView() {
     headerView = new Vue({
         el: '#comment-preview-header',
@@ -14,6 +14,9 @@ function reloadView() {
             "user_name": "",
             "title": "",
             "body": ""
+        },
+        filters: {
+            removeMd: removeMd
         }
     });
     return headerView;

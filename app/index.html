@@ -39,7 +39,7 @@
                 <img v-bind:src="avatar_url" class="avatar-img"/>
 
                 <p class="comment-description">
-                    {{body}}
+                    {{body | removeMd}}
                 </p>
             </div>
         </div>
