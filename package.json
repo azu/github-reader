@@ -26,7 +26,7 @@
     "url": "https://github.com/azu/github-reader/issues"
   },
   "dependencies": {
-    "bluebird": "^2.2.2",
+    "bluebird": "^3.1.1",
     "github": "^0.2.1",
     "lodash": "^3.5.0",
     "mousetrap": "^1.5.3",
@@ -35,13 +35,13 @@
     "parse-github-event": "^0.2.0",
     "purecss": "^0.6.0",
     "request": "^2.51.0",
-    "vue": "^0.11.0"
+    "vue": "^1.0.13"
   },
   "devDependencies": {
-    "espower-loader": "^0.10.0",
-    "intelli-espower-loader": "^0.6.0",
+    "espower-loader": "^1.0.0",
+    "intelli-espower-loader": "^1.0.1",
     "mocha": "^2.0.1",
     "nw-zip-builder": "^1.0.5",
-    "power-assert": "^0.10.0"
+    "power-assert": "^1.2.0"
   }
 }

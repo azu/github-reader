@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:v-bind="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Github Reader</title>
+    <title>GitHub Reader</title>
     <script src="../node_modules/node-webkit-winstate/index.js"></script>
     <link rel="stylesheet" href="../node_modules/purecss/build/pure-min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -10,25 +10,22 @@
 
 <div id="layout" class="content pure-g">
     <div id="content-list" class="pure-u-1-4">
-        <input class="content-list-filter-input" v-show="isSearchMode" v-transition v-model="searchWord"/>
+        <input class="content-list-filter-input" v-show="isSearchMode" transition="fade" v-model="searchWord"/>
 
-        <div class="event-item pure-g" v-repeat="displayItems"
-             v-on="
-             click: loadHTMLView(this)
-             "
-             v-class="
-             event-item-selected: this.$data === selectedItem
-             ">
-            <div class="pure-u">
+        <div class="event-item pure-g" v-for="item in displayItems"
+             v-bind:class='{
+                    "event-item-selected": item === selectedItem
+                 }'>
+            <div class="pure-u" v-on:click="loadHTMLView(item)">
                 <div class="event-header">
-                    <img v-attr="src:avatar_url" class="avatar-img"/>
+                    <img v-bind:src="item.avatar_url" class="avatar-img"/>
 
-                    <p style="font-size: .6em; margin: 0;">{{date}}</p>
-                    <h5 class="event-username">{{user_name}}</h5>
-                    <h4 class="event-subject">{{title}}</h4>
+                    <p style="font-size: .6em; margin: 0;">{{item.date}}</p>
+                    <h5 class="event-username">{{item.user_name}}</h5>
+                    <h4 class="event-subject">{{item.title}}</h4>
                 </div>
                 <p class="event-description">
-                    {{body}}
+                    {{item.body}}
                 </p>
             </div>
         </div>
@@ -39,7 +36,7 @@
             <p class="repo_name"><a href="https://github.com/{{repo_name}}">{{repo_name}}</a></p>
 
             <div class="comment-preview-body">
-                <img v-attr="src:avatar_url" class="avatar-img"/>
+                <img v-bind:src="avatar_url" class="avatar-img"/>
 
                 <p class="comment-description">
                     {{body}}
