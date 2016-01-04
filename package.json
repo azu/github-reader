@@ -40,7 +40,6 @@
   "devDependencies": {
     "espower-loader": "^0.10.0",
     "intelli-espower-loader": "^0.6.0",
-    "json-server": "^0.6.4",
     "mocha": "^2.0.1",
     "nw-zip-builder": "^1.0.5",
     "power-assert": "^0.10.0"
