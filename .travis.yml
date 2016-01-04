@@ -13,11 +13,8 @@ deploy:
   api_key:
     secure: qS2igPviHIlN6zGVUPa9s5lh/TnYH/nELBxb9EfjXQzhaScV1/R3csjg0AI28Bh0ReSp1xhRWc7I5EiKLsS5wqYM821MfTiyrjoKneAjDYy5XeW4+kFKXaqvMgYK+v5f1CoiuJVKtJwVv5uEVb3NsXpX5qUGcLmIvmWmUoRrjik=
   file:
-    - build/github-reader/github-reader-osx32.zip
     - build/github-reader/github-reader-osx64.zip
-    - build/github-reader/github-reader-win32.zip
-    - build/github-reader/github-reader-win64.zip
-    - build/github-reader/github-reader-linux32.zip
+#    - build/github-reader/github-reader-win64.zip
     - build/github-reader/github-reader-linux64.zip
   on:
     repo: azu/github-reader
