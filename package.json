@@ -29,9 +29,11 @@
     "bluebird": "^2.2.2",
     "github": "^0.2.1",
     "lodash": "^3.5.0",
+    "mousetrap": "^1.5.3",
     "node-notifier": "^4.0.3",
     "node-webkit-winstate": "^1.1.0",
     "parse-github-event": "^0.2.0",
+    "purecss": "^0.6.0",
     "request": "^2.51.0",
     "vue": "^0.11.0"
   },

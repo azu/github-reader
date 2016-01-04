@@ -9,6 +9,7 @@ var commentHeaderController = require("./commentHeaderViewController");
 var listController = require("./listViewController");
 var inputFocusController = require("./inputFocusController");
 var Promise = require("bluebird");
+var Mousetrap = require("mousetrap");
 // gui is chrome context object
 module.exports = function (gui) {
     var commentHeaderView = commentHeaderController.reloadView();
@@ -33,25 +34,25 @@ module.exports = function (gui) {
     listView.$watch("searchWord", function (word) {
         listController.filterByWord(word);
     });
-    window.Mousetrap.bind('o', function () {
+    Mousetrap.bind('o', function () {
         var iframeURL = document.getElementById("github-iframe").src;
         if (!iframeURL) {
             return;
         }
         gui.Shell.openExternal(iframeURL);
     });
-    window.Mousetrap.bind('j', function () {
+    Mousetrap.bind('j', function () {
         listView.selectNextItem();
     });
-    window.Mousetrap.bind('k', function () {
+    Mousetrap.bind('k', function () {
         listView.selectPrevItem();
     });
-    window.Mousetrap.bind('r r', function () {
+    Mousetrap.bind('r r', function () {
         console.log("reload");
         reloadData();
     });
     ['command+f', 'ctrl+f'].forEach(function (key) {
-        window.Mousetrap.bind(key, function () {
+        Mousetrap.bind(key, function () {
             listController.toggleSearchMode();
             if (listController.isSearchMode()) {
                 inputFocusController.focus();

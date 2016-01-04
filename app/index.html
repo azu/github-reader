@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Github Reader</title>
     <script src="../node_modules/node-webkit-winstate/index.js"></script>
-    <link rel="stylesheet" href="../bower_components/pure/pure-min.css">
+    <link rel="stylesheet" href="../node_modules/purecss/build/pure-min.css">
     <link rel="stylesheet" href="css/style.css">
 <body>
 
@@ -51,12 +51,12 @@
 </div>
 <script src="node-webkit/workaround.js"></script>
 <script src="menu/menu.js"></script>
-<script src="../bower_components/mousetrap/mousetrap.min.js"></script>
 <script>
     (function () {
         var gui = require('nw.gui');
         var win = gui.Window.get();
-        window.Mousetrap.bind('command+r', function () {
+        var Mousetrap = require("mousetrap");
+        Mousetrap.bind('command+r', function () {
             win.reload(true);
         });
         win.on('new-win-policy', function (frame, url, policy) {

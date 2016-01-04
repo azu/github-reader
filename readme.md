@@ -63,7 +63,6 @@ module.exports = function (item) {
 
 ``` sh
 npm install
-bower install
 ```
 
 [Run apps](https://github.com/nwjs/nw.js/wiki/How-to-run-apps "run apps") with node-webkit.
