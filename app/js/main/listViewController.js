@@ -105,18 +105,21 @@ function mergeData(list) {
     }
     if (existItems.length !== 0) {
         var userFilteredItems = newItems.filter(userFilter);
-        userFilteredItems.forEach(function (item) {
-            notifier.sendNotification({
-                id: item.id,
-                title: item.repo_name,
-                icon: item.avatar_url,
-                text: item.body,
-                url: item.html_url
-            }, function (error) {
-                if (error) {
-                    console.error("Growl Error", error);
-                }
-            });
+        userFilteredItems.forEach(function (item, index) {
+            setTimeout(function () {
+                notifier.sendNotification({
+                    id: item.id,
+                    title: item.repo_name,
+                    subtitle: item.user_name,
+                    icon: item.avatar_url,
+                    text: item.body,
+                    url: item.html_url
+                }, function (error) {
+                    if (error) {
+                        console.error("Growl Error", error);
+                    }
+                });
+            }, index * 1500);
         });
     }
     var mergeItem = existItems.concat(newItems);

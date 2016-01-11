@@ -4,8 +4,7 @@
  */
 "use strict";
 
-var notifier = require('node-notifier');
-var growl = new notifier.NotificationCenter();
+var growl = require('node-notifier');
 var EventEmitter = require('events').EventEmitter;
 var download = require('download-cache');
 var notificationEvent = new EventEmitter();
