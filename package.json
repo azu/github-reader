@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "bluebird": "^3.1.1",
+    "download-cache": "^1.1.1",
     "github": "^0.2.1",
     "lodash": "^3.5.0",
     "mousetrap": "^1.5.3",
