@@ -15,7 +15,7 @@ deploy:
   file:
     - build/github-reader/github-reader-osx64.zip
 #    - build/github-reader/github-reader-win64.zip
-    - build/github-reader/github-reader-linux64.zip
+#    - build/github-reader/github-reader-linux64.zip
   on:
     repo: azu/github-reader
     tags: true
