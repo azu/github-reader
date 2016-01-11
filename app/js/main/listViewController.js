@@ -87,7 +87,7 @@ function sortDate(aItem, bItem) {
 function userFilter(item) {
     var filterScriptPath = userConfig.getFilterScriptPath();
     if (filterScriptPath == null) {
-        return false;
+        return true;
     }
     var canFilter = require(filterScriptPath);
     return canFilter(item);
